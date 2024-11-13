@@ -1,4 +1,15 @@
 $(function () {
+    // let lightStatus = localStorage.getItem('lightStatus');
+
+    // if (lightStatus === 'checked') {
+    //     alert('dark');
+    //     $('#lightCheck').prop('checked', true);
+    //     $('body').addClass('active');
+    // } else {
+    //     alert('light');
+    //     $('#lightCheck').prop('checked', false);
+    // }
+
     function updateProgressBar() {
         const documentHeight = $(document).height(); // 문서의 총 높이
         const windowHeight = $(window).height(); // 윈도우 창의 높이

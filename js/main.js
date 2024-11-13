@@ -1,4 +1,12 @@
 $(function () {
+    // $('#lightCheck').change(function () {
+    //     if ($(this).is(':checked')) {
+    //         localStorage.setItem('lightStatus', 'checked');
+    //     } else {
+    //         localStorage.setItem('lightStatus', 'unchecked');
+    //     }
+    // });
+
     // cnt04 : 포트폴리오 리스트
     var cnt04_01 = new Swiper(".cnt04_wrap .article01 .mySwiper", {
         slidesPerView: 'auto',
