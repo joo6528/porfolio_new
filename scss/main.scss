@@ -28,7 +28,7 @@
             // background: url('/img/face_img.svg') no-repeat;
             width: 150px;
             height: 150px;
-            background: url('/img/calendar.svg') no-repeat;
+            background: url('img/calendar.svg') no-repeat;
             background-size: 150px auto;
             display: block;
             top: -150px;
@@ -553,7 +553,7 @@
 
                 &:after {
                     position: absolute;
-                    background: url('/img/folder.svg')no-repeat;
+                    background: url('img/folder.svg')no-repeat;
                     content: '';
                     width: 250px;
                     height: 250px;
@@ -610,7 +610,7 @@
                 &:hover {
                     background: var(--black02);
                     justify-content: space-between;
-                    cursor: url('/img/cursorWOn.png') 2 2, auto;
+                    cursor: url('img/cursorWOn.png') 2 2, auto;
 
                     & .cnt_top {
                         top: 40px;
@@ -626,22 +626,22 @@
                 }
 
                 &:hover .cnt_top {
-                    cursor: url('/img/cursorWOn.png') 2 2, auto;
+                    cursor: url('img/cursorWOn.png') 2 2, auto;
 
                     & .cnt_title {
                         color: var(--white);
-                        cursor: url('/img/cursorWOn.png') 2 2, auto;
+                        cursor: url('img/cursorWOn.png') 2 2, auto;
                     }
 
                     & .cnt_subTitle {
-                        cursor: url('/img/cursorWOn.png') 2 2, auto;
+                        cursor: url('img/cursorWOn.png') 2 2, auto;
                     }
                 }
 
                 &:hover .cnt_bottom .moreBtn {
                     background: var(--white);
                     color: var(--black01);
-                    cursor: url('/img/cursorOn.png') 2 2, auto;
+                    cursor: url('img/cursorOn.png') 2 2, auto;
                 }
             }
 
@@ -772,19 +772,19 @@
                 }
 
                 &:hover {
-                    cursor: url('/img/cursorOn.png') 2 2, auto;
+                    cursor: url('img/cursorOn.png') 2 2, auto;
 
                     & a {
-                        cursor: url('/img/cursorOn.png') 2 2, auto;
+                        cursor: url('img/cursorOn.png') 2 2, auto;
 
                         & span {
-                            cursor: url('/img/cursorOn.png') 2 2, auto;
+                            cursor: url('img/cursorOn.png') 2 2, auto;
                         }
                     }
 
                     & .list_moreBtn {
                         transform: translateX(10px);
-                        cursor: url('/img/cursorOn.png') 2 2, auto;
+                        cursor: url('img/cursorOn.png') 2 2, auto;
                     }
                 }
             }
@@ -986,18 +986,18 @@ body.active {
 
                     &:hover {
                         background: var(--white);
-                        cursor: url('/img/cursorOn.png') 2 2, auto;
+                        cursor: url('img/cursorOn.png') 2 2, auto;
 
                         & .cnt_top {
-                            cursor: url('/img/cursorOn.png') 2 2, auto;
+                            cursor: url('img/cursorOn.png') 2 2, auto;
 
                             & .cnt_title {
                                 color: var(--black03);
-                                cursor: url('/img/cursorOn.png') 2 2, auto;
+                                cursor: url('img/cursorOn.png') 2 2, auto;
                             }
 
                             & .cnt_subTitle {
-                                cursor: url('/img/cursorOn.png') 2 2, auto;
+                                cursor: url('img/cursorOn.png') 2 2, auto;
                             }
                         }
 
@@ -1005,7 +1005,7 @@ body.active {
                             & .moreBtn {
                                 background: var(--black02);
                                 color: var(--white);
-                                cursor: url('/img/cursorWOn.png') 2 2, auto;
+                                cursor: url('img/cursorWOn.png') 2 2, auto;
                             }
                         }
                     }
@@ -1036,17 +1036,17 @@ body.active {
                     }
 
                     &:hover {
-                        cursor: url('/img/cursorWOn.png') 2 2, auto;
+                        cursor: url('img/cursorWOn.png') 2 2, auto;
 
                         & a {
-                            cursor: url('/img/cursorWOn.png') 2 2, auto;
+                            cursor: url('img/cursorWOn.png') 2 2, auto;
 
                             & span {
-                                cursor: url('/img/cursorWOn.png') 2 2, auto;
+                                cursor: url('img/cursorWOn.png') 2 2, auto;
                             }
 
                             &.list_moreBtn.dark {
-                                cursor: url('/img/cursorOn.png') 2 2, auto;
+                                cursor: url('img/cursorOn.png') 2 2, auto;
                             }
                         }
                     }
@@ -1060,10 +1060,10 @@ body.active {
 
         &.dark {
             display: block;
-            cursor: url('/img/cursor.png') 2 2, auto;
+            cursor: url('img/cursor.png') 2 2, auto;
 
             & img {
-                cursor: url('/img/cursor.png') 2 2, auto;
+                cursor: url('img/cursor.png') 2 2, auto;
             }
         }
     }
