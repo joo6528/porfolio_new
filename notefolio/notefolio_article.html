@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노트폴리오 아티클</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/notofolio_style.css">
+    <link rel="stylesheet" href="./css/notofolio_responsive_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- custom JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/notofolio_article.js"></script>
+    <script src="./js/notofolio_base.js"></script>
+</head>
+<body>
+
+    <!-- top banner start -->
+    <div class="tbnWrap">
+        <a href="#none" class="top_banner">
+            <img src="images/notefolio/top_banner_img.jpg" alt="">
+        </a>
+    </div>
+    <!-- top banner end -->
+
+    <!-- top menu start -->
+    <div class="tmuWrap">
+        <a href="#none" class="top_gnb">
+            <img src="images/notefolio/top_gnb_img01.svg" alt="스터닝 로고">
+        </a>
+
+        <a href="./notefolio_index.html" class="top_gnb clickOn">
+            <img src="images/notefolio/top_gnb_img02.svg" alt="노트폴리오 로고">
+        </a>
+
+        <a href="#none" class="top_gnb">
+            <svg data-v-d71d0352="" width="36" height="9" viewBox="0 0 36 9" fill="#a6a6a6"><path data-v-d71d0352="" d="M0 0.17926V8.80045L6.7001 8.81398V6.78129L2.31758 6.77452V0.182642L0 0.17926Z"></path> <path data-v-d71d0352="" d="M7.12793 4.50509C7.12793 7.00791 9.22318 8.96958 11.8978 8.97635C14.5725 8.98311 16.6913 7.01468 16.6913 4.49833V4.47127C16.6913 1.96845 14.5961 0.00678176 11.9214 1.73814e-05C9.24676 -0.00674699 7.12793 1.96169 7.12793 4.47804V4.50509ZM9.48593 4.45774C9.47538 4.1369 9.52991 3.81726 9.64623 3.51824C9.76255 3.21923 9.93822 2.94709 10.1626 2.71836C10.3869 2.48964 10.6552 2.30911 10.9512 2.18776C11.2472 2.0664 11.5647 2.00674 11.8844 2.01242C12.2069 2.00903 12.5268 2.07129 12.8247 2.19542C13.1226 2.31954 13.3924 2.50297 13.6178 2.73465C13.8432 2.96632 14.0195 3.24144 14.1361 3.54339C14.2527 3.84535 14.3072 4.16789 14.2963 4.49156V4.51862C14.3049 4.83632 14.2497 5.15251 14.134 5.44834C14.0183 5.74417 13.8444 6.01358 13.6228 6.24051C13.4012 6.46744 13.1363 6.64725 12.844 6.76921C12.5517 6.89118 12.2379 6.9528 11.9214 6.95041C11.5993 6.95048 11.2805 6.88604 10.9835 6.76088C10.6866 6.63572 10.4174 6.45235 10.1919 6.2215C9.96637 5.99065 9.78896 5.71695 9.67005 5.41643C9.55114 5.1159 9.49313 4.79458 9.4994 4.47127L9.48593 4.45774Z"></path> <path data-v-d71d0352="" d="M21.9969 9C23.8765 9 26.12 8.32356 26.12 5.0124V0.21984H23.7991V5.08681C23.7991 6.31792 23.1691 6.99436 22.0205 6.99436C20.8718 6.99436 20.2553 6.27057 20.2553 5.01578V0.213074H17.9377V5.06651C17.9377 7.62683 19.3391 8.99661 21.9969 9Z"></path> <path data-v-d71d0352="" d="M34.6694 7.68433C35.1066 7.28797 35.4521 6.80049 35.682 6.256C35.9118 5.71151 36.0204 5.12316 36 4.53214V4.50508C36.0206 3.92275 35.9133 3.34301 35.6856 2.80701C35.458 2.27101 35.1157 1.79188 34.6829 1.40361C33.8138 0.642622 32.5708 0.240138 31.0853 0.236755H27.6763V8.85795H31.0449C32.5338 8.86134 33.7902 8.45547 34.6694 7.68433ZM29.9534 2.19504H31.1088C32.719 2.19504 33.7161 3.09809 33.7161 4.5389V4.58287C33.7161 6.01692 32.7056 6.90643 31.1088 6.90305H29.9534V2.19504Z"></path></svg>
+        </a>
+    </div>
+    <!-- top menu end -->
+
+    <!-- header start -->
+    <div class="hdrWrap">
+        <header>
+            <div class="main_nav">
+                <div class="logo">
+                    <a href="./notefolio_index.html"><img src="./images/notefolio/main_logo.svg" alt=""></a>
+                </div>
+
+                <ul class="nav">
+                    <li><a href="./notefolio_index.html">발견</a></li>
+                    <li><a href="#none">채용</a></li>
+                    <li><a href="./notefolio_article.html" class="clickShow">아티클</a></li>
+                    <li class="new"><a href="./notefolio_cummunity.html" target="_blank">커뮤니티/워크숍</a></li>
+                </ul>
+            </div>
+
+            <div class="searchBox">
+                <input type="text" class="search_input" placeholder="140,000개 이상의 크리에이티브 검색">
+                <i class="xi-search"></i>
+            </div>
+
+            <div class="buttonsBox">
+                <a href="./notefolio_login.html" class="loginBtn">로그인</a>
+                <a href="#none" class="membershipBtn">회원가입</a>
+            </div>
+        </header>
+    </div>
+    <!-- header end -->
+
+    <!-- mobile menu start -->
+    <div class="mobilemenu_bottom">
+        <div class="mnvWrap">
+            <a href="./notefolio_index.html"><i class="xi-apps"></i></a>
+            <a href="#none"><i class="xi-bell-o"></i></a>
+            <a href="#none" data-toggle="modal" data-target="#searchModal"><i class="xi-search"></i></a>
+            <a href="#none"><i class="xi-profile-o"></i></a>
+            <div class="mobileMenuIcon"><i class="xi-bars"></i></div>
+        </div>
+
+        <div class="mnuWrap">
+            <header>
+                <div class="logo">
+                    <a href="./notefolio_index.html"><img src="./images/notefolio/main_logo.svg" alt=""></a>
+                </div>
+
+                <button class="mobileMenuCloseBtn"><i class="xi-close"></i></button>
+            </header>
+
+            <section>
+                <div class="loginBox">
+                    <p>국내 최대 포트폴리오 플랫폼 <br> 노트폴리오에 오신 것을 환영합니다!</p>
+
+                    <div class="loginBtnBox">
+                        <a href="./notefolio_login.html" class="loginBtn">로그인</a>
+                        <a href="#none" class="membershipBtn">회원가입</a>
+                    </div>
+                </div>
+
+                <ul class="menuListBox">
+                    <li>
+                        <a href="./notefolio_index.html">
+                            <i class="xi-apps"></i>
+                            <span>발견</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#none">
+                            <i class="xi-business"></i>
+                            <span>채용</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./notefolio_article.html">
+                            <i class="xi-browser-text"></i>
+                            <span>아티클</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./notefolio_cummunity.html">
+                            <i class="xi-comment-o"></i>
+                            <span class="new">커뮤니티/워크숍</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menuSite_infoBox">
+                    <li><a href="#none">회사소개</a></li>
+                    <li><a href="#none">자주묻는 질문</a></li>
+                    <li><a href="#none">문의하기</a></li>
+                    <li><a href="#none">광고문의</a></li>
+                </ul>
+
+                <div class="menu_familySiteBox">
+                    <div class="accordion">
+                        <div>
+                            <input type="checkbox" name="example_accordion" id="section1" class="accordion__input">
+                            <label for="section1" class="accordion__label">패밀리 사이트</label>
+                            
+                            <div class="accordion__content">
+                                <a href="#none">
+                                    <div class="siteLogoImgBox">
+                                        <img src="./images/notefolio/stunning_logo.svg" alt="">
+                                    </div>
+
+                                    <div class="siteTxtBox">
+                                        <p class="logoName">스터닝</p>
+                                        <p class="logoInfo">창의적인 생각을 모아 바꾸는 세상</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="accordion__content">
+                                <a href="#none">
+                                    <div class="siteLogoImgBox">
+                                        <img src="./images/notefolio/main_logo.svg" alt="">
+                                    </div>
+
+                                    <div class="siteTxtBox">
+                                        <p class="logoName">노트폴리오</p>
+                                        <p class="logoInfo">국내 최대 포트폴리오 플랫폼</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="accordion__content">
+                                <a href="#none">
+                                    <div class="siteLogoImgBox">
+                                        <img src="./images/notefolio/loud_logo.svg" alt="">
+                                    </div>
+
+                                    <div class="siteTxtBox">
+                                        <p class="logoName">라우드소싱</p>
+                                        <p class="logoInfo">크리에이티브 전문가 플랫폼</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menuFooter">
+                        <span>powered by</span><img src="./images/notefolio/ci_stunning_text.svg" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- banner start -->
+    <div class="bnrWrap">
+        <div class="bannerTxtBox">
+            <p class="bannerTxtTitle">노트폴리오 아티클</p>
+            <h2>다양한 창작 영역의 인사이트를 한곳에서 모아보세요.</h2>
+            <p class="applyLinkTxt">나의 인사이트를 공유하고 싶다면 <a href="#none" class="applyLink">필진 지원하기</a>를 통해 신청해보세요.</p>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- content01 start -->
+    <div class="cntWrap">
+        <div class="contents article_cnt01">
+
+            <section>
+                <div class="swiper categorySwiper">
+                    <ul class="categoryBox_article swiper-wrapper">
+                        <li class="clickShow swiper-slide"><a href="#none">전체</a></li>
+                        <li class="swiper-slide"><a href="#none">디자인 이론/역사</a></li>
+                        <li class="swiper-slide"><a href="#none">디자인 프로세스</a></li>
+                        <li class="swiper-slide"><a href="#none">UI/UX</a></li>
+                        <li class="swiper-slide"><a href="#none">브랜딩</a></li>
+                        <li class="swiper-slide"><a href="#none">타이포그래피</a></li>
+                        <li class="swiper-slide"><a href="#none">편집 디자인</a></li>
+                        <li class="swiper-slide"><a href="#none">커리어/라이프</a></li>
+                        <li class="swiper-slide"><a href="#none">컬쳐/트렌드</a></li>
+                        <li class="swiper-slide"><a href="#none">예술</a></li>
+                    </ul>
+                </div>
+
+                <div class="contents_itemBox_article">
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="./notefolio_article_view.html"><img src="./images/notefolio/article_cnt01_img03.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>전우성</span>
+                                <span>2022.12.02</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="./notefolio_article_view.html">
+                                    <h5>브랜딩을 시작해야 한다면</h5>
+                                    <p class="article_infoTxt">모든 것은 유기적으로 연결된다</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#브랜딩</a></li>
+                                        <li><a href="#none">#브랜드아이덴티티</a></li>
+                                        <li><a href="#none">#전우성</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img01.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>아이덴티오</span>
+                                <span>2022.12.07</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>디자이너라면 곡 알아야 할 영문 서체 1편</h5>
+                                    <p class="article_infoTxt">노트폴리오 생일파티에 당신을 초대합니다.</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#디자인 이론/역사</a></li>
+                                        <li><a href="#none">#라틴</a></li>
+                                        <li><a href="#none">#타입디자인</a></li>
+                                        <li><a href="#none">#아이덴티오</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img02.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>노인영</span>
+                                <span>2022.12.05</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>타치아노,베네치아 화풍을 완성하다</h5>
+                                    <p class="article_infoTxt">자유로운 영혼 베로네세</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#예술</a></li>
+                                        <li><a href="#none">#파인아트</a></li>
+                                        <li><a href="#none">#노인영</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img04.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>김나홈</span>
+                                <span>2022.11.30</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>테니스 강습을 망치고 얻은 것</h5>
+                                    <p class="article_infoTxt">테니스 수업을 받으면서 얻은 뜻밖의 일들</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#일러스트레이션</a></li>
+                                        <li><a href="#none">#에세이</a></li>
+                                        <li><a href="#none">#김나홈</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img05.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>보니</span>
+                                <span>2022.11.28</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>처음부터 마지막까지,이커머스에서 마이페이지란?</h5>
+                                    <p class="article_infoTxt">IT우주에서 살아남기</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#UI/UX</a></li>
+                                        <li><a href="#none">#UI</a></li>
+                                        <li><a href="#none">#보니</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img06.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>이보미</span>
+                                <span>2022.11.25</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>스타트업 일잘러 목격담</h5>
+                                    <p class="article_infoTxt">내가 생각하는 일잘러</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#조직문화</a></li>
+                                        <li><a href="#none">#자기계발</a></li>
+                                        <li><a href="#none">#이보미</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img07.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>김승화</span>
+                                <span>2022.11.23</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>이번 생에 쇼호스트는 처음이라.</h5>
+                                    <p class="article_infoTxt">66세 쇼호스트 민순자 어머니</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#브랜딩</a></li>
+                                        <li><a href="#none">#브랜드캠페인</a></li>
+                                        <li><a href="#none">#에세이</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img08.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>김성빈</span>
+                                <span>2022.11.21</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>IT기업이 신입 디자이너를 뽑지 않는 이유</h5>
+                                    <p class="article_infoTxt">기업은 당장의 성과를 낼 수 있는 인재를 원한다</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#자기계발</a></li>
+                                        <li><a href="#none">#조직문화</a></li>
+                                        <li><a href="#none">#김성빈</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img09.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>박지수</span>
+                                <span>2022.11.18</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>효율적인 협업 = 문서 잘 쓰기가 아니다</h5>
+                                    <p class="article_infoTxt">스타트업 프로덕트 고민상담 - 4화</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#조직문화</a></li>
+                                        <li><a href="#none">#지수</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img10.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>an.other</span>
+                                <span>2022.11.16</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>디자인을 넘어 브랜드를 바라보자</h5>
+                                    <p class="article_infoTxt">디자인과 브랜딩의 연결고리</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#브랜딩</a></li>
+                                        <li><a href="#none">#브랜드디자인</a></li>
+                                        <li><a href="#none">#자기계발</a></li>
+                                        <li><a href="#none">#an.other</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img11.png" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>바다김</span>
+                                <span>2022.11.14</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>디자인 박사과정을 무기한 휴학했습니다.</h5>
+                                    <p class="article_infoTxt">지루하고 개인적인 디자인 연구 성장 및 탈주 일지</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#디자인리서치</a></li>
+                                        <li><a href="#none">#자기계발</a></li>
+                                        <li><a href="#none">#바다김</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img12.png" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>전우성</span>
+                                <span>2022.11.11</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>이창우 대표님과의 브랜딩 대담(?)</h5>
+                                    <p class="article_infoTxt">29CM부터 라운즈, 닷슬래시대시까지 브랜딩에 관한 얘기들</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#브랜딩</a></li>
+                                        <li><a href="#none">#브랜드아이덴티티</a></li>
+                                        <li><a href="#none">#전우성</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img13.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>노인영</span>
+                                <span>2022.11.09</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>베네치아의 르네상스 미술</h5>
+                                    <p class="article_infoTxt">조르조네, 색채 미술의 전통을 세우다</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#예술</a></li>
+                                        <li><a href="#none">#파인아트</a></li>
+                                        <li><a href="#none">#노인영</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img14.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>아이덴티오</span>
+                                <span>2022.11.07</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>공간 브랜딩, 건축과 사인의 관계</h5>
+                                    <p class="article_infoTxt">건축의 화룡점정, 사인</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#디자인 이론/역사</a></li>
+                                        <li><a href="#none">#브랜드디자인</a></li>
+                                        <li><a href="#none">#아이덴티오</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contents_item">
+                        <div class="contents_item_img">
+                            <a href="#none"><img src="./images/notefolio/article_cnt01_img15.jpg" alt=""></a>
+                        </div>
+
+                        <div class="contents_item_text">
+                            <div class="dateBox">
+                                <span>가을</span>
+                                <span>2022.11.04</span>
+                            </div>
+
+                            <div class="article_infoBox">
+                                <a href="#none">
+                                    <h5>우연히 찾은 행운 같은 공간</h5>
+                                    <p class="article_infoTxt">안탈리아, 햇살에 물든 화가의 공간</p>
+                                    <ul class="tagBox">
+                                        <li><a href="#none">#커리어/라이프</a></li>
+                                        <li><a href="#none">#일러스트레이션</a></li>
+                                        <li><a href="#none">#에세이</a></li>
+                                        <li><a href="#none">#가을</a></li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="article_moreBtn">더보기<i class="xi-angle-down-min"></i></button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- content01 end -->
+
+    <!-- footer start -->
+    <div class="ftrWrap">
+        <footer>
+            <div class="footer_infoBox">
+                <div class="site_infoBox">
+                    <span>(주)스터닝</span>
+                    <div class="person_infoBox">
+                        <span>사업자 정보</span> <i class="xi-caret-down-min"></i>
+                    </div>
+    
+                    <ul class="site_info_item">
+                        <li><a href="#none">서비스소개</a></li>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">운영정책</a></li>
+                        <li><a href="#none">개인정보처리방침</a></li>
+                        <li><a href="#none">자주묻는질문</a></li>
+                        <li><a href="#none">문의하기</a></li>
+                        <li><a href="#none">광고문의</a></li>
+                    </ul>
+                </div>
+    
+                <div class="site_snsBox">
+                    <div class="site_sns_item">
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 아카데미"><i class="xi-school"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 매거진"><i class="xi-library-books"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노폴레터"><i class="xi-mail"></i></a>
+                    </div>
+    
+                    <div class="site_sns_item">
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 인스타그램"><i class="xi-instagram"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 페이스북"><i class="xi-facebook"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 트위터"><i class="xi-twitter"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="노트폴리오 팀 블로그">
+                            <svg viewBox="0 0 1043.63 592.71" style="width: 20px; height:20px"><g data-name="Layer 2"><g data-name="Layer 1"><path d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></path></g></g></svg>
+                        </a>
+                    </div>
+    
+                    <div class="site_sns_item">
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="iOS App"><i class="xi-apple"></i></a>
+                        <a href="#none" class="tooltipCustom" data-toggle="tooltip" data-placement="top" title="android App"><img src="./images/notefolio/androidAppIcon.svg" alt=""></a>
+                    </div>
+    
+                    <div class="footer_logo">
+                        <a href="#none"><img src="./images/notefolio/footer_logo.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site_info_moreBox">
+                <div class="businessNumBox">
+                    <span>사업자 등록번호 : 120-87-69298 직업정보제공: J1200020190003</span>
+                    <span>대표자명 : 김승환</span>
+                    <span>전화번호 : 070-8733-5858</span>
+                    <span>주소 : 서울특별시 강남구 봉은사로112길 6 2F</span>
+                </div>
+                <div class="CopyrightBox">
+                    <span>ⓒ 2020 STUNNING INC.</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+    <!-- Modal mobileMenu -->
+    <div class="modal fade mobile_search" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">검색</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="searchBox">
+                    <input type="text" class="search_input" placeholder="검색어를 입력하세요.">
+                    <i class="xi-search"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+</body>
+</html>

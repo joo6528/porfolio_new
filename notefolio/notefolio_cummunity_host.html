@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모임 개설하기</title>
+
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./css/notofolio_community_style.css">
+    <link rel="stylesheet" href="./css/notofolio_community__responsive_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- custom JS -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/notofolio_cummunity_base.js"></script>
+</head>
+<body>
+    <!-- top menu start -->
+    <div class="tmuWrap">
+        <header>
+            <div class="logoBox">
+                <a href="./notefolio_cummunity.html"><img src="./images/notefolio/logo_mini.png" alt=""></a>
+            </div>
+    
+            <ul class="topMenuBox">
+                <li><a href="./notefolio_cummunity.html">홈</a></li>
+                <li><a href="./notefolio_cummunity_channel.html">모임/채널</a></li>
+                <li><a href="./notefolio_cummunity_host.html" class="clickShow">모임 개설하기</a></li>
+                <li><a href="./notefolio_index.html">노트폴리오</a></li>
+            </ul>
+    
+            <div class="otherMenuBox">
+                <button type="button" class="searchBtn" data-toggle="modal" data-target="#exampleModalCenter"><i class="xi-search"></i></button>
+                <button class="otherBtn"><i class="xi-ellipsis-h"></i></button>
+                <button class="mobilemenuBtn hideOn"><i class="xi-bars"></i></button>
+            </div>
+        </header>
+
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <!-- top menu end -->
+
+    <!-- mobile menu start -->
+    <div class="mobilemenu_top">
+        <div class="mnvWrap">
+            <div class="mobile_menuCnt">
+                <header>
+                    <button class="btn-close"><i class="xi-close"></i></button>
+                </header>
+    
+                <section>
+                    <ul class="menuListBox">
+                        <li><a href="./notefolio_cummunity.html"><span>홈</span><i class="xi-angle-right"></i></a></li>
+                        <li><a href="./notefolio_cummunity_channel.html"><span>모임/채널</span><i class="xi-angle-right"></i></a></li>
+                        <li><a href="./notefolio_cummunity_host.html"><span>모임 개설하기</span><i class="xi-angle-right"></i></a></li>
+                        <li><a href="./notefolio_index.html"><span>노트폴리오</span><i class="xi-angle-right"></i></a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- content start -->
+    <div class="cntWrap">
+        <div class="contents subContents">
+            <header>
+                <p class="community_title_icon">✋</p>
+                <h1>모임 개설하기</h1>
+            </header>
+
+            <section>
+                <article class="underLine">
+                    <h3>호스트 지원 절차</h3>
+
+                    <div class="processBox">
+                        <span>호스트 지원</span>
+                        <i class="xi-arrow-right"></i>
+                        <span>검토 및 소개 페이지 개설</span>
+                        <i class="xi-arrow-right"></i>
+                        <span>모임 오픈</span>
+                    </div>
+
+                    <div class="listBox">
+                        <ul class="listCustom">
+                            <li>지원한 서류를 바탕으로 검토하여 개설 여부를 안내드립니다. (단, 커뮤니티 취지와 맞지 않는 성격의 모임일 경우 반려될 수 있습니다.)</li>
+                            <li>창작자라면 분야, 연차, 기타 조건에 관계 없이 누구나 모임을 개설할 수 있습니다.</li>
+                            <li>모임 개설 신청만 해주세요. 그 외 필요한 부분이 있다면 담당 매니저가 함께 도와드립니다. </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>이런 모임을 진행할 수 있어요.</h3>
+
+                    <div class="listBox">
+                        <h5>목표를 함께 달성해봐요!</h5>
+
+                        <ul class="listCustom">
+                            <li>정해진 기간 동안 목표를 달성하기 위해 제한된 인원이 함께 프로젝트를 진행합니다.</li>
+                            <li>
+                                <span>모임은 스터디, 워크숍, 독서클럽, 사이드 프로젝트 등 원하는 목표에 따라 자유롭게 진행이 가능합니다.</span>
+                                <span class="highlight">예) 레터링 워크숍, UX 케이스 스터디, 굿즈 제작 프로젝트, 브랜드 디자인 독서 클럽 등</span></li>
+                            <li>멤버 모집은 신청으로 진행되며, 호스트가 특정 조건에 부합하는 멤버로 선정할 수 있습니다.</li>
+                        </ul>
+                    </div>
+
+                    <div class="listBox">
+                        <h5>호스트의 역할</h5>
+                        <p>
+                            호스트의 역할은 모임이 활발히 그리고 원활하게 진행될 수 있도록 멤버들을 이끄는 것으로 어떠한 특별한 자격이 요구되지 않습니다.
+                        </p>
+
+                        <ul class="listCustom">
+                            <li>호스트는 신청자 명단을 확인하고 함께할 멤버를 선정합니다.</li>
+                            <li>호스트는 신청자 분들과 소통할 수 있는 온라인 채널(카카오톡 오픈채팅, 슬랙, 밴드 등)을 개설합니다.</li>
+                            <li>이후 모임의 일정을 정하고 멤버들과 함께 모임을 진행합니다. 기간 내 모임에 모두 적극적으로 참여할수 있도록 멤버들을 독려합니다.</li>
+                            <li>모임이 종료된 후, 소기의 결과물을 노트폴리오 커뮤니티에 공유합니다.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <a href="#none" class="hostApplyBtn">모임 개설 신청하기</a>
+            </section>
+        </div>
+    </div>
+    <!-- content end -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body searchBox">
+                <input type="text" placeholder="모임 개설하기">
+                <i class="xi-search"></i>
+            </div>
+        </div>
+        </div>
+    </div>
+
+     <!-- bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+     <!-- scroll progress bar JS -->
+     <script>
+         function progressBarScroll() {
+         let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+             height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+             scrolled = (winScroll / height) * 100;
+         document.getElementById("progressBar").style.width = scrolled + "%";
+         }
+ 
+         window.onscroll = function () {
+         progressBarScroll();
+         };
+     </script>
+ 
+     <script>
+         $('#myModal').on('shown.bs.modal', function () {
+             $('#myInput').trigger('focus')
+         })
+     </script>
+</body>
+</html>

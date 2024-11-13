@@ -1,0 +1,598 @@
+/*********** font style ***********/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/*********** style css ***********/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    vertical-align: middle;
+    font-weight: 400;
+}
+body {
+    color: rgb(55, 53, 47);
+    line-height: 1.6;
+}
+a {
+    text-decoration: none!important;
+    color: rgb(55, 53, 47);
+    cursor: pointer;
+    display: inline-block;
+}
+a:hover {
+    color: inherit;
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(55, 53, 47);
+}
+button:focus {
+    outline: none!important;
+}
+input::placeholder {
+    color: #ccc;
+    font-size: 18px;
+}
+ul {
+    list-style: none;
+}
+dl, ol, ul {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+.modal {
+    padding-right: 0!important;
+}
+/********************** base css start **********************/
+/*********** top_menu css start ***********/
+.tmuWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+}
+.tmuWrap > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    height: 48px;
+    width: 100%;
+    border-bottom: 2px solid #F5F5F5;
+}
+.tmuWrap .logoBox img {
+    width: 20px;
+}
+.tmuWrap .topMenuBox {
+    display: flex;
+    width: 80%;
+}
+.tmuWrap .topMenuBox > li {
+    width: 25%;
+    text-align: center;
+}
+.tmuWrap .topMenuBox > li .clickShow {
+    color: #53a1c9;
+}
+.tmuWrap .topMenuBox > li .clickShow:after {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+.tmuWrap .topMenuBox > li a {
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    min-width: 60px;
+}
+.tmuWrap .topMenuBox > li a::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #53a1c9;
+    left: 0;
+    bottom: -10px;
+    opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+.tmuWrap .topMenuBox > li a:hover {
+    color: #53a1c9;
+}
+.tmuWrap .topMenuBox > li a:hover:after {
+    opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+.otherMenuBox {
+    display: flex;
+    gap: 15px;
+}
+.tmuWrap .searchBtn i {
+    font-size: 20px;
+}
+.tmuWrap .otherBtn i {
+    font-size: 20px;
+}
+.tmuWrap .mobilemenuBtn i {
+    font-size: 20px;
+}
+.hideOn {
+    display: none;
+}
+.progress-bar {
+    height: 2px;
+    background: rgb(94, 181, 239);
+    width: 0%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: none;
+}
+.modal-dialog {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+.searchBox {
+    padding: 0;
+    height: 52px;
+    position: relative;
+}
+.searchBox input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 3px;
+    padding-left: 50px;
+    padding-right: 15px;
+}
+.searchBox > i {
+    position: absolute;
+    color: #ccc;
+    font-size: 22px;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.searchBox input:focus {
+    outline: none!important;
+}
+/*********** top_menu css end ***********/
+
+/*********** mobile menu start ***********/
+.mobilemenu_top .mnvWrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    z-index: 1000;
+    opacity: 0;
+    transition: 0.5s;
+}
+.mobilemenu_top .mobile_menuCnt {
+    width: 80vw;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    background-color: #fff;
+    overflow: hidden;
+    height: 100vh;
+}
+.mobilemenu_top .mobile_menuCnt header {
+    height: 48px;
+    border-bottom: 2px solid #F5F5F5;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 12px;
+}
+.mobilemenu_top .mobile_menuCnt header button i {
+    font-size: 20px;
+    padding-right: 5px;
+}
+.mobilemenu_top .mobile_menuCnt .menuListBox {
+    margin-top: 16px;
+}
+.mobilemenu_top .mobile_menuCnt .menuListBox li a {
+    font-size: 16px;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobilemenu_top .mobile_menuCnt .menuListBox li a span {
+    font-weight: 500;
+}
+.mobilemenu_top .mobile_menuCnt .menuListBox li a:hover {
+    color: #53a1c9;
+    background-color: #F5F5F5;
+}
+.mobilemenu_top .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+/*********** mobile menu end ***********/
+
+/********************** base css end **********************/
+
+
+/********************** banner css start **********************/
+/*********** banner css start ***********/
+.bnrWrap {
+    width: 100%;
+    height: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.bnrWrap img {
+    width: 100%;
+}
+/*********** banner css end ***********/
+/********************** banner css end **********************/
+
+
+/********************** community_home css start **********************/
+/*********** content css start ***********/
+.cntWrap .contents {
+    margin-top: 45px;
+    padding: 0 95px 200px 95px;
+}
+.cntWrap .contents header h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+.cntWrap .contents header p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.cntWrap .contents section article {
+    margin-top: 40px;
+}
+.community_itemTitleBox {
+    margin-bottom: 20px;
+}
+.community_itemTitleBox > h3 {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.community_itemTitleBox > p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.community_itemCntBox .community_itemGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.community_itemCnt {
+    width: calc(20% - 13px);
+}
+.community_itemCnt > a{
+    box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px, rgb(15 15 15 / 10%) 0px 2px 4px;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    overflow: hidden;
+}
+.community_itemImgBox img {
+    width: 100%;
+}
+.community_itemTxtBox {
+    padding: 8px 10px 15px 10px;
+}
+.community_itemCnt > a:hover {
+    background-color: rgb(240, 240, 240);
+}
+.community_itemTxtBox > h5 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.community_itemTxtBox > p {
+    margin-top: 8px;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.community_itemTxtBox .categoryTagBox {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.tagCustom {
+    padding: 0 6px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.TagColor01 {
+    background-color: #ffe8f3;
+    color: rgb(76, 35, 55);
+}
+.TagColor02 {
+    background-color: #e7f3e6;
+    color: rgb(28, 56, 41)
+}
+.TagColor03 {
+    background-color: #fef5e6;
+    color: rgb(64, 44, 27);
+}
+.TagColor04 {
+    background-color: #e3f2fb;
+    color: rgb(24, 51, 71);
+}
+.TagColor05 {
+    background-color: #f1f0ef;
+    color: rgb(50, 48, 44);
+}
+.TagColor06 {
+    background-color: #f6edfb;
+    color: rgb(65, 36, 84);
+}
+.TagColor07 {
+    background-color: #ffe8e7;
+    color: rgb(93, 23, 21);
+}
+.TagColor08 {
+    background-color: #feebe1;
+    color: rgb(73, 41, 14);
+}
+.community_listBox li {
+    margin-top: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+.community_listBox li::before {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgb(70, 70, 70);
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 6px;
+}
+.guideLine li::before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 70);
+    left: 6px;
+    top: 10px;
+}
+.guideLine .supportLink {
+    color: rgb(11, 110, 153);
+    text-decoration: underline!important;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+.guideLine .supportLink:hover {
+    font-weight: 500;
+}
+.community_with_itemBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+.community_with_item {
+    margin: 20px;
+    width: 120px;
+}
+.community_with_item .community_with_itemImgBox {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+.community_with_item .community_with_itemImgBox img {
+    width: 100%;
+}
+.community_with_item .community_with_itemTxtBox > h5 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+.community_with_item .community_with_itemTxtBox > p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+/*********** content css end ***********/
+/********************** community_home css end **********************/
+
+/********************** community_channel css start **********************/
+.community_title_icon {
+    margin-top: 95px!important;
+    margin-bottom: 20px!important;
+    font-size: 78px!important;
+}
+.contents > section > .channelArticle:first-child {
+    margin-top: 0!important;
+}
+.channelArticle {
+    margin-top: 30px!important;
+}
+.community_channel_searchBox {
+    border-bottom: 1px solid rgb(233 233 231);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.community_channel_itemTitleBox h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.community_channel_searchBox {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.inner_searchBox {
+    position: relative;
+}
+.inner_searchBox .search__input {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  line-height: 30px;
+  height: 30px;
+  width: 200px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: all .3s linear;
+  line-height: 22px;
+  padding: 0 40px 0 10px;  
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.inner_searchBox .search__input::placeholder {
+    font-size: 14px;
+}
+.inner_searchBox .search__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s linear;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.inner_searchBox:hover .search__input,
+.inner_searchBox .search__input:focus {
+  transform: scaleX(1);
+  border-color: #ccc;
+  color: #ccc;
+  outline: none;
+}
+
+.inner_searchBox .search__input:focus + .search__icon {
+  background-color: #ccc;
+}
+
+.inner_searchBox:hover .search__icon,
+.inner_searchBox .search__icon:hover,
+.inner_searchBox .search__icon:focus,
+.inner_searchBox .search__icon:active {
+  background-color: #ccc;
+}
+
+/********************** community_channel css end **********************/
+
+
+/********************** community_host css start **********************/
+.cntWrap .subContents {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.underLine {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+.cntWrap .subContents article h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.processBox {
+    margin-top: 20px;
+    text-align: center;
+}
+.processBox span {
+    font-size: 20px;
+    padding: 20px 45px;
+    background-color: #ededed;
+    display: inline-block;
+    border-radius: 50px;
+    font-weight: 500;
+}
+.processBox span:last-child {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.processBox > i {
+    font-weight: bold;
+}
+.listBox {
+    margin-top: 50px;
+}
+.listBox > h5 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.listBox > p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.listCustom li {
+    margin-top: 12px;
+    padding-left: 25px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.listCustom li::before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgb(70, 70, 70);
+    left: 6px;
+    position: absolute;
+    content: '';
+    top: 7px;
+}
+.listCustom li > span {
+    width: 100%;
+}
+.highlight {
+    color: rgb(11, 110, 153);
+}
+.hostApplyBtn {
+    height: 60px;
+    line-height: 60px;
+    color: #ffffff;
+    background-color: #2AC5C6;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+.hostApplyBtn:hover {
+    color: #ffffff;
+    background-color: #22ACAD;
+}
+/********************** community_host css end **********************/

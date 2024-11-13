@@ -1,0 +1,696 @@
+@media(max-width: 1400px){
+    .cntWrap .cnt01 {
+        padding: 0;
+        margin-right: 0;
+        height: initial;
+    }
+    .cnt01 .cnt01VideoBox {
+        border-radius: 0;
+    }
+    .cntWrap .cnt01 header {
+        padding: 0 40px;
+        bottom: 15%;
+    }
+    .cntWrap .cnt01 header h1 {
+        font-size: 90px;
+    }
+    .cntWrap .cnt01 header p {
+        font-size: 20px;
+    }
+    .cnt02 header {
+        bottom: initial;
+        top: 10%;
+        width: 100%;
+    }
+    .cnt02 header > p {
+        margin-top: 0;
+    }
+    .cnt02 section > div {
+        width: 100%;
+        top: initial;
+        bottom: 15%;
+        transform: initial;
+    }
+
+    .sub01 .subTopWrap .subBgBox {
+        border-radius: 0;
+    }
+    .hdrWrap header .logobox img {
+        display: none;
+    }
+    .hdrWrap header .logobox .mob_logo {
+        display: block;
+    }
+    .hdrWrap header .headerNavBox > li {
+        color: #fff;
+    }
+    .sub01 .subTopWrap {
+        padding: 0;
+        height: 500px;
+    }
+    .scrollShow {
+        background-color: rgba(51, 51, 51, 0.5);
+        border-bottom: 1px solid rgb(223, 223, 223);
+    }
+    .sub01 .subTopWrap .subTitleTxtBox {
+        padding: 0 40px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox {
+        flex-wrap: wrap;
+        gap: 20px 30px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox li {
+        width: calc(50% - 15px);
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox .clickOn a {
+        background-color: #eee;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox .clickOn a::before {
+        display: none;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox a:hover::before {
+        width: 0;
+    }
+    .sub01 .subCntWrap .subContent {
+        padding-top: 40px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox h3 {
+        font-size: 54px;
+    }
+    .hdrWrap header .headerNavBox a {
+        font-size: 18px;
+    }
+    .hdrWrap header .headerNavBox .navTitle .navSubTxt li:nth-of-type(1) a {
+        font-size: 18px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox a {
+        font-size: 22px;
+        width: 100%;
+        border: 1px solid #eee;
+        padding: 12px;
+        border-radius: 10px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox h5 {
+        font-size: 40px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTitle {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 1028px){
+    .cntWrap .cnt01 header h1 {
+        font-size: 80px;
+    }
+    .cntWrap .cnt01 header p {
+        font-size: 18px;
+    }
+    .cnt02 header h3 {
+        font-size: 40px;
+    }
+    .cnt02 header > p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .cnt02 .cnt02Txt .titleTxtBox h5 {
+        font-size: 32px;
+    }
+    .cnt02 .cnt02Txt .titleTxtBox p {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .cnt03 section .cnt03Txt {
+        font-size: 24px;
+        width: 100%;
+        line-height: 1.2;
+    }
+    .cnt03 section .cnt03Txt p > span {
+        font-size: 32px;
+    }
+    .cnt03 section {
+        flex-wrap: wrap;
+        align-content: space-evenly;
+    }
+    .cnt04 header {
+        top: 10%;
+    }
+    .cnt04 section {
+        flex-wrap: wrap;
+        gap: 20px 30px;
+    }
+    .cnt04 section article {
+        height: 160px;
+        width: 100%;
+    }
+    .cnt04 section article .cnt04BgBox img {
+        width: 100%;
+        height: initial;
+    }
+    .cnt04 header h3 {
+        font-size: 40px;
+    }
+    .cnt04 header > p {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .cnt04 .cnt04Txt .titleTxtBox h5 {
+        font-size: 32px;
+    }
+    .cnt04 .cnt04Txt .titleTxtBox p {
+        margin-top: 0;
+        font-size: 16px;
+    }
+    .cnt04 .cnt04Txt .detailTxtBox {
+        width: 100%;
+        margin-top: 0;
+    }
+    .cnt04 .cnt04Txt .detailTxtBox p {
+        -webkit-line-clamp: 2;
+    }
+
+    .hdrWrap header .headerNavBox .navTitle {
+        display: none;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .categoryBox {
+        display: none;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox {
+        margin-top: 80px;
+        display: block;
+        position: relative;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox li {
+        color: #fff;
+        font-size: 22px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .mainTitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt {
+        display: none;
+        position: absolute;
+        border: 1px solid #ccc;
+        width: 100%;
+        background-color: #fff;
+        color: #777;
+        font-weight: 400;
+        z-index: 7;
+        border-radius: 10px;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt > div {
+        padding: 10px 20px;
+        transition: 0.15s;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt > div:hover {
+        background-color: #eee;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt > div a {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .sub01 .subTopWrap {
+        height: 400px;
+    }
+    .hdrWrap header {
+        padding: 0 20px;
+        height: 80px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox {
+        padding: 0 40px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox {
+        margin-top: 60px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox h3 {
+        font-size: 48px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox p {
+        font-size: 18px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .mainTitle {
+        font-size: 18px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt {
+        font-size: 18px;
+    }
+    .sub01 .subCntWrap .locationWrap li {
+        font-size: 14px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox a {
+        font-size: 16px;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox h5 {
+        font-size: 36px;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox p {
+        font-size: 16px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTitle {
+        font-size: 26px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTxt {
+        font-size: 16px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox > h5 {
+        font-size: 38px;
+    }
+    .ftrWrap .footerInfoBox {
+        flex-wrap: wrap;
+    }
+    .sub01::before {
+        font-size: 380px;
+    }
+    .curzr {
+        display: none!important;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox {
+        padding-top: 80px;
+    }
+    .sub01 .subCntWrap .subContent .subImgCustom::after {
+        height: 20vh;
+    }
+    .slideBox .swiper-slide .monthTxt {
+        font-size: 32px;
+    }
+    .slideBox .swiper-slide .historyList li {
+        font-size: 16px;
+    }
+    .sub01 .subCntBox .stepBox {
+        flex-wrap: wrap;
+    }
+    .sub01 .subCntBox .stepBox .leftBox {
+        width: 100%;
+    }
+    .sub01 .subCntBox .stepBox .rightBox {
+        width: 100%;
+    }
+    .sub01 .subCntBox .stepBox .leftBox li:nth-child(odd) {
+        font-size: 16px;
+        padding: 15px;
+    }
+    .sub01 .subCntBox .stepBox {
+        padding-top: 20px;
+    }
+    .sub01 .subCntBox .stepBox .rightBox .titleTxt {
+        font-size: 22px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subTableBox {
+        overflow-y: auto;
+        padding: 10px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subTableBox > p,
+    .sub01 .subCntWrap .subContent .subCntBox .subTableBox table,
+    .sub01 .subCntBox .subTableBox .addTxtBox {
+        min-width: 1000px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox,
+    .sub01 .subCntWrap .subContent .subCntBox .subTableBox,
+    .sub01 .subCntWrap .subContent .subCntBox .subCntImgBox,
+    .sub01 .subCntBox .imgItemBox,
+    .mapBox,
+    .slideBox {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 780px) {
+    body {
+        font-size: 14px;
+    }
+    .scroll-downs {
+        display: none;
+    }
+    .cntWrap .cnt01 {
+        min-height: 360px;
+    }
+    .cnt01 .cnt01VideoBox {
+        overflow: hidden;
+    }
+    .cntWrap .cnt01 .cnt01Bg {
+        width: 130%;
+    }
+    .cntWrap .cnt01::before {
+        font-size: 240px;
+    }
+    .cnt02, .cnt03, .cnt04 {
+        position: initial;
+        max-width: initial;
+        width: 100%;
+        padding: 60px 20px;
+        height: initial;
+    }
+    .cnt03 {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+        padding: 30px 0px;
+    }
+    .cnt02 header,
+    .cnt02 section,
+    .cnt03 section,
+    .cnt04 header,
+    .cnt04 section {
+        position: initial;
+    }
+    .cntWrap .cnt01 header {
+        padding: 0 20px;
+    }
+    .cntWrap .cnt01 header h1 {
+        font-size: 50px;
+    }
+    .cntWrap .cnt01 header p {
+        font-size: 16px;
+    }
+    .cntWrap .cnt01::before {
+        bottom: -40%;
+    }
+    .cnt02 header > p,
+    .cnt04 header > p {
+        font-size: 14px;
+    }
+    .cnt02 header h3,
+    .cnt04 header h3 {
+        font-size: 32px;
+    }
+    .cnt02 section > div {
+        position: initial;
+        margin-top: 40px;
+    }
+    .cnt02 .swiper-slide {
+        height: 40vh;
+    }
+    .cnt03 section::after {
+        display: none;
+    }
+    .cnt03 section {
+        padding: 0 30px;
+    }
+    .cnt03 section .cnt03Txt {
+        font-size: 18px;
+    }
+    .cnt03 section .cnt03Txt p > span {
+        font-size: 18px;
+    }
+    .cnt03 section .detailBtn {
+        margin-top: 20px;
+    }
+    .cnt04 section {
+        margin-top: 40px;
+    }
+    .cnt02 .cnt02Txt .titleTxtBox h5,
+    .cnt04 .cnt04Txt .titleTxtBox h5 {
+        font-size: 28px;
+    }
+    .cnt02 .cnt02Txt .titleTxtBox p {
+        font-size: 14px;
+    }
+    .cnt02::before {
+        width: 50vw;
+    }
+    .cnt04::before {
+        font-size: 280px;
+    }
+
+    .hdrWrap header {
+        height: 60px;
+    }
+    .sub01 .subTopWrap {
+        height: 300px;
+    }
+    .sub01 .subCntWrap {
+        width: 100%;
+        max-width: initial;
+        padding: 0 20px;
+        padding-top: 20px;
+        margin: initial;
+        padding-bottom: 80px;
+    }
+    .hdrWrap header .logobox img {
+        height: 40px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox h3 {
+        font-size: 32px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox {
+        padding: 0 20px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .mainTitle {
+        font-size: 14px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox .categoryTxt {
+        font-size: 14px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox {
+        margin-top: 20px;
+    }
+    .sub01 .subTopWrap .subTitleTxtBox p {
+        font-size: 14px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox a {
+        font-size: 14px;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox li {
+        width: 100%;
+        background-color: #fff;
+    }
+    .sub01 .subCntWrap .subContent {
+        padding-top: 20px;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox h5 {
+        font-size: 26px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTitle {
+        font-size: 20px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTxt {
+        font-size: 14px;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox p {
+        font-size: 14px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox > h5 {
+        font-size: 26px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox {
+        padding-top: 60px;
+    }
+    .ftrWrap footer {
+        width: 100%;
+        max-width: initial;
+        margin: 0;
+        padding: 20px;
+    }
+    .ftrWrap .logoBox {
+        font-size: 20px;
+    }
+    .ftrWrap .footerInfoBox {
+        font-size: 12px;
+    }
+    .ftrWrap .copyrightBox {
+        font-size: 12px;
+    }
+    .up-btn {
+        right: 20px;
+        bottom: 20px;
+    }
+    .sub01::before {
+        font-size: 240px;
+    }
+    .mobMenu .modal-dialog {
+        height: 100vh;
+        right: 0;
+    }
+    .mobMenu .modal-content {
+        border-radius: 0;
+    }
+    .modal.fade .modal-dialog {
+        -webkit-transform: initial;
+        transform: initial;
+        right: -300px;
+    }
+    .modal.show .modal-dialog {
+        -webkit-transform: initial;
+        transform: initial;
+        right: 0;
+    }
+    .mobMenu .mobMenuNavBox .navTitle {
+        font-size: 24px;
+    }
+    .sub01 .subCntWrap .subContent img {
+        width: 90%;
+    }
+    .sub01 .subCntBox .developStepBox li:nth-child(odd) {
+        padding: 20px;
+        margin: 20px;
+    }
+    .sub01 .subCntBox .developStepBox li > p {
+        font-size: 20px;
+    }
+    .sub01 .subCntBox .developStepBox li img {
+        width: 20px;
+    }
+    .sub01 .subCntWrap .subContent .subImgCustom::after {
+        display: none;
+    }
+    .sub01 .subCntWrap .subContent .subCategoryBox {
+        padding-bottom: 40px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox > img {
+        margin-top: -20px;
+    }
+    .mapBox {
+        margin-top: 40px;
+        width: 100%;
+        height: 350px;
+    }
+    .slideBox .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: 0;
+    }
+    .slideBox .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: 0;
+    }
+    .slideBox .swiper-slide .monthTxt {
+        text-align: center;
+        font-size: 28px;
+    }
+    .sub01 .subCntWrap .subContent .subImgCustom img {
+        width: 100%;
+    }
+    .sub01 .subCntBox .stepBox .rightBox .titleTxt {
+        font-size: 18px;
+    }
+    .sub01 .subCntBox .consultationBox p:nth-of-type(1) {
+        font-size: 24px;
+    }
+    .sub01 .subCntBox .consultationBox p {
+        font-size: 22px;
+    }
+    .sub01 .subCntBox .imgItemBox {
+        flex-wrap: wrap;
+        gap: 20px 30px;
+    }
+    .sub01 .subCntBox .itmeBox {
+        width: calc(50% - 15px);
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .numCustom {
+        width: 22px;
+        height: 22px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntInnerBox {
+        flex-wrap: wrap;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntLeftBox {
+        order: 2;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntRightBox {
+        order: 1;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntLeftBox, .sub01 .subCntWrap .subContent .subCntBox .subCntRightBox {
+        width: 100%;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox .subCntRightBox img {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .sub01 .imgItemCustom03 .itmeBox {
+        width: calc(33.3% - 20px)!important;
+    }
+    .imgItemCustom02 .itmeBox {
+        width: 90%!important;
+        margin: 0 auto;
+    }
+    .slideBox .swiper-button-next, .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+    }
+    .slideBox .swiper-slide {
+        padding: 0 30px 30px 30px;
+    }
+    .slideBox .swiper-slide .historyList li {
+        font-size: 14px;
+    }
+    .sub01 .subTopWrap img {
+        width: 130%;
+    }
+}
+
+@media(max-width: 480px) {
+    /* .sub01 .subCntWrap .locationWrap {
+        display: none;
+    }
+    .sub01 .subCntWrap .subContent {
+        padding-top: 0px;
+    } */
+    .cnt02 .cnt02Txt .titleTxtBox h5, .cnt04 .cnt04Txt .titleTxtBox h5 {
+        font-size: 24px;
+    }
+    .cntWrap .cnt01 header h1 {
+        font-size: 38px;
+    }
+    .cntWrap .cnt01 header p {
+        font-size: 14px;
+        max-width: 70%;
+    }
+    .cnt03 section .detailBtn {
+        width: 100%;
+        text-align: center;
+    }
+    .sub01 .subCntWrap .subContent .subCntTitleBox h5 {
+        font-size: 24px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox {
+        padding-top: 40px;
+    }
+    .slideBox .swiper-slide {
+        padding: 0 20px 20px 20px;
+    }
+    .cnt04 .cnt04Txt {
+        padding: 20px;
+    }
+    .cnt04 .cnt04Txt .detailTxtBox p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .ftrWrap .footerInfoBox {
+        margin-top: 10px;
+    }
+    .cnt02, .cnt03, .cnt04 {
+        padding: 40px 20px;
+    }
+    .cnt03 {
+        padding: 30px 0;
+    }
+    .cnt03 section .cnt03Txt p {
+        display: inline;
+    }
+    .cnt02 .cnt02Txt .detailTxtBox {
+        margin-top: 10px;
+    }
+    .cntWrap .cnt01::before {
+        font-size: 220px;
+    }
+    .cnt02 header h3, .cnt04 header h3 {
+        font-size: 30px;
+    }
+    .sub01 .subCntWrap .locationWrap li {
+        font-size: 12px;
+    }
+    .sub01 .subCntWrap .locationWrap {
+        padding-bottom: 15px;
+    }
+    .sub01 .subCntWrap .subContent .subCntBox > h5 {
+        font-size: 24px;
+    }
+}

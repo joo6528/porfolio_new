@@ -1,0 +1,116 @@
+/* responsive css 1400px, 1024px, 780px, 480px */
+@media(max-width: 1400px) {
+    .community_itemCntBox {
+        overflow-x: auto;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .community_itemCntBox .community_itemGroup {
+        flex-wrap: nowrap;
+        min-width: 1200px;
+    }
+    .community_itemCntBox::-webkit-scrollbar{
+        height: 12px;
+    }
+    .community_itemCntBox::-webkit-scrollbar-thumb{
+        background-color: #212529;
+        border-radius: 10px;  
+    }
+    .community_itemCntBox::-webkit-scrollbar-track{
+        background-color: rgba(155, 155, 155, 0.33);
+    }
+    
+}
+
+@media(max-width: 1024px) {
+    .cntWrap .contents {
+        padding: 0 30px 200px 30px;
+        margin-top: 0px;
+    }
+    .cntWrap .contents header h1 {
+        font-size: 36px;
+    }
+    .cntWrap .contents header p {
+        margin-top: 8px;
+    }
+    .community_itemTitleBox > h3 {
+        font-size: 26px;
+    }
+    .community_itemTitleBox > p {
+        margin-top: 10px;
+    }
+    .community_with_item {
+        width: 80px;
+        margin: 15px;
+    }
+    .community_with_item .community_with_itemImgBox {
+        width: 80px;
+        height: 80px;
+    }
+    .community_with_item .community_with_itemTxtBox > h5 {
+        font-size: 14px;
+    }
+    .processBox span {
+        width: 100%;
+    }
+    .processBox > i {
+        transform: rotate(90deg);
+    }
+}
+
+@media(max-width: 780px) {
+    .tmuWrap .hideOn {
+        display: block;
+    }
+    .mnvWrap.active {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    .overlay.active {
+        opacity: 1;
+        transition: 0.5s;
+        pointer-events: all;
+    }
+    .community_title_icon {
+        margin-bottom: 12px!important;
+        font-size: 65px!important;
+    }
+    .tmuWrap .otherBtn {
+        display: none;
+    }
+    .tmuWrap .topMenuBox {
+        display: none;
+    }
+    .processBox span {
+        font-size: 18px;
+        padding: 12px;
+    }
+    .searchBox input::placeholder {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 480px) {
+    .bnrWrap {
+        height: 200px;
+    }
+    .cntWrap .contents {
+        padding: 0 20px;
+    }
+    .cntWrap .contents header h1 {
+        font-size: 28px;
+    }
+    .cntWrap .contents header p {
+        font-size: 15px;
+    }
+    .community_itemTitleBox > h3 {
+        font-size: 24px;
+    }
+    .community_itemTitleBox > p {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .community_listBox li {
+        font-size: 14px;
+    }
+}

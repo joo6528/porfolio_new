@@ -1,0 +1,284 @@
+@media(max-width: 1280px) {
+    .tmuWrap {
+        width: 90%;
+    }
+    .hdrWrap header {
+        width: 90%;
+    }
+    .hdrWrap .headerBox {
+        height: 60px;
+    }
+    .hdrWrap .headerNavBox {
+        height: 60px;
+    }
+    .hdrWrap .headerNav_center {
+        display: none;
+    }
+    .mctgWrap {
+        width: 90%;
+    }
+    .cntWrap .content {
+        width: 90%;
+    }
+    .bnrWrap .bannerCnt {
+        width: 90%;
+    }
+    .mbnrWrap {
+        margin-top: 0;
+    }
+    .cntWrap .content.listCnt {
+        padding-top: 40px;
+    }
+    .subCnt {
+        margin-top: 0!important;
+    }
+    .mbnrWrap .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: calc(5% - 10px);
+    }
+    .mbnrWrap .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: calc(5% - 10px);
+    }
+    .cntWrap .themaCnt {
+        margin-left: 0;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1080px) {
+    body {
+        font-size: 16px!important;
+        cursor: initial;
+    }
+    a, button, label, span {
+        cursor: pointer;
+    }
+    .curzr {display: none;}
+    .hdrWrap .headerBox .logoBox img {
+        height: 35px;
+    }
+    .cntWrap .listCnt article .product_txtBox h5 {
+        font-size: 16px;
+    }
+    .cntWrap .content header h3 {
+        font-size: 26px;
+    }
+    .tagBox li {
+        font-size: 10px;
+    }
+    .moreBtnBox .moreBtn {
+        font-size: 14px;
+    }
+    .viewCnt .product_infoBox {
+        flex-wrap: wrap;
+    }
+    .viewCnt .productImgBox {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .viewCnt .productImgBox_left {
+        order: 2;
+    }
+    .viewCnt .productImgBox_left .thumbImg {
+        width: 120px;
+        height: 120px;
+    }
+    .viewCnt .productImgBox_right {
+        width: 100%;
+    }
+    .cntWrap .content.viewCnt {
+        padding-top: 40px;
+    }
+    .viewCnt .picZoomer-cursor {
+        display: none!important;
+    }
+    .viewCnt .picZoomer-zoom-wp {
+        display: none!important;
+    }
+    .viewCnt .productImgBox_left .thumbGroup {
+        flex-direction: initial;
+        gap: 0 10px;
+    }
+    .viewCnt .productTxtBox {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .to-top {
+        right: 30px;
+        bottom: 30px;
+    }
+    .cntWrap .themaCnt {
+        flex-wrap: wrap;
+        padding-top: 0px;
+    }
+    .themaCnt section {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .bnrWrap .bannerCnt {
+        margin-top: 40px;
+    }
+    .ftrWrap footer {
+        padding: 30px 0 40px 0;
+        width: 90%;
+    }
+}
+
+@media(max-width: 780px) {
+    body {
+        font-size: 14px!important;
+    }
+    .cntWrap .content header h3 {
+        font-size: 24px;
+    }
+    .subCnt .categoryWrap .titleBox {
+        /* width: 120px; */
+        line-height: 45px;
+        font-size: 16px;
+    }
+    .subCnt .categoryWrap .categoryBox li {
+        font-size: 15px;
+    }
+    .cntWrap .listCnt section {
+        margin-top: 20px!important;
+    }
+    .cntWrap .listCnt section {
+        gap: 20px 20px;
+    }
+    .cntWrap .listCnt article {
+        width: calc(50% - 10px);
+    }
+    .viewCnt .guideInfoBox .titleTxt {
+        font-size: 18px;
+    }
+    .ftrWrap .footerLogo img {
+        height: 35px;
+    }
+    .footerRightBox {
+        display: none;
+    }
+    .mobMenuModal .modal-dialog {
+        width: 100%;
+    }
+    .hdrWrap .headerBox .logoBox img {
+        height: 30px;
+    }
+    .tmuWrap {
+        display: none;
+    }
+    .modal-dialog {
+        margin: 0 5%;
+    }
+    .lgnWrap .loginBox .loginFormBox {
+        margin-top: 30px;
+    }
+    .lgnWrap .loginBox .logoBox img {
+        height: 35px;
+    }
+    .lgnWrap .loginItemBox input {
+        padding: 20px 10px;
+    }
+    .lgnWrap .loginItemBox input:focus,
+    .lgnWrap .loginItemBox input:valid {
+        padding: 30px 15px 10px 15px;
+    }
+    .lgnWrap .loginBtn {
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .lgnWrap .loginItemBox label {
+        font-size: 12px;
+    }
+    .lgnWrap .loginItemBox {
+        margin-bottom: 20px;
+    }
+    .lgnWrap .saveBox {
+        margin-top: 10px;
+    }
+    .lgnWrap .loginGuideBox {
+        margin-top: 30px;
+    }
+    .lgnWrap .joinBtn {
+        line-height: 50px;
+        font-size: 16px;
+    }
+    .viewCnt .otherProduct_Box > h3 {
+        font-size: 24px;
+    }
+    .viewCnt .otherProduct_Box {
+        margin-top: 40px;
+    }
+    .viewCnt .product_viewBox {
+        margin-top: 0px;
+    }
+    .viewCnt .menu_tabs label {
+        font-size: 16px;
+    }
+    .viewCnt .guideInfoBox {
+        padding: 10px;
+    }
+    .viewCnt .bestReviewBox > h5 {
+        font-size: 20px;
+    }
+    .viewCnt .reviewBox > h5 {
+        font-size: 20px;
+    }
+    .cntWrap .listCnt article .product_txtBox {
+        margin-top: 5px;
+    }
+}
+
+@media(max-width: 560px) {
+    .cntWrap .content.listCnt {
+        padding-top: 20px;
+    }
+    .subCnt .categoryWrap {
+        flex-wrap: wrap;
+    }
+    .subCnt .categoryWrap .titleBox {
+        background: transparent;
+        text-align: left;
+        color: #2ac1bc;
+        font-size: 26px;
+    }
+    .subCnt .categoryWrap .categoryBox {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 0 10px 0;
+    }
+    /* .cntWrap .listCnt article {
+        width: 100%;
+    } */
+    .viewCnt .productTxtBox .buttonBox {
+        flex-wrap: wrap;
+        gap: 10px 0;
+    }
+    .viewCnt .productTxtBox .buttonBox button {
+        width: 100%;
+        line-height: 40px;
+        font-size: 14px;
+    }
+    .edition::before {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .viewCnt .productTxtBox .productTitle {
+        font-size: 24px;
+    }
+    .mctgWrap .main_category_img {
+        width: 60px;
+        height: 60px;
+    }
+    .mbnrWrap .swiper-slide {
+        border-radius: 30px;
+    }
+    .cntWrap .content header h3 {
+        font-size: 22px;
+    }
+    .mctgWrap {
+        margin-top: 20px;
+    }
+    .mctgWrap .main_category_txt a {
+        font-size: 12px;
+    }
+}

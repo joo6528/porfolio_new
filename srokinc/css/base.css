@@ -1,0 +1,265 @@
+/* font custom */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 16px;
+    color: #333;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    vertical-align: middle;
+    line-height: 1;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    background-color: #8bcf76;
+    color: #fff;
+}
+
+.scrollShow {
+    background-color: #ffffffb7;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.cntWrap {
+    position: relative;
+}
+/* .sub01 {
+    position: relative;
+    overflow-x: hidden;
+    width: 100vw;
+} */
+
+
+.cntWrap::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #333;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+}
+
+/* header CSS START */
+.hdrWrap header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.hdrWrap header .logobox img {
+    height: 50px;
+}
+.hdrWrap header .logobox .mob_logo {
+    display: none
+}
+.hdrWrap header .headerNavBox {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.hdrWrap header .headerNavBox > li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.hdrWrap header .headerNavBox a {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.hdrWrap header .headerNavBox i {
+    font-size: 30px;
+}
+.hdrWrap header .headerNavBox .navTitle {
+    position: relative;
+    width: 200px;
+    padding: 0 20px;
+    z-index: 10;
+}
+.hdrWrap header .headerNavBox .navSubTxt {
+    display: none;
+    position:absolute;
+    top: calc(0% - 21px);
+    left: 0px;
+    background:#fff;
+    padding:0;
+    border: 1px solid rgb(223, 223, 223);
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.35s;
+    text-align: center;
+    padding: 20px;
+    
+}
+.hdrWrap header .headerNavBox .navTitle:hover .navSubTxt {
+    display: block;
+    transition: 0.35s;
+}
+.hdrWrap header .headerNavBox .navTitle .navSubTxt a {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    padding: 10px 0;
+    display: inline-block;
+}
+.hdrWrap header .headerNavBox .navTitle .navSubTxt a:hover {
+    color: #449ecc;
+}
+.hdrWrap header .headerNavBox .navTitle .navSubTxt li:nth-of-type(1) a {
+    color: #24498e;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0 20px 0;
+    display: inline-block;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 20px;
+}
+/* header CSS END */
+
+/* footer CSS START */
+.ftrWrap {
+    background-color: #333;
+}
+.ftrWrap footer {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0;
+    color: #fff;
+}
+.ftrWrap .logoBox {
+    font-size: 24px;
+}
+.ftrWrap .footerInfoBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.ftrWrap .footerInfoBox .rightBox {
+    display: flex;
+    gap: 0 40px;
+}
+.ftrWrap .copyrightBox {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 14px;
+}
+/* footer CSS END */
+
+/* totop CSS START */
+.up-btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 5;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+    transition: 0.15s;
+}
+.up-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* totop CSS END */
+
+/* mobMenu CSS START */
+.modal-backdrop.show {
+    opacity: .3;
+}
+.mobMenu .modal-dialog {
+    width: 300px;
+    height: 90vh;
+    min-height: initial;
+    margin: 0;
+    align-items: initial;
+    position: absolute;
+    right: 40px;
+}
+.mobMenu .modal.fade .modal-dialog {
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.mobMenu .modal-content {
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 4px 8px #999;
+}
+.mobMenu .modal-header {
+    border-bottom: 0;
+    padding: 20px 20px 0 20px;
+}
+.mobMenu button.close {
+    opacity: 1;
+    color: #333;
+}
+.mobMenu .modal-body {
+    padding:  0 20px 20px 20px;
+    overflow-y: auto;
+}
+.mobMenu .mobMenuNavBox .navTitle {
+    color: #24498e;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.mobMenu .mobMenuNavBox .navTitle .navSubTxt {
+    border-top: 1px dotted #ccc;
+    margin-top: 5px;
+}
+.mobMenu .mobMenuNavBox .navTitle .navSubTxt a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    padding: 10px 0;
+    width: 100%;
+}
+.mobMenu .mobMenuNavBox .navTitle .navSubTxt a i {
+    transform: translateX(-16px);
+    transition: 0.35s;
+    opacity: 0;
+}
+.mobMenu .mobMenuNavBox .navTitle .navSubTxt a:hover {
+    color: #449ecc;
+}
+.mobMenu .mobMenuNavBox .navTitle .navSubTxt a:hover i {
+    transform: translateX(0px);
+    transition: 0.35s;
+    opacity: 1;
+}
+/* mobMenu CSS END */

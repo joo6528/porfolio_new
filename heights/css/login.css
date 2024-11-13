@@ -1,0 +1,242 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.loginBox {
+    width: 25%;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.loginBox label {
+    display: block;
+}
+.loginBox input {
+    width: 100%;
+    height: ;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 6px 0 20px 0;
+}
+.idSaveBtn input {
+    width: initial;
+}
+.idSaveBtn label {
+    display: inline-block;
+}
+.loginBtn {
+    line-height: 50px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin: 24px 0;
+    cursor: pointer;
+}
+.findBox {
+    display: flex;
+}
+.findBox li{
+    position: relative;
+    width: 25%;
+    text-align: center;
+}
+.findBox li::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.findBox li:last-child:after {
+    display: none;
+}
+.snsLoginBox {
+    margin-top: 40px;
+}
+.snsLoginBox > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+.snsImg {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #eee;
+    position: relative;
+}
+.snsImg::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.snsImg_naver::before {
+    background-image: url('../images/icon_login_naver.png');
+    width: 48px;
+    height: 48px;
+}
+.snsImg_facebook::before {
+    background-image: url('../images/icon_login_facebook.png');
+    width: 48px;
+    height: 48px;
+}
+.snsImg_google::before {
+    background-image: url('../images/icon_login_google.png');
+    width: 48px;
+    height: 48px;
+    background-size: 50%;
+}
+.snsImg_kakao::before {
+    background-image: url('../images/icon_login_kakao.png');
+    width: 48px;
+    height: 48px;
+}
+.snsText {
+    border: 1px solid #eee;
+    border-left: none;
+    line-height: 46px;
+    padding: 0 15px;
+    width: calc(100% - 48px);
+}
+.snsText a {
+    width: 100%;
+    display: inline-block;
+}
+
+/* footer CSS */
+.footerCnt {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    gap: 30px;
+    border-top: 1px solid #eee;
+    padding: 35px 0;
+}
+.categoryTxt_Title span {
+    margin-right: 5px;
+}
+.categoryTxt_Title span:last-child {
+    color: #999;
+}
+.menu_list {
+    display: flex;
+}
+.categoryTxt_link {
+    margin-top: 30px;
+}
+.categoryTxt_link .menu a {
+    width: 80px;
+    color: #999;
+    display: inline-block;
+}
+.categoryTxt_link .product a {
+    margin-right: 5px;
+}
+.categoryImg {
+    display: flex;
+    gap: 15px;
+}
+.categoryImg .img {
+    position: relative;
+}
+.categoryImg .img img {
+    width: 180px;
+}
+.categoryImg span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000016;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_infoTitle {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+.footer_info {
+    background-color: #F7F7F7;
+    border-top: 1px solid #eee;
+    padding: 35px 0;
+    display: flex;
+    gap: 0 40px;
+}
+.footer_infoMenu {
+    margin-top: 8px;
+}
+.footer_infoMenu a {
+    color: #999;
+    font-size: 14px;
+}
+.footer_infoTxt {
+    margin-top: 16px;
+}
+.footer_infoTxt span {
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.rightTxt {
+    width: 580px;
+}
+.newsletterBox > form {
+    display: flex;
+    gap: 0 5px;
+    margin: 8px 0;
+}
+.email_input {
+    padding: 0 16px;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 1;
+    border: none;
+    width: calc(100% - 160px)
+}
+.subscribe_btn {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+.signUpTxt {
+    font-size: 12px;
+    color: #999;
+    width: 80%;
+}
+
+/* 반응형 CSS 1280px, 768px, 576px */
+@media (max-width: 1280px) {
+    .loginBox {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    .loginBox {
+        width: 100%;
+    }
+}

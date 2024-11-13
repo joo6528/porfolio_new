@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 공통 CSS */
+
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+dl, ol, ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    margin: 0;
+}
+a:hover {
+    color: #000;
+}
+button {
+    cursor: pointer;
+}
+button, input {
+    border: none;
+    background-color: transparent;
+}
+select:focus,
+button:focus,
+input:focus {
+    border: none;
+    outline: none;
+}
+
+
+/********** Header CSS ***********/
+.hdrWrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 10;
+    width: 100%;
+}
+.hdrWrap header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 10px 30px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+.hdrWrap .menuLeft {
+    display: flex;
+    align-items: center;
+}
+.hdrWrap header .logo_web img {
+    width: 140px;
+}
+.hdrWrap header .logo .logo_mob {
+    display: none;
+}
+.hdrWrap .menuLeft .headerNav {
+    display: flex;
+}
+.hdrWrap .menuLeft .headerNav li{
+    margin-left: 25px;
+    
+}
+.hdrWrap .menuLeft .headerNav li.checked {
+    position: relative;
+}
+.hdrWrap .menuLeft .headerNav li.checked:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    bottom: -16px;
+    left: 0;
+}
+.hdrWrap .menuLeft .headerNav a {
+    font-size: 18px;
+    font-weight: 600;
+}
+.hdrWrap .menuRight .headerSubNav .mob_menu,
+.hdrWrap .menuRight .headerSubNav .mob_menubar {
+    display: none;
+}
+.hdrWrap .menuRight .headerSubNav {
+    display: flex;
+    align-items: center;
+}
+.hdrWrap .menuRight .headerSubNav li {
+    padding: 6px 8px;
+}
+.hdrWrap .menuRight .headerSubNav li,
+.hdrWrap .menuRight .headerSubNav li a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hdrWrap .menuRight .headerSubNav .clickOn {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.hdrWrap .menuRight .cart {
+    position: relative;
+}
+.hdrWrap .menuRight .cart img {
+    width: 30px;
+}
+.hdrWrap .menuRight .cart .cartNum {
+    position: absolute;
+    background-color: #000;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    top: 6px;
+    right: 8px;
+}
+.hdrWrap .menuRight .cart .cartNum p {
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 16px;
+}
+.hdrWrap .languageModal {
+    font-weight: normal!important;
+    position: relative;
+    padding: 6px 16px!important;
+}
+.hdrWrap .languageModal i {
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+.languageBox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 35px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+    display: none;
+    z-index: 10;
+}
+.languageBox > li:first-child {
+    border-bottom: 1px solid #eee;
+}
+.languageBox > li a {
+    font-weight: 400!important;
+    color: #999;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.toggle-button .menu-bar {
+    border-radius: 2px;
+    width: 20px;
+    transition: 0.5s;
+}
+.toggle-button .menu-bar-top {
+    border: 2px solid #000;
+    border-bottom: none;
+    top: 0;
+}
+.toggle-button .menu-bar-middle {
+    height: 2px;
+    background-color: #000;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.toggle-button .menu-bar-bottom {
+    border: 2px solid #000;
+    border-top: none;
+}
+.button-open .menu-bar-top {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+.button-open .menu-bar-middle {
+    display: none;
+}
+    .button-open .menu-bar-bottom {
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+
+.searchBox.check {
+    display: block;
+}
+.searchBox {
+    border-top: 1px solid #eee;
+    display: none;
+    position: absolute;
+    z-index: 50;
+    background: #fff;
+}
+.searchBox .searchForm {
+    padding: 12px 30px 12px 12%;
+    border-bottom: 1px solid #eee;
+}
+.searchInput {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 40px;
+    width: 100%;
+    font-size: 14px;
+}
+.searchInput::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+}
+.searchBox .searchForm > div {
+    display: flex;
+    justify-content: space-between;
+}
+.searchBox .searchForm form {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+}
+.searchBox .searchForm form > button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.searchBox .searchForm .searchIcon {
+    left: 15px;
+}
+.searchBox .searchForm .deleteIcon {
+    right: 15px;
+}
+.searchBox .searchForm button img {
+    height: 18px;
+}
+.searchBox .searchForm .searchIcon img {
+    height: 14px;
+}
+
+.searchBox .popularBrand {
+    padding: 16px 30px 16px 12%;
+    border-bottom: 1px solid #eee;
+}
+.popularBrand > div {
+    display: flex;
+    justify-content: space-between;
+}
+.popularBrand .brandTitle{
+    width: 10%;
+}
+.popularBrand .brandTitle p {
+    color: #999;
+}
+.brand_items {
+    width: 90%;
+    display: flex;
+    gap: 0 16px;
+}
+.brand_items .brand_item {
+    width: calc(100% / 6);
+}
+.brand_item .item_img img {
+    border-radius: 10px;
+    width: 100%;
+}
+.brand_item .item_txt {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.guideBox {
+    position: absolute;
+    top: 48px;
+    right: 30px;
+    width: 400px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 530px;
+    display: none;
+    z-index: 10;
+}
+.guideNumBox {
+    background: #F7F7F7;
+    border-bottom: 1px solid #eee;
+    padding: 16px 16px 20px 16px;
+}
+.guideNumBox h6 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.guideInfoBox {
+    background-color: #fff;
+    padding: 16px;
+}
+.guideNumTxt {
+    margin-bottom: 8px;
+}
+.guideNumBox > a {
+    font-size: 14px;
+    border: solid 1px #eee;
+    color: #999;
+    padding: 4px 8px;
+    margin-top: 8px;
+}
+.guide_list > h6 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.guide_list > p {
+    margin-bottom: 30px;
+}
+.guideBtns {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+}
+.guideBtns > a {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 14px 0;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-weight: normal;
+}
+.pageNavBox {
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+    border-top: 1px solid #eee;
+    position: relative;
+    z-index: -1;
+}
+.pageNav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pageNav li {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.navRightBtn i {
+    color: #bbb;
+    font-size: 20px;
+}
+.categoryMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categoryMenu li {
+    padding: 5px 12px;
+    border-radius: 2px;
+    font-weight: 500;
+    width: initial;
+}
+.clickOn {
+    background-color: #f7f7f7;
+}
+.curationItem_btnBox ul {
+    display: flex;
+    gap: 0 10px;
+    padding-top: 10px;
+}
+.curationItem_btnBox li {
+    width: 50%;
+}
+.curationItem_btnBox .ViewAllBtn {
+    width: 100%;
+    text-align: center;
+}
+.hdrWrap .nav_mob {
+    display: none!important;
+}
+.hdrWrap .searchBtn_mob i {
+    font-size: 20px;
+}
+
+.menu_mob{
+    position: relative;
+    display:block;
+    width:20px;
+    height:16px;
+    cursor:pointer;
+} 
+.menu_mob > span {
+    position: absolute;
+    display:block;
+    width:100%;
+    height:2px;
+    border-radius:30px;
+    background:#000;
+    transition: all 0.35s;  /* 진행되는 과정들을 천천히 보여줄 수 있다. 0.35초 동안 진행됨 */
+    z-index:2;
+}
+.menu_mob > span:nth-child(1) {
+    top:0px;
+}
+.menu_mob > span:nth-child(2) {
+    top:50%;
+    transform: translateY(-50%);  /* 엘리먼트를 변형할 때 쓴다. 비틀거나 구부리거나 돌릴 때 . 여러가지로 모양을 바꿀 때 */
+}
+.menu_mob > span:nth-child(3) {
+    bottom:0px;
+}
+.menu_mob.check > span:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+}
+
+.menu_mob.check > span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_mob.check > span:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+}
+.menulist_mob {
+    position:fixed;  /* 스크롤을 내리더라도 같은 위치에서 붙어다닌다. */
+    width:100%;
+    height:calc(100% - 60px);
+    top:60px;
+    padding:0px 16px 25px 16px;
+    left: 0;
+    z-index:-1;
+    background: #f7f7f7;
+    display: none;
+}
+.hdrWrap.check {
+    background: #f7f7f7;
+}
+.menulist_mob.check {
+    display: block;
+}
+
+.menulist_mob .memberBox > ul {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.menulist_mob .memberBox > ul > li {
+    width: 33.3%;
+    border: 1px solid #000;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: center;
+}
+.menulist_mob .memberBox li  a {
+    font-size: 16px!important;
+    font-weight: 500!important;
+    font-weight: normal;
+    width: 100%;
+    justify-content: center;
+}
+.hdrWrap .menuRight .headerSubNav li {
+    font-size: 16px!important;
+    font-weight: 500!important;
+}
+.menulist_mob .languageModal_modal {
+    position: relative;
+}
+.menulist_mob .languageModal_modal i {
+    margin-left: 10px;
+}
+.menulist_mob .languageModal_modal ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    display: none;
+}
+.menulist_mob .memberBox.clickOn .languageModal_modal ul {
+    display: block;
+}
+.menulist_mob .languageModal_modal ul li {
+    color: #999;
+    font-size: 16px!important;
+    font-weight: normal!important;
+    height: 40px;
+    justify-content: center;
+}
+.menulist_mob .languageModal_modal ul li:first-child {
+    border-bottom: 1px solid #eee;
+}
+
+.categoryMenu01Nav_mob {
+    display: flex;
+    padding: 24px 0 16px;
+    cursor: default;
+}
+.categoryMenu01Nav_mob li {
+    font-size: 15px!important;
+}
+.menulist_mob .categoryMenuBox {
+    padding: 0px!important;
+    border-top: 1px solid #ddd;
+    display: block!important;
+}
+.menulist_mob .categoryMenuBox .categoryTitleBox {
+    width: 100%;
+    padding: 16px 10px;
+}
+.menulist_mob .categoryMenuBox .categoryTitleBox h5 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+}
+.menulist_mob .categoryMenuBox .categorySubMenuBox {
+    padding: 10px 0;
+    background-color: #eee;
+}
+.menulist_mob .categoryMenuBox .categorySubMenuBox li {
+    width: calc(50% - 2px);
+    display: inline-block;
+    padding: 9px 18px!important;
+}
+.menulist_mob .categoryMenuBox .categorySubMenuBox li a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666;
+}
+.categoryMenu02_mob .categoryMenuBox {
+    padding: 10px 0!important;
+}
+.categoryMenu02_mob .categoryMenuBox .categoryTitleBox h5 a {
+    font-size: 16px;
+    font-weight: 500;
+}
+.categoryMenu02_mob .categoryMenuBox .categoryTitleBox i {
+    color: initial;
+    transform: rotate(-90deg);
+}
+.categoryMenu03_mob .categoryMenuBox .categoryTitleBox h5 a {
+    font-size: 24px;
+}
+.overflowH {
+    overflow: hidden;
+    height: 100%;
+}
+.openH {
+    overflow: auto;
+}
+
+/* moreBtn CSS */
+.moreBtn {
+    border: 1px solid #ddd;
+    font-size: 13px;
+    padding: 4px 12px;
+    color: #999;
+    border-radius: 5px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* ViewAllBtn CSS */
+.ViewAllBtn {
+    border: 1px solid #ddd;
+    font-size: 12px;
+    padding: 4px 12px;
+    color: #999;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+/********** content 공통 CSS ***********/
+.content {
+    padding: 0 30px;
+}
+.content header h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content section {
+    display: flex;
+    gap: 0 30px;
+}
+.cnt03,
+.cnt04,
+.cnt05,
+.cnt06 {
+    margin-top: 140px;
+}
+.content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pagingBox {
+    display: flex;
+    padding-top: 60px;
+    margin: 0 auto;
+    gap: 0 16px;
+    width: 100%;
+    justify-content: center;
+}
+.pagingBox li {
+    color: #999;
+    padding: 8px;
+    cursor: pointer;
+}
+.pagingBox .clickOn {
+    color: #000;
+}
+
+/********** footer CSS ***********/
+footer {
+    margin-top: 120px;
+    background-color: #F7F7F7;
+}
+
+/* footer CSS */
+.footerCnt {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    border-top: 1px solid #eee;
+    padding: 35px 30px;
+}
+.leftTxt {
+    width: calc(100% - 550px);
+}
+.categoryTxt {
+    width: calc(100% - 210px);
+}
+.categoryTxt_Title span {
+    margin-right: 5px;
+    font-weight: 500;
+}
+.categoryTxt_Title span:last-child {
+    color: #999;
+}
+.menu_list {
+    display: flex;
+    margin-bottom: 10px;
+}
+.categoryTxt_link .menu_list:last-child {
+    margin-bottom: 0;
+}
+.categoryTxt_link {
+    margin-top: 30px;
+}
+.categoryTxt_link .menu a {
+    width: 100px;
+    color: #999;
+    display: inline-block;
+    font-weight: 400;
+}
+.categoryTxt_link .product a {
+    margin-right: 5px;
+    font-weight: 400;
+}
+.categoryImg {
+    display: flex;
+    gap: 15px;
+}
+.categoryImg .img {
+    position: relative;
+}
+.categoryImg .img img {
+    width: 180px;
+}
+.categoryImg span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #00000016;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+.footer_infoTitle {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+}
+.footer_infoTitle h6 {
+    font-weight: 500;
+}
+.footer_info {
+    background-color: #F7F7F7;
+    border-top: 1px solid #eee;
+    padding: 35px 30px;
+    display: flex;
+    gap: 0 40px;
+    justify-content: space-between;
+}
+.footer_info i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.footer_infoMenu {
+    margin-top: 8px;
+}
+.footer_infoMenu a {
+    color: #999;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.footer_infoTxt {
+    margin-top: 16px;
+}
+.footer_infoTxt span {
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.rightTxt {
+    width: 480px;
+}
+.newsletterBox > form {
+    display: flex;
+    gap: 0 5px;
+    margin: 8px 0;
+}
+.email_input {
+    padding: 0 16px;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 1;
+    border: none;
+    width: calc(100% - 160px);
+    background-color: #fff;
+}
+.subscribe_btn {
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+.signUpTxt {
+    font-size: 13px;
+    color: #999;
+    width: 80%;
+}

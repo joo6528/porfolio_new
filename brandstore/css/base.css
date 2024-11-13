@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'BMJUA'!important;
+    font-size: 16px!important;
+    line-height: 1.2!important;
+    color: #333;
+    vertical-align: middle;
+    cursor: none;
+}
+
+a {
+    display: inline-block;
+    cursor: none;
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    border: none;
+    background-color: transparent;
+    font-family: 'BMJUA'!important;
+    cursor: none;
+    color: #333;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+.btn {
+    border-radius: 50px;
+    padding: 0 20px;
+}
+label {
+    cursor: none;
+}
+span {
+    cursor: none;
+}
+dl, ol, ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* addClass css */
+.hiddenOn {
+    display: none;
+}
+.hide {
+    display: none!important;
+}
+.scrollShow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* top menu css start */
+.tmuWrap {
+    width: 80%;
+    height: 40px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+.tmuWrap .topMenuBox {
+    display: flex;
+    align-items: center;
+}
+.tmuWrap .topMenuBox li > a {
+    line-height: 25px;
+    padding: 0 10px;
+    border-radius: 30px;
+    font-size: 13px;
+    color: #666;
+}
+.tmuWrap .loginBtn{
+    position: relative;
+}
+.tmuWrap .loginBtn::after {
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+}
+/* top menu css end */
+
+/* header css start */
+.hdrWrap {
+    background-color: #fff;
+}
+.hdrWrap header {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hdrWrap .headerBox {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.hdrWrap .headerBox .logoBox img {
+    height: 40px;
+}
+.hdrWrap .headerBox .buttonBox {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+.hdrWrap .headerBox .loginBox {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+.hdrWrap .headerNavBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.hdrWrap .headerNav_left i {
+    font-size: 24px;
+}
+.hdrWrap .headerNav_left .menuBar {
+    border: 1px solid rgb(233 233 233);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+.hdrWrap .headerNav_left .menuBar:hover {
+    border: 1px solid #2ac1bc;
+    background-color: #2ac1bc;
+}
+.hdrWrap .headerNav_left .menuBar:hover i {
+   color: #fff;
+}
+.hdrWrap .headerNav_center {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.hdrWrap .headerNav_center li:hover {
+    color: #2ac1bc;
+}
+.hdrWrap .headerNav_center .clickOn {
+    color: #2ac1bc;
+    position: relative;
+}
+.hdrWrap .headerNav_center .clickOn::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background-image: url('../images/menuImg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    top: -28px;
+    right: -28px;
+    z-index: 0;
+}
+.hdrWrap .headerNav_right {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+.hdrWrap .headerNav_right .searchBtn:hover {
+    color: #2ac1bc;
+}
+.hdrWrap .headerNav_right i {
+    font-size: 28px;
+}
+.hdrWrap .headerNav_right .cartIBtn i {
+    position: relative;
+}
+.hdrWrap .headerNav_right .cartIBtn i::after {
+    position: absolute;
+    content: '0';
+    width: 16px;
+    height: 16px;
+    background-color: #2ac1bc;
+    border-radius: 50%;
+    right: 0;
+    bottom: -3px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+/* search modal css */
+#exampleModalCenter .modal-content {
+    border: 0;
+    background-color: transparent;
+}
+#exampleModalCenter .modal-body {
+    padding: 0px;
+}
+.searchBox {
+    position: relative
+}
+.searchBox input {
+    width: 100%;
+    border: solid 1px #E4E8E8;
+    border-radius: 20px;
+    background-color: #F7F9F9;
+    padding: 20px 10px 20px 40px;
+}
+.searchBox input::placeholder {
+    font-size: 16px;
+}
+.searchBox > i {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    font-size: 18px;
+}
+#exampleModalCenter .modal-content .searchWordBox {
+    margin-top: 10px;
+}
+#exampleModalCenter .modal-content .searchWordBox a {
+    color: #fff;
+    margin-right: 10px;
+}
+#exampleModalCenter .modal-content .searchWordBox a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.mobMenuModal .modal-dialog {
+    width: 380px;
+    height: 100vh;
+    background-color: #fff;
+    margin: initial;
+    align-items: initial;
+    position: absolute;
+    right: 0;
+}
+.mobMenuModal.modal.fade .modal-dialog {
+    transform: translate(380px, 0)!important;
+}
+.mobMenuModal.modal.show .modal-dialog {
+    transform: translate(0, 0)!important;
+}
+.mobMenuModal .modal-header {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.mobMenuModal .modal-header .loginBox a {
+    display: flex;
+    align-items: center;
+}
+.mobMenuModal .modal-header .loginBox a i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.mobMenuModal .modal-header .loginBox a:hover {
+    color: #fff;
+    background-color: #2ac1bc;
+}
+.mobMenuModal .modal-header .btnBox {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    gap: 0 10px;
+}
+.mobMenuModal .modal-header .btnBox a:hover {
+    color: #2ac1bc;
+}
+.mobMenuModal .modal-header .btnBox button {
+    font-size: 20px;
+}
+.mobMenuModal .modal-header .btnBox button:hover {
+    color: #2ac1bc;
+}
+.mobMenuModal .modal-header .loginBox {
+    width: 100%;
+}
+.mobMenuModal .modal-header .loginBox a {
+    width: 100%;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.mobMenuModal .modal-body {
+    padding: 20px!important;
+}
+.mobMenuModal .modal-body .headerNav li a {
+    font-size: 18px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: 0.15s;
+}
+.mobMenuModal .modal-body .headerNav li a:hover {
+    background-color: #2ac1bc;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.mobMenuModal .modal-footer .askBtnBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.mobMenuModal .modal-footer .askBtnBox a {
+    width: calc(50% - 10px);
+    font-size: 13px;
+    background-color: #333;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    justify-content: center;
+}
+.mobMenuModal .modal-footer .askBtnBox a:hover {
+    background-color: #222;
+}
+/* header css end */
+
+/* footer css start */
+.ftrWrap {
+    background-color: rgb(238,238,238);
+}
+.ftrWrap footer {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 40px 0 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.ftrWrap .footerLogo img {
+    height: 40px;
+}
+.ftrWrap .footer_menuBox {
+    display: flex;
+    gap: 5px 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.ftrWrap .footer_infoBox {
+    display: flex;
+    gap: 0 15px;
+    color: #999;
+    font-size: 14px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.ftrWrap .copyRightBox {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+/* footer css end */
+
+/* to top css start */
+.to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+	bottom: 60px;
+	right: 12%;
+	/* border: 1px solid #ddd; */
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    z-index: 100;
+}
+.to-top:hover {
+    background-color: #2ac1bc;
+    color: #fff;
+    border: 1px solid #2ac1bc;
+}
+/* to top css end */

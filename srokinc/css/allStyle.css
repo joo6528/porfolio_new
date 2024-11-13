@@ -1,0 +1,1048 @@
+/*********** index CSS START ***********/
+/* content 공통 CSS START */
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #fff!important;
+}
+#fp-nav.fp-right {
+    right: 40px!important;
+}
+.bold {
+    font-weight: 700;
+    color: #333;
+}
+/* content 공통 CSS END */
+
+/* content01 CSS START */
+.cntWrap .cnt01 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 0px 40px 0px;
+    margin-right: 10%;
+}
+.cntWrap .cnt01::before {
+    position: absolute;
+    content: 'IT';
+    color: #46a2d2;
+    right: -10%;
+    z-index: 1;
+    font-size: 480px;
+    font-weight: 800;
+    opacity: 0.3;
+    bottom: -20%;
+    line-height: 1.2;
+}
+.cnt01 .cnt01VideoBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+.cnt01 .cnt01VideoBox:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 1 2 / 20%);
+}
+.cntWrap .cnt01 .cnt01Bg {
+    width: 100%;
+}
+.cntWrap .cnt01 header {
+    position: absolute;
+    bottom: 20%;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    padding: 0 140px;
+}
+.cntWrap .cnt01 header h1 {
+    font-size: 100px;
+    line-height: 1.2;
+}
+.cntWrap .cnt01 header p {
+    font-size: 22px;
+    font-weight: 300;
+}
+/* mouse scroll */
+.scroll-downs {
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    width :32px;
+    height: 52px;
+    z-index: 2;
+}
+.mousey {
+    width: 3px;
+    padding: 6px 12px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0px); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+}
+.scroll-downs p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+/* content01 CSS END */
+
+/* content02 CSS START */
+.cnt02 {
+    height: 100vh;
+    position: relative;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.cnt02::before {
+    position: absolute;
+    content: '';
+    width: 25vw;
+    height: 40vh;
+    background-color: #eee;
+    left: -20%;
+    bottom: -5%;
+}
+.cnt02 header {
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+    width: 16%;
+}
+.moreBtn {
+    padding: 5px 35px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+.moreBtn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.cnt02 header h3 {
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+}
+.cnt02 header h3 span:nth-of-type(1) {
+    color: #254891;
+}
+.cnt02 header h3 span:nth-of-type(2) {
+    color: #46a2d2;
+}
+/* .cnt02 header h3::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(39, 116, 216, 0.788),rgba(12, 25, 54, 0.877));;
+    right: -15px;
+    bottom: 25px;
+    z-index: -1;
+} */
+.cnt02 header > p {
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.cnt02 section > div {
+    margin-left: initial;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.cnt02 .swiper-wrapper {
+    padding-bottom: 20px;
+}
+.cnt02 .swiper-slide {
+    overflow: hidden;
+    height: 50vh;
+    border-radius: 10px;
+}
+.cnt02 .swiper-pagination-progressbar {
+    background: rgb(0 0 0 / 0%);
+}
+.cnt02 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    top: initial;
+    bottom: 0px;
+}
+.cnt02 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: linear-gradient(45deg, #254891,#59a541);
+}
+.cnt02 .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height: 6px;
+}
+.cnt02 .cnt02BgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cnt02 .cnt02BgBox::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.cnt02 .cnt02BgBox img {
+    height: 100%;
+}
+.cnt02 .cnt02BgBox .imgCustomW {
+    width: 100%;
+    height: initial;
+}
+.cnt02 .cnt02IconBox img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    opacity: 0.6;
+    width: 50px;
+}
+.cnt02 .cnt02Txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: end;
+}
+.cnt02 .cnt02Txt .titleTxtBox h5 {
+    font-size: 36px;
+}
+.cnt02 .cnt02Txt .titleTxtBox p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.cnt02 .cnt02Txt .detailTxtBox {
+    margin-top: 20px;
+}
+.cnt02 .cnt02Txt .detailTxtBox p {
+    font-weight: 400;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+.cnt02 .swiper-button-prev:after,
+.cnt02 .swiper-rtl .swiper-button-next:after{
+    display: none;
+}
+.cnt02 .swiper-button-next:after,
+.cnt02 .swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+.cnt02 .swiper-button-next,
+.cnt02 .swiper-button-prev {
+    top: 290px;
+    width: initial;
+    height: initial;
+}
+.cnt02 .swiper-button-next,
+.cnt02 .swiper-rtl .swiper-button-prev {
+    right: initial;
+    left: 100px;
+}
+.cnt02 .cntTxtHoverBox a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1 1 3 / 50%);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt02 .swiper-slide:hover .cntTxtHoverBox a {
+    opacity: 1;
+}
+.cnt02 .swiper-slide:hover .cntTxtHoverBox a i {
+    font-size: 80px;
+    color: #ffffffc4;
+    transform: rotate(180deg);
+}
+/* content02 CSS END */
+
+/* content03 CSS START */
+.cnt03 {
+    background: linear-gradient(45deg, rgb(14 60 122),rgb(0 31 43));
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.cnt03 section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 60px;
+}
+.cnt03 section .cnt03Txt {
+    color: #fff;
+    font-size: 26px;
+    line-height: 2;
+    font-weight: normal;
+    position: relative;
+    overflow: hidden;
+}
+.cnt03 section::after {
+    position: absolute;
+    content: '';
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(0 0 0),rgb(0 181 255));
+    opacity: 0.1;
+    left: -100px;
+    z-index: -1;
+    top: -50%;
+}
+.cnt03 section .cnt03Txt p > span {
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.cnt03 section .detailBtn {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 45px;
+    transition: 0.25s;
+}
+.cnt03 section .detailBtn:hover {
+    background-color: #fff;
+    color: rgb(0 31 43);
+}
+/* content03 CSS END */
+
+/* content04 CSS START */
+.cnt04 {
+    height: 100vh;
+    position: relative;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.cnt04::before {
+    position: absolute;
+    content: 'SANGROKINC';
+    color: #46a2d2;
+    left: -10%;
+    z-index: -1;
+    font-size: 480px;
+    font-weight: 800;
+    opacity: 0.3;
+    top: 0;
+}
+.cnt04 header {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    text-align: right;
+}
+.moreBtn {
+    padding: 5px 35px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+.moreBtn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.cnt04 header h3 {
+    font-size: 48px;
+    font-weight: 700;
+    position: relative;
+}
+.cnt04 header h3 span:nth-of-type(1) {
+    color: #254891;
+}
+.cnt04 header h3 span:nth-of-type(2) {
+    color: #46a2d2;
+}
+/* .cnt04 header h3::after {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(39, 116, 216, 0.788),rgba(12, 25, 54, 0.877));;
+    left: -15px;
+    bottom: 25px;
+    z-index: -1;
+} */
+.cnt04 header > p {
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.cnt04 section {
+    display: flex;
+    gap: 0 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+}
+.cnt04 section article {
+    background-color: #eee;
+    height: 50vh;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.cnt04 section article .cnt04BgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.cnt04 section article .cnt04BgBox img {
+    height: 100%;
+}
+.cnt04 section article .cnt04BgBox::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.cnt04 .cnt04Txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 0px;
+    left: 0px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: end;
+}
+.cnt04 .cnt04Txt .titleTxtBox h5 {
+    font-size: 36px;
+}
+.cnt04 .cnt04Txt .titleTxtBox p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.cnt04 .cnt04Txt .detailTxtBox {
+    margin-top: 5px;
+}
+.cnt04 .cnt04Txt .detailTxtBox p {
+    font-weight: 400;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+}
+.cnt04 .cntTxtHoverBox a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1 1 3 / 50%);
+    opacity: 0;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cnt04 article:hover .cntTxtHoverBox a {
+    opacity: 1;
+}
+.cnt04 article:hover .cntTxtHoverBox a i {
+    font-size: 80px;
+    color: #ffffffc4;
+    transform: rotate(180deg);
+}
+/* content04 CSS END */
+/*********** index CSS END ***********/
+
+/*********** subPage_사업분야 CSS START ***********/
+.sub01 .subTopWrap {
+    height: 600px;
+    padding: 110px 40px 0 40px;
+    position: relative;
+}
+.sub01 .subTopWrap .subBgBox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+.sub01 .subTopWrap .subBgBox::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 1 2 / 30%);
+}
+.sub01 .subTopWrap img {
+    width: 100%;
+}
+.sub01 .subTopWrap .subTitleTxtBox {
+    position: absolute;
+    left: 0px;
+    bottom: 10%;
+    width: 100%;
+    padding: 0 80px;
+}
+.sub01 .subTopWrap .subTitleTxtBox h3 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+.sub01 .subTopWrap .subTitleTxtBox p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+.sub01 .subTopWrap .subTitleTxtBox .mob_categoryBox {
+    display: none;
+}
+.sub01 .subTopWrap .subTitleTxtBox .categoryBox {
+    display: flex;
+    align-items: center;
+    gap: 20px 40px;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+.sub01 .subTopWrap .subTitleTxtBox .categoryBox li {
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #FFF;
+    border: 1px solid #fff;
+    transition: 0.15s;
+}
+.sub01 .subTopWrap .subTitleTxtBox .categoryBox li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #FFF;
+}
+.sub01 .subTopWrap .subTitleTxtBox .categoryBox .clickOn{
+    background: #FFF;
+    font-weight: 700;
+    border: none;
+    color: #333;
+}
+.sub01 .subCntWrap {
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+.sub01::before {
+    position: absolute;
+    color: #46a2d2;
+    left: 40px;
+    z-index: -1;
+    font-size: 480px;
+    font-weight: 800;
+    opacity: 0.2;
+    bottom: -50px;
+}
+.emvedded::before {
+    content: 'EMBEDDED';
+}
+.iotsystem::before {
+    content: 'IOTSYSTEM';
+}
+.security::before {
+    content: 'SECURITY';
+}
+.bigdata::before {
+    content: 'BIGDATA';
+}
+.iotsetting::before {
+    content: 'IOTSETTING';
+}
+.iotscan::before {
+    content: 'IOTSCAN';
+}
+.dataplatform::before {
+    content: 'DATAPLATFORM';
+}
+.iotplatform::before {
+    content: 'IOTPLATFORM';
+}
+.iotdata::before {
+    content: 'IOTDATA';
+}
+.company::before {
+    content: 'COMPANY';
+}
+.sub01 .subCntWrap .locationWrap {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 20px;
+    color: #777;
+}
+.sub01 .subCntWrap .locationWrap .clickOn a {
+    font-weight: 700;
+    color: #333;
+}
+.sub01 .subCntWrap .locationWrap li {
+    display: flex;
+    align-items: center;
+}
+.sub01 .subCntWrap .subContent {
+    padding-top: 60px;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 60px;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox a {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    padding: 0 10px;
+    color: #ccc;
+    font-weight: 400;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox a::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 16px;
+    background-color: #eee;
+    z-index: -1;
+    bottom: -8px;
+    transition: 0.35s;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox a:hover::before {
+    width: 100%;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox .clickOn a {
+    color: #333;
+    font-weight: 500;
+}
+.sub01 .subCntWrap .subContent .subCategoryBox .clickOn a::before {
+    width: 100%;
+}
+.sub01 .subCntWrap .subContent .subCntTitleBox h5 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.sub01 .subCntWrap .subContent .subCntTitleBox p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+}
+.sub01 .subCntWrap .subContent .subCntBox > img {
+    margin-top: -40px;
+}
+.sub01 .subCntWrap .subContent img {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.sub01 .subCntWrap .subContent .subCntBox {
+    padding-top: 120px;
+}
+.sub01 .subCntWrap .subContent .noneP {
+    margin-top: 0;
+}
+.sub01 .subCntWrap .subContent .subCntBox > h5 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.sub01 .subCntWrap .subContent .subCntBox .subCntListBox {
+    margin-top: 40px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTitle {
+    font-size: 32px;
+    font-weight: 600;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTxt {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    line-height: 1.6;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntListBox .subCntTxt::before {
+    position: absolute;
+    content: "\e93f";
+    font-family: 'xeicon';
+    left: 0;
+}
+.sub01 .subCntWrap .subContent .imgcustom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 60px;
+}
+.sub01 .subCntWrap .subContent .imgcustom img {
+    width: 30%;
+    min-width: 300px;
+    margin: 0;
+}
+.sub01 .subCntWrap .subContent .subImgCustom {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.sub01 .subCntWrap .subContent .subImgCustom::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 35vh;
+    background-color: #eee;
+    left: 10%;
+    bottom: -10%;
+    border-radius: 10px;
+    opacity: 0.9;
+    max-height: 300px;
+}
+.sub01 .subCntWrap .subContent .subImgCustom img {
+    width: 60%;
+    margin: 0;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox {
+    width: 100%;
+    margin-top: 40px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox > p {
+    text-align: right;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox table {
+    width: 100%;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox th,
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox td {
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.sub01 .subCntWrap .subContent .subCntBox .subTableBox th {
+    background-color: rgb(245, 245, 245);
+}
+.sub01 .subCntWrap .subContent .subCntBox .tableColor {
+    background-color: rgb(231, 231, 231)!important;
+}
+.sub01 .subCntWrap .subContent .subCntBox .tableColor02  {
+    background-color: #a4a55c1f!important;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntImgBox {
+    margin-top: 40px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .numCustom {
+    color: #fff;
+    background-color: #339cbd;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+}
+.sub01 .subCntWrap .subContent .subCntBox .nun .subCntTxt {
+    padding-left: 0;
+}
+.sub01 .subCntWrap .subContent .subCntBox .nun .subCntTxt::before {
+    display: none;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntInnerBox {
+    display: flex;
+    gap: 0 30px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntLeftBox,
+.sub01 .subCntWrap .subContent .subCntBox .subCntRightBox {
+    width: calc(50% - 15px);
+}
+.sub01 .subCntWrap .subContent .subCntBox .subCntRightBox img {
+    margin-top: 40px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .videoBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .videoBox video {
+    width: 80%;
+    border-radius: 10px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .innerImgBox {
+    margin-top: 60px;
+}
+.sub01 .subCntWrap .subContent .subCntBox .innerImgBox > p {
+    text-align: center;
+}
+
+/* IoTSystem CSS START */
+.sub01 .subCntBox .developStepBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sub01 .subCntBox .developStepBox li img {
+    width: 30px;
+}
+.sub01 .subCntBox .developStepBox li:nth-child(odd) {
+    width: 600px;
+    margin: 30px;
+    padding: 30px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: -6px -6px 20px rgb(255 255 255), 6px 6px 20px rgb(0 0 0 / 10%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sub01 .subCntBox .developStepBox li:nth-child(even) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.sub01 .subCntBox .developStepBox li .num {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    color: #32a3b1;
+    box-shadow: -4px -4px 15px rgb(255 255 255), 4px 4px 15px rgb(0 0 0 / 10%);
+}
+.sub01 .subCntBox .developStepBox li > p {
+    width: 100%;
+    color: #32a3b1;
+    font-size: 24px;
+    text-align: center;
+}
+/* IoTSystem CSS END */
+
+.sub01 .subCntBox .stepBox {
+    display: flex;
+    align-content: center;
+    gap: 0 40px;
+    padding-top: 40px;
+}
+.sub01 .subCntBox .stepBox .leftBox {
+    width: 320px;
+}
+.sub01 .subCntBox .stepBox .leftBox li:nth-child(odd) {
+    background-color: #eee;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+}
+.sub01 .subCntBox .stepBox .leftBox li:nth-child(even) {
+    text-align: center;
+    font-size: 20px;
+}
+.sub01 .subCntBox .stepBox .leftBox .addTxt {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.sub01 .subCntBox .stepBox .rightBox {
+    width: calc(100% - 360px);
+}
+.sub01 .subCntBox .stepBox .rightBox li {
+    border-bottom: 1px solid #333;
+    padding: 20px 0;
+}
+.sub01 .subCntBox .stepBox .rightBox .titleTxt {
+    font-size: 24px;
+    font-weight: 600;
+}
+.sub01 .subCntBox .consultationBox p {
+    font-size: 26px;
+    font-weight: 600;
+}
+.sub01 .subCntBox .consultationBox p:nth-of-type(1) {
+    font-size: 28px;
+    font-weight: 700;
+}
+.sub01 .subCntBox .subTableBox .addTxtBox {
+    margin-top: 20px;
+}
+.sub01 .subCntBox .subTableBox .addTxt {
+    text-align: left!important;
+}
+
+.sub01 .subCntBox .imgItemBox {
+    display: flex;
+    gap: 0 30px;
+    margin-top: 40px;
+}
+.sub01 .subCntBox .itmeBox {
+    width: calc(25% - 22px);
+}
+.sub01 .subCntBox .itmeBox .ImgBox {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sub01 .subCntBox .itmeBox .ImgBox img {
+    width: 100%;
+}
+.sub01 .subCntBox .itmeBox .center {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub01 .subCntBox .itmeBox .txtBox {
+    margin-top: 5px;
+}
+/* IoTSetting CSS END */
+
+/* DataPlatform CSS START */
+.imgItemCustom02 .itmeBox {
+    width: calc(50% - 15px)!important;
+}
+.imgItemCustom03 {
+    justify-content: space-around!important;
+    gap: initial!important;
+}
+/* DataPlatform CSS END */
+/*********** subPage_사업분야 CSS END ***********/
+
+/*********** subPage_회사소개 CSS START ***********/
+.slideBox {
+    position: relative;
+    margin-top: 40px;
+}
+.slideBox .swiper-slide {
+    padding: 40px;
+    border-radius: 10px;
+}
+.slideBox .swiper-slide .monthTxt {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1;
+}
+.slideBox .swiper-slide .historyList {
+    margin-top: 30px;
+}
+.slideBox .swiper-slide .historyList li {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.slideBox .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+}
+.slideBox .swiper-pagination-bullet-active {
+    background-color: #24498e;
+}
+.slideBox .swiper-button-next, .swiper-button-prev {
+    color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px #ccc;
+    background-color: #fff;
+}
+.slideBox .swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: #24498e;
+}
+.slideBox .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: 600;
+}
+.slideBox .swiper-button-next:hover:after, .swiper-button-prev:hover:after {
+    color: #fff;
+}
+.slideBox .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -25px;
+}
+.slideBox .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -25px;
+}
+.mapBox {
+    margin-top: 40px;
+    width: 100%;
+    height: 550px;
+}
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+.srokMap {
+    border-radius: 10px;
+}
+/*********** subPage_회사소개 CSS END ***********/

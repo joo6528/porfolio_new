@@ -1,0 +1,923 @@
+/************* FONTS ****************/
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../fonts/Pretendard-Light.woff');
+}
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('../fonts/Pretendard-Medium.woff');
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('../fonts/Pretendard-Regular.woff');
+}
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('../fonts/Pretendard-Bold.woff');
+}
+
+
+/***************** CUSTOM CSS *****************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard-Medium';
+    line-height: 1.6;
+}
+body {
+    font-size: 16px;
+    color: #7c8798;
+}
+ul {
+    list-style: none;
+}
+select, input {
+    outline: none;
+    color: #333;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 8px;
+    height: 35px;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    text-decoration: none;
+}
+button {
+    font-size: 14px;
+    border: none;
+}
+button:focus {
+    border: none;
+    outline: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e8eef3;
+    background-color: #f4f8fb;
+}
+table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e8eef3;
+    font-size: 15px;
+}
+label {
+    margin: 0;
+}
+
+h2 {
+    color: #1c2d41;
+    font-size: 21px;
+}
+p {
+    margin: 0;
+}
+
+.bold {
+    font-family: 'Pretendard-Bold'!important;
+}
+
+/* flex custom */
+.fx-0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fx-1 {
+    display: flex;
+    align-items: center;
+}
+.fx-2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.fx-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fx-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* fill custom */
+.fill01 {
+    fill: #9eabc0;
+}
+
+/* font color custom */
+.color01 {
+    color: #b8c3d5;
+}
+.color02 {
+    color: #1c2d41;
+}
+
+/* button custom */
+.bnt01 {
+    background-color: #05509F;
+    color: #fff;
+}
+.bnt01:hover {
+    background-color: #03468d;
+    color: #fff;
+}
+.btn02 {
+    background-color: #22ca80;
+    color: #fff;
+}
+.btn02:hover {
+    background-color: #1fb675;
+    color: #fff;
+}
+.btn03 {
+    background-color: #ff4f70;
+    color: #fff;
+}
+.btn03:hover {
+    background-color: #eb4866;
+    color: #fff;
+}
+.btn04 {
+    background-color: rgb(228, 227, 227);
+    color: #333;
+}
+.btn04:hover {
+    background-color: rgb(224, 223, 223);
+    color: #333;
+}
+.btn05 {
+    background-color: #17a2b8;
+    color: #fff;
+}
+.btn05:hover {
+    background-color: #138ea1;
+    color: #fff;
+}
+.btn06 {
+    background-color: #20c997;
+    color: #fff;
+}
+.btn06:hover {
+    background-color: #21b98c;
+    color: #fff;
+}
+
+.btnCustom-01 {
+    border: none;
+    padding: 6px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnCustom-02 {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 9px 0 rgb(169 184 200 / 20%);
+}
+
+/* scrollbar custom */
+.scrollCustom {
+    max-height: 500px;
+    overflow-y: auto;
+}
+.scrollCustom::-webkit-scrollbar {
+    width: 10px;  /* 스크롤바의 너비 */
+}
+
+.scrollCustom::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background: #82a7d3; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.scrollCustom::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
+
+/* calender custom */
+.calenders label {
+    width: 40px;
+}
+.calenders input{
+    width: 120px!important;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 8px;
+    height: 35px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.calenders input:focus {
+    border: 1px solid #ccc!important;
+}
+.datepicker table th {
+    padding: initial;
+    border: none;
+    font-size: initial;
+    background: transparent;
+    color: #1c2d41;
+}
+.datepicker table td {
+    padding: initial;
+    border: none;
+    font-size: initial;
+}
+.gj-picker-bootstrap {
+    color: #1c2d41;
+}
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon,
+.gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+    top: 7px;
+}
+
+/* modal custom */
+.modal {
+    padding: 0!important;
+}
+.modal-content {
+    border: none!important;
+    border-radius: 10px!important;
+    box-shadow: 0 3px 9px 0 rgb(60 60 60 / 60%);
+}
+.madalCustom01 {
+    width: 90%;
+    max-width: 800px;
+    margin: 1.75rem auto;
+}
+
+/* contents css */
+.cnt01 {
+    padding: 30px;
+}
+
+/* paging css */
+.paging {
+    display: flex;
+    justify-content: center;
+}
+.page-link {
+    line-height: inherit;
+    color: #7c8798 ;
+}
+.page-link:hover {
+    color: #7c8798 ;
+}
+.page-link:focus {
+    box-shadow: none!important;
+}
+.page-item.active .page-link {
+    background-color: #b8c3d5;
+    border-color: #b8c3d5;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* radio, ckeckbox button custom */
+.check_custom_input {
+    display: none;
+}
+.check_custom_label {
+    width: 18px!important;
+    height: 18px!important;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+    background: #fff;
+}
+.check_custom_input:checked + .check_custom_label::before {
+    position: absolute;
+    content: '';
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+    background-color: #67748e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/***************** CUSTOM CSS *****************/
+
+/***************** LAYOUT CSS *****************/
+.loginWrap {
+    min-width: 1800px;
+    overflow: hidden;
+}
+.cntWrap {
+    display: flex;
+    min-width: 1800px;
+    overflow: hidden;
+}
+.leftMenu {
+    width: 260px;
+    box-shadow: 0 3px 9px 0 rgb(169 184 200 / 20%);
+    z-index: 1;
+}
+.contents {
+    width: calc(100% - 260px);
+    background-color: #f9fbfd;
+    min-height: 100vh;
+}
+.topMenu {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #edf2f9;
+    padding: 15px 30px;
+}
+.cnt01 > article {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 9px 0 rgb(169 184 200 / 20%);
+}
+.cnt01 > article > h5 {
+    font-size: 18px;
+    color: #1c2d41;
+    font-weight: bold;
+}
+.cnt01 > article > p {
+    font-size: 14px;
+}
+.searchBox {
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.searchBox select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 6px;
+    height: 35px;
+    margin-left: 5px;
+}
+.searchBox > button {
+    margin-left: -5px;
+}
+.searchBox > button i {
+    margin-right: 5px;
+}
+
+/***************** LAYOUT CSS *****************/
+
+/***************** STYLE CSS *****************/
+/* left menu css */
+.leftMenu .logo {
+    padding: 35px 35px 0 35px;
+}
+.leftMenu .logo img {
+    width: 120px;
+}
+.leftMenu .logo span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.menuWrap {
+    margin-top: 30px;
+}
+.menuList a {
+    padding: 12px 35px;
+    margin-right: 15px;
+    border-radius: 0 60px 60px 0;
+}
+.menuList span {
+    color: #818181;
+    margin-left: 14px;
+}
+.menuList svg {
+    fill: #9eabc0;
+    margin-left: 10px;
+}
+.clickOn a {
+    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    box-shadow: 0 7px 12px 0 rgb(95 118 232 / 25%);
+}
+.clickOn svg {
+    fill: #fff;
+}
+.clickOn span {
+    color: #fff;
+}
+.menuList a:hover span {
+    color: #6e6e6e;
+}
+.menuList a:hover svg {
+    fill: #909bad;
+}
+.clickOn a:hover span {
+    color: #fff;
+}
+.clickOn a:hover svg {
+    fill: #fff;
+}
+
+/* Top menu pofile css */
+.profileBox > i {
+    font-size: 28px;
+    margin-right: 8px;
+}
+.profileBox  {
+    background: #fff;
+    padding: 8px 20px;
+    box-shadow: 0 2px 9px 0 rgb(169 184 200 / 25%);
+    border-radius: 30px;
+    position: relative;
+}
+.userNameBox span{
+    font-family: 'Pretendard-Regular';
+    cursor: pointer;
+}
+.userNameBox:hover .userName {
+    text-decoration: underline;
+}
+.logoutBox {
+    background-color: #b8c3d5;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+    right: 0px;
+    box-shadow: 0 2px 9px 0 rgb(169 184 200 / 28%);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+.logoutBox > div:hover {
+    font-weight: bold;
+}
+.logoutBox::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #b8c3d5;
+    content: '';
+    transform: rotate(45deg);
+    top: -5px;
+    right: 20px;
+}
+.logoutTxt i {
+    margin-left: 5px;
+}
+
+/* CCTVADMIN CSS */
+/* cctvAdmin modal css */
+.cctvScreenBox h5 {
+    text-align: center;
+    font-size: 16px;
+    background: #344767;
+    padding: 3px;
+    color: #fff;
+    border-radius: 10px;
+}
+.cctvScreenBox .cctvShow {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.cctvScreenBox .cctvShow img {
+    width: 100%;
+}
+.modalTxt {
+    margin-top: 20px;
+}
+.total > div:first-child {
+    margin-top: 0;
+}
+.modalTxt > label{
+    color: #1c2d41;
+    font-size: 16px!important;
+    font-weight: bold;
+}
+.modalTxt label{
+    width: 130px;
+    font-size: 15px;
+}
+.inputBox {
+    width: calc(100% - 130px);
+    gap: 20px 10px;
+    flex-wrap: wrap;
+}
+.inputBox label {
+    width: 90px;
+}
+.inputBox input {
+    width: calc(100% - 90px);
+    border: 1px solid #ccc;
+    line-height: 33px;
+    border-radius: 5px;
+    padding: 0 6px;
+}
+.inputBox input:disabled,
+.inputBox input:read-only {
+    background-color: #e9ecef;
+}
+.csBox {
+    padding: 15px;
+    background-color: #edf2f9;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+.total {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 10px;
+}
+.cctvSetting > div {
+    width: calc(33.3% - 6.5px);
+    display: flex;
+    align-items: center;
+}
+.cctvSetting > div:last-child {
+    width: 100%;
+}
+.userName input {
+    width: 100%;
+}
+.siteInfo > div {
+    width: calc(50% - 5px);
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.saveFrame {
+    justify-content: space-between;
+}
+.saveFrame input {
+    width: calc(100% - 195px);
+}
+.cctvAdmin > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cctvAdmin > div:nth-of-type(1) {
+    width: calc(40% - 7.5px);
+}
+.cctvAdmin > div:nth-of-type(2) {
+    width: calc(60% - 7.5px);
+}
+.cctvAdmin > div:nth-of-type(1) label {
+    width: 90px;
+}
+.cctvAdmin > div:nth-of-type(1) input {
+    width: calc(100% - 90px);
+}
+.cctvAdmin > div:nth-of-type(2) label {
+    width: 210px;
+}
+.cctvAdmin > div:nth-of-type(2) input {
+    width: calc(100% - 210px);
+}
+
+.cctvInfo > div {
+    width: calc(33.3% - 6.5px);
+    align-items: center;
+    display: flex;
+    gap: 0 10px;
+}
+.checkCustom {
+    width: 18px!important;
+    height: 18px!important;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+    background: #fff
+}
+.cctvTxt_sub02 > div input {
+    display: none;
+}
+.cctvTxt_sub02 > div input + .checkCustom::before {
+    width: 18px!important;
+    height: 18px!important;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.cctvTxt_sub02 > div input:checked + .checkCustom::before {
+    position: absolute;
+    content: '';
+    width: 12px!important;
+    height: 12px!important;
+    border-radius: 50%;
+    background-color: #67748e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cctvTxt_sub02 > div label {
+    width: calc(100% - 28px);
+    text-align: center;
+    padding: 3px;
+    font-weight: 500;
+}
+
+.btn_01 {
+    border: 1px solid #82d616;
+    color: #82d616!important;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.btn_02 {
+    border: 1px solid #cb0c9f;
+    color: #cb0c9f!important;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.btn_03 {
+    border: 1px solid #17c1e8;
+    color: #17c1e8!important;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.trafficSearch > div {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 5px);
+}
+.trafficSearch > div:nth-of-type(3) {
+    width: 100%;
+}
+.trafficSearch > div:nth-of-type(6) {
+    width: 100%;
+}
+
+.modelInfo > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.modelInfo > div input {
+    width: calc(100% - 90px);
+}
+
+.signal > div {
+    width: 100%;
+}
+.signal > div input {
+    width: 100%;
+    color: red;
+}
+
+/* DATAADMIN CSS */
+/* 유동인구장비 css */
+.fileUpBox {
+    margin-top: 10px;
+}
+.fileUpBox > button > i {
+    margin-right: 6px;
+}
+.fileSearchBox {
+    background-color: #f9fbfd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+    border: 1px solid #eee;
+    box-shadow: 0 3px 9px 0 rgb(169 184 200 / 20%);
+}
+.fileSearchBox >div > label {
+    width: 50px;
+}
+.fileSearchBox > div > div > div {
+    gap: 5px;
+}
+.fileSearchBox .existing_new > div {
+    width: calc(100% - 50px);
+    gap: 0 20px;
+}
+.fileSearchBox .existing_new > div > div {
+    width: 50%;
+}
+.existing_check select {
+    width: calc(100% - 20px);
+}
+.new_txt {
+    margin-left: 5px;
+}
+.new_check input[type="text"] {
+    width: calc(100% - 57px);
+}
+.fileUpload {
+    margin-top: 15px;
+}
+.fileUploadBox {
+    width: 100%;
+}
+.fileUploadBox input[type="file"] {
+    width: calc(100% - 70px);
+    background-color: #fff;
+}
+.fileUploadBox input[type="file"]::-webkit-file-upload-button {
+    background-color: #b8c3d5;
+    border: none;
+    color: #fff;
+    margin-top: 3.5px;
+    margin-left: -3.5px;
+    border-radius: 3px;
+    width: 80px;
+    cursor: pointer;
+}
+.slideOn {
+    display: block;
+}
+
+/* LOGIN CSS */
+.loginWrap {
+    background-color: #f9fbfd;
+    width: 100%;
+    height: 100vh;
+}
+.loginCnt {
+    width: 550px;
+}
+.loginCnt .logo img {
+    width: 120px;
+}
+.loginBox {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 60px 60px 60px;
+    box-shadow: 0 2px 9px 0 rgb(169 184 200 / 20%);
+    position: relative;
+    overflow: hidden;
+}
+.loginBox::after {
+    position: absolute;
+    background-image: url('../images/background_logo.png');
+    content: '';
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 450px;
+    bottom: -100px;
+    right: -150px;
+}
+.loginBox h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #1c2d41;
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ccc;
+}
+.loginBox > h1 > span {
+    color: #03468d;
+    margin-right: 5px;
+}
+.loginBtn {
+    background-image: linear-gradient(310deg, #7928CA 0%, #FF0080 100%);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.loginInfo {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.loginInfo h6 {
+    font-size: 18px;
+    margin: 0;
+}
+.loginInfo .fa-unlock-alt {
+    font-size: 28px;
+}
+.loginForm {
+    position: relative;
+    z-index: 5;
+}
+.loginForm form > input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 45px;
+    background-color: transparent;
+}
+.idRemember .rememberTxt {
+    font-size: 14px;
+}
+
+.idRemeber_input {
+    display: none;
+}
+.idRemeber_label {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-right: 3px;
+    position: relative;
+}
+.idRemeber_input:checked + .idRemeber_label::before {
+    width: 13px;
+    height: 13px;
+    background-color: #1c2d41;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    border-radius: 2px;
+}
+.idRemeber_input:checked + .idRemeber_label::after {
+    content:"\f00c";
+    position: absolute;
+    font-size: 6px;
+    line-height: 13px;
+    text-align: center;
+    color: #fff;
+    font-family: 'fontawesome';
+    width: 13px;
+    height: 13px;
+}
+
+.sub_info {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.sub_info a {
+    color: #7c8798;
+    padding: 0 8px;
+    position: relative;
+    font-size: 14px;
+}
+.sub_info a:hover {
+    font-weight: bold;
+}
+.sub_info a::after {
+    position: absolute;
+    width: 2px;
+    height: 14px;
+    background-color: #ccc;
+    content: '';
+    right: 0px;
+    top: 5px;
+}
+.sub_info a:last-child:after{
+    display: none;
+}
+.copyright p {
+    font-size: 14px;
+}
+
+/***************** STYLE CSS *****************/
+
+/*  Responsive css (780px) */
+
+@media (max-width: 780px) {
+    .modalTxt {
+        flex-wrap: wrap;
+        gap: 5px 0;
+    }
+    .modalTxt > label {
+        width: 100%;
+    }
+    .modalTxt .inputBox {
+        width: 100%;
+    }
+    .inputBox > div {
+        width: 100%;
+    }
+    .cctvAdmin {
+        flex-wrap: wrap;
+    }
+    .cctvAdmin > div {
+        width: 100%!important;
+    }
+    .saveFrame .buttonBox {
+        width: 185px!important;
+    }
+}

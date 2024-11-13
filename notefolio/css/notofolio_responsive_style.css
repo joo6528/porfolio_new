@@ -1,0 +1,323 @@
+/* responsive css 1400px, 1024px, 780px, 480px */
+@media(max-width: 1400px) {
+    .tbnWrap {
+        display: none;
+    }
+    .tmuWrap {
+        display: none;
+    }
+    .main_nav .nav {
+        display: none;
+    }
+    .hdrWrap .searchBox {
+        display: none;
+    }
+    .buttonsBox > a {
+        font-size: 14px;
+    }
+    .buttonsBox .membershipBtn {
+        background-color: transparent;
+        color: #2AC5C6;
+        font-weight: 600;
+        padding: 0;
+    }
+    .mnvWrap {
+        display: block;
+        display: flex;
+    }
+    .cnt02 header h3 {
+        font-size: 36px;
+    }
+
+    .contents {
+        padding: 0 24px;
+    }
+    .cnt01_left {
+        width: 100%;
+    }
+    .cnt01_right {
+        display: none;
+    }
+    .cnt02 .category_itemGroup {
+        width: 220%;
+    }
+    .slideOn {
+        margin-left: -120%;
+    }
+    .contents_item {
+        width: calc(25% - 16px);
+    }
+    .contents_item:nth-of-type(8) ~ div {
+        display: none;
+    }
+    .bannerWrap {
+        width: calc(100% + 48px);
+        margin-left: -24px;
+        padding: 24px;
+    }
+
+    .ftrWrap {
+        display: none;
+    }
+
+    .bannerTxtBox h2 {
+        font-size: 28px;
+    }
+    .bannerTxtBox .applyLinkTxt {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .bannerTxtBox .applyLinkTxt .applyLink {
+        font-size: 14px;
+    }
+    .contents_itemBox_article .contents_item {
+        width: calc(25% - 30px);
+    }
+    .article_viewBox .viewCover {
+        padding:  0 24px;
+        width: 100%;
+        max-width: 980px;
+    }
+    .article_viewCntBox {
+        padding:  0 24px;
+        width: 100%;
+        max-width: 980px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .contents_item {
+        width: calc(33.3% - 14px);
+    }
+    .contents_item:nth-of-type(6) ~ div {
+        display: none;
+    }
+    .contents_itemBox_article .contents_item {
+        width: calc(33.3% - 27px);
+    }
+    .cntDeailView .modal-dialog {
+        max-width: initial;
+        width: 100%;
+        margin: 0;
+    }
+    .cntDeailView .modal-content {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .cntDeailView .modal-dialog .detailView_sideBarBox {
+        display: none;
+    }
+    .cntDeailView .body_InfoBox .snsShareBox li:nth-of-type(1) ~ li {
+        display: none;
+    }
+    .cntDeailView .modal-footer .commentBox {
+        padding: 0;
+        background-color: #fff;
+    }
+    .cntDeailView .modal-footer .commentTxt::placeholder {
+        font-size: 12px;
+    }
+    .commentBtn {
+        font-size: 11px;
+    }
+    .cntDeailView .modal-header {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .cntDeailView .headerTitleBox {
+        width: 100%;
+        padding: 15px 30px;
+        border-top: 1px solid #eee;
+    }
+    .cntDeailView .modal-header .headerViewBox {
+        margin-top: 10px;
+        gap: 0 20px;
+        padding: 0 15px 30px 30px;
+    }
+    .cntDeailView .modal-header .headerViewBox li {
+        display: flex;
+        align-items: center;
+        gap: 0 5px;
+    }
+    .cntDeailView .modal-header .headerViewBox li i {
+        font-size: 18px;
+    }
+    .cntDeailView .modal-header .moreBox_mob {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .cntDeailView .modal-header .profileBox_mob {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 30px;
+    }
+}
+
+@media(max-width: 780px) {
+    .contents_item {
+        width: calc(50% - 10px);
+    }
+    .bannerWrap {
+        flex-wrap: wrap;
+    }
+    .bannerWrap header {
+        width: 100%;
+        margin-top: 0;
+    }
+    .bannerWrap header h5 {
+        margin-bottom: 0;
+    }
+    .bannerWrap header p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .bannerWrap section {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contents_item:nth-of-type(4) ~ div {
+        display: none;
+    }
+    .cnt02 header h3 {
+        font-size: 30px;
+    }
+    .contents header > h5 {
+        margin-bottom: 0;
+    }
+
+    .bnrWrap .bannerTxtBox {
+        width: 80%;
+    }
+    .bannerTxtBox .bannerTxtTitle {
+        font-size: 14px;
+    }
+    .bannerTxtBox h2 {
+        font-size: 24px;
+    }
+    .bannerTxtBox .applyLinkTxt {
+        margin-top: 10px;
+    }
+
+    .contents_itemBox_article .contents_item {
+        width: calc(50% - 20px);
+    }
+    .lgnWrap {
+        background-color: #fff;
+    }
+    .lgnWrap .loginBox {
+        padding: 0;
+    }
+
+    .article_viewBox {
+        height: 320px;
+    }
+    .article_viewBox .viewCoverTxtBox > h3 {
+        font-size: 32px;
+    }
+    .article_viewCntBox {
+        margin-top: 50px;
+    }
+    .article_viewCntBox .viewText_itemBox > h5 {
+        font-size: 18px;
+    }
+    .article_viewCntBox .viewText_itemBox {
+        margin-bottom: 50px;
+    }
+    .viewOther_itemBox .viewOther_item {
+        width: 100%;
+    }
+    .viewOther_itemBox .viewOther_item a {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    .viewOther_itemBox .viewOther_item_img {
+        width: 20%;
+    }
+    .viewOther_itemBox .viewOther_item_text {
+        width: 80%;
+    }
+    .viewOther_itemBox .viewOther_item .viewOther_item_text > h5 {
+        -webkit-line-clamp: 1;
+    }
+
+    .cntDeailView .headerTitleBox {
+        padding: 15px;
+    }
+    .cntDeailView .modal-header .headerViewBox {
+        padding: 0 15px 15px 15px;
+    }
+    .cntDeailView .modal-header .moreBox_mob {
+        padding: 15px;
+    }
+    .cntDeailView .modal-header .profileBox_mob {
+        padding: 15px;
+    }
+}
+
+@media(max-width: 480px) {
+    .contents_item {
+        width: 100%;
+    }
+
+    .article_cnt01 {
+        margin-top: 28px;
+    }
+    .contents_itemBox_article {
+        margin-top: 20px;
+    }
+    .contents_itemBox_article .contents_item {
+        width: 100%;
+    }
+    .lgnWrap .loginBox {
+        padding: 0;
+        width: 90%;
+    }
+    .login_inner {
+        width: 100%;
+    }
+    .login_form {
+        margin-top: 20px;
+    }
+    .login_snsBox {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .viewUser_infoBox .user_info_imgBox {
+        width: 60px;
+        height: 60px;
+    }
+    .viewUser_infoBox {
+        flex-wrap: wrap;
+    }
+    .viewUser_infoBox .user_info_txtBox p {
+        margin-top: 10px;
+    }
+    .viewUser_infoBox .user_info_txtBox .snsBox {
+        margin-top: 10px;
+    }
+    .viewUser_infoBox .sourceBtn {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .viewTagBox {
+        flex-wrap: wrap;
+    }
+    .viewUser_infoBox {
+        margin: 35px 0;
+    }
+    .article_viewBox {
+        height: 280px;
+    }
+    .main_nav, .buttonsBox {
+        width: 50%;
+    }
+}

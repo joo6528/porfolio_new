@@ -1,0 +1,475 @@
+/* 반응형 CSS 1280px, 768px, 576px */
+@media (max-width: 1280px) {
+    .hdrWrap .menuLeft .headerNav a {
+        font-size: 16px;
+    }
+    .cnt02 article {
+        width: 25%;
+    }
+    .cnt02 article:last-child {
+        display: none;
+    }
+    .cnt03 article {
+        width: 33.3%;
+    }
+    .cnt03 article:last-child {
+        display: none;
+    }
+    .cnt04 .swiper-wrapper >  div:last-child article {
+        display: none;
+    }
+    .cnt05 article {
+        width: 20%;
+    }
+    .cnt05 article:last-child {
+        display: none;
+    }
+    .cnt06 ul {
+        width: 33.3%;
+    }
+    .cnt06 li:nth-of-type(15) ~ li {
+        display: none;
+    }
+    .cnt06 .rankTxt h5 a {
+        font-size: 14px;
+    }
+    .cnt06 .rankTxt p a {
+        font-size: 13px;
+    }
+    .categoryImg {
+        width: 180px;
+        flex-wrap: wrap;
+    }
+    .categoryImg .img {
+        width: calc(50% - 7.5px);
+    }
+    .categoryImg .img img {
+        width: 100%;
+    }
+
+    .loginBox {
+        width: 50%;
+    }
+
+    .filterModal .modal-dialog {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .detailCnt header > h3 {
+        font-size: 24px;
+    }
+    .detailCnt .detailTxtBox div {
+        font-size: 14px;
+    }
+    .detailCnt .detailTxtBox p {
+        font-size: 14px;
+    }
+
+    .subEditorial section .editorialWrap {
+        width: calc(50% - 9px);
+    }
+    .subEditorial .editorialTxt {
+        padding-bottom: 0px;
+        margin-top: 10px;
+    }
+    .subCuration article {
+        width: calc(33.3% - 11px);
+    }
+
+    .releaseCnt section article {
+        width: calc(33.3% - 11px);
+    }
+    .releaseCnt .todayTxtBox p {
+        font-size: 36px;
+        display: inline-block;
+    }
+
+    .cnt04 .curationTxt {
+        padding: 0 20px;
+    }
+    .cnt04 .curationItemWrap {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .hdrWrap header .logo .logo_web {
+        display: none;
+    } 
+    .hdrWrap header .logo .logo_mob {
+        display: block;
+    }
+    .hdrWrap header .logo_mob img {
+        width: 34px;
+    }
+    .hdrWrap .menuLeft .headerNav a {
+        font-size: 18px;
+    }
+    .hdrWrap .menuLeft .headerNav li:nth-of-type(2) ~ li {
+        display: none;
+    }
+    .hdrWrap .menuLeft .headerNav li {
+        margin-left: 16px;
+    }
+
+    .cnt01 {
+        padding: 70px 0 0 0;
+    }
+    .cnt01 .swiper-wrapper {
+        margin-left: -50%;
+    }
+
+    .cnt02 section {
+        flex-wrap: wrap;
+        gap: 60px 40px;
+    }
+    .cnt02 article {
+        width: calc(50% - 20px);
+    }
+    .cnt02 article:nth-of-type(4) ~ article {
+        display: none;
+    }
+    .cnt03 article {
+        width: 33.3%;
+    }
+    .cnt03 article:nth-of-type(3) ~ article {
+        display: none;
+    }
+    .cnt04 article:nth-of-type(3) ~ article {
+        display: none;
+    }
+    .cnt05 article {
+        width: 25%;
+    }
+    .cnt05 article:nth-of-type(4) ~ article {
+        display: none;
+    }
+    .searchBox .searchForm {
+        padding: 12px 30px;
+    }
+    .searchBox .popularBrand {
+        padding: 20px 30px;
+        height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
+    .popularBrand > div {
+        flex-wrap: wrap;
+    }
+    .popularBrand .brandTitle p {
+        color: initial;
+        font-size: 15px;
+    }
+    .popularBrand .brandTitle {
+        width: 100%;
+    }
+    .brand_items {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px 16px;
+        margin-top: 20px;
+    }
+    .brand_items .brand_item {
+        width: calc(50% - 8px);
+    }
+    .searchBox .searchForm .closeIcon {
+        display: none;
+    }
+    .searchBox .searchForm form {
+        width: 100%;
+    }
+    .hdrWrap .menuRight .headerSubNav > li {
+        display: none;
+    }
+    .hdrWrap .menuRight .headerSubNav .mob_menu,
+    .hdrWrap .menuRight .headerSubNav .mob_menubar {
+        display: block;
+    }
+    .hdrWrap .menuRight .headerSubNav .mob_menu i {
+        font-size: 20px;
+    }
+    .subCuration article {
+        width: calc(50% - 8px);
+        display: block!important;
+    }
+    .hdrWrap .nav_mob {
+        display: block!important;
+    }
+    .hdrWrap .cart {
+        display: block!important;
+    }
+
+    .subEditorial section .editorialWrap {
+        display: block!important;
+    }
+
+    .releaseCnt section article {
+        display: block!important;
+    }
+
+    .footer_info {
+        gap: 0 20px;
+    }
+    .leftTxt {
+        width: calc(100% - 380px);
+    }
+    .rightTxt {
+        width: 360px;
+    }
+    .email_input {
+        width: calc(100% - 130px);
+    }
+    .subscribe_btn {
+        width: 130px;
+    }
+
+    .product_listItemBox .product_listTxt .productPriceBox .price {
+        display: block;
+    }
+
+    .cnt06 ul {
+        display: block;
+        width: 100%;
+        height: initial;
+    }
+    .cnt06 li {
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hdrWrap .menuLeft .headerNav li.checked:after {
+        display: none;
+    }
+    .content {
+        padding: 0 16px;
+    }
+    .content header h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .cnt01 {
+        padding: 70px 0 0 0;
+    }
+    .cnt03 .spotTxtWrap {
+        padding: 0 10px;
+        gap: 10px;
+    }
+    .cnt03 .spotTxtWrap .spotSubImg {
+        width: 36px;
+        height: 36px;
+    }
+    .cnt04 article {
+        width: 100%;
+    }
+    .product_listItemBox {
+        width: calc(50% - 8px);
+    }
+    .subEditorial section .editorialWrap {
+        width: 100%
+    }
+    .pageNavBox {
+        border-top: none;
+    }
+    .hdrWrap header {
+        margin: 10px 16px;
+    }
+    .pageNavBox {
+        padding: 5px 16px 15px 16px;
+    }
+    .pageNav {
+        display: none;
+    }
+    .categoryMenu {
+        justify-content: flex-start;
+    }
+    .categoryMenu li {
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .loginBox {
+        width: 100%;
+        padding: 120px 16px 0px 16px;
+    }
+    .findBox a {
+        font-size: 13px;
+    }
+    .subCuration article {
+        width: 100%;
+    }
+    .cnt04 .curationTxt {
+        padding: 0;
+    }
+    .cnt04 .curationItemWrap {
+        padding: 20px 0;
+    }
+
+    .detailCnt {
+        margin-top: 160px;
+    }
+    .detailCnt header > h3 {
+        display: block!important;
+    }
+    .detailCnt header, .detailCnt section {
+        width: 100%;
+    }
+
+    .releaseCnt section article {
+        width: calc(50% - 8px);
+    }
+
+    footer {
+        background-color: transparent;
+    }
+    .footerCnt {
+        display: block;
+        padding: 20px 16px;
+        border-top: none;
+    }
+    .footerCnt:first-child {
+        border-top: 1px solid #eee;
+    }
+    .categoryTxt_link {
+        display: none;
+    }
+    .categoryImg {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .categoryImg .img {
+        width: calc(25% - 11.5px);
+    }
+    .categoryImg span {
+        font-size: 12px;
+    }
+    .footer_info {
+        background-color: transparent;
+        border-top: none;
+        flex-wrap: wrap;
+    }
+    .leftTxt {
+        width: 100%;
+    }
+    .rightTxt {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .newsletterBox > form {
+        flex-wrap: wrap;
+    }
+    .email_input {
+        background: rgba(221,221,221,0.5);
+        width: 100%;
+    }
+    .subscribe_btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .signUpTxt {
+        font-size: 12px;
+    }
+
+    .listOn article {
+        width: 100%;
+    }
+    .product_listItemBox .product_listImg a {
+        width: 100%;
+    }
+
+    .cnt03 {
+        padding: 0;
+    }
+    .cnt03 section {
+        flex-wrap: wrap;
+    }
+    .cnt03 article {
+        display: block!important;
+        width: 50%;
+    }
+
+    .cnt02 section {
+        gap: 20px 40px;
+    }
+
+    .cnt05 section {
+        flex-wrap: wrap;
+        gap: 60px 0;
+    }
+    .cnt05 .editorialWrap {
+        width: 100%;
+    }
+
+    .cnt06 li {
+        height: 60px;
+    }
+    .cnt06 .rankImg {
+        height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cnt03, .cnt04, .cnt05, .cnt06 {
+        margin-top: 125px;
+    }
+    .releaseCnt section article {
+        width: 100%;
+    }
+
+    .hdrWrap .searchBtn_mob i {
+        font-size: 18px;
+    }
+    .hdrWrap .menuRight .cart img {
+        width: 24px;
+    }
+    .hdrWrap .menuRight .cart .cartNum {
+        width: 14px;
+        height: 14px;
+    }
+    .menu_mob {
+        width: 18px;
+        height: 14px;
+    }
+    .hdrWrap .menuRight .headerSubNav li {
+        padding: 4px;
+    }
+    .hdrWrap .menuRight .cart .cartNum p {
+        line-height: 13px;
+    }
+    .searchBtn_mob {
+        display: flex!important;
+        align-items: center;
+    }
+    .hdrWrap .menuRight .cart .cartNum {
+        right: 6px;
+    }
+
+    .cnt01 {
+        padding: 70px 16px 0 16px;
+    }
+    .cnt01 .swiper-wrapper {
+        margin-left: 0;
+    }
+
+    .cnt02 section {
+        gap: 15px 0;
+        border-top: none;
+    }
+    .cnt02 article {
+        width: 100%;
+    }
+
+    .pagingBox {
+        padding-top: 00px;
+    }
+    .pagingBox li {
+        font-size: 12px;
+    }
+    .pagingBox li:nth-of-type(6) ~ li {
+        display: none;
+    }
+    .pagingBox li:nth-of-type(12) {
+        display: block!important;
+    }
+}

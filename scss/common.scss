@@ -1,0 +1,395 @@
+:root {
+    --black01: #494949;
+    --black02: #373737;
+    --black03: #262626;
+    --black04: #4f4f4f;
+    --black03Op2: rgba(7, 7, 7, 0.2);
+    --gray01: #F8F8F8;
+    --gray02: #EDEDED;
+    --gray03: #CFCFCF;
+    --gray04: #D2D2D2;
+    --gray04: #eeeeee;
+    --pointColorPink: #DF89B5;
+    --pointColorViolet: #B9B6E5;
+    --pointColorVioletOp2: rgba(185, 182, 229, 0.2);
+    --pointColorVioletOp4: rgba(185, 182, 229, 0.4);
+    --pointColorBlue: #B5D1E6;
+    --pointColorGreen: #B8DEA4;
+    --pointColorOrange: #FFA959;
+    --pointColorYellow: #FFC83D;
+    --white: #FFFFFF;
+    --whiteOp4: rgba(255, 255, 255, 0.4);
+    --GraPinkViolet: linear-gradient(90deg, var(--pointColorPink)0%, var(--pointColorViolet)100%);
+    --GraBlueGreen: linear-gradient(90deg, var(--pointColorBlue)0%, var(--pointColorGreen)100%);
+    --GraOrangeYellow: linear-gradient(90deg, var(--pointColorOrange)0%, var(--pointColorYellow)100%);
+}
+
+/* 레이아웃 */
+* {
+    cursor: url('/img/cursor.png') 1 1, auto;
+    transition: all 0.1s ease-in-out;
+}
+
+::selection {
+    background: var(--pointColorViolet)
+}
+
+body {
+    color: var(--black02);
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    line-height: 1;
+    background: var(--gray01);
+}
+
+p,
+span,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--black02);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: initial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: initial;
+    margin: 0;
+    padding: 0;
+}
+
+.wd1600 {
+    width: 94%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.fontBlack01 {
+    color: var(--black01);
+}
+
+.gray01 {
+    color: var(--gay01);
+}
+
+.gray02 {
+    color: var(--gay02);
+}
+
+.gray03 {
+    color: var(--gay03);
+}
+
+.pointColorPink {
+    color: var(--pointColorPink);
+}
+
+.pointColorViolet {
+    color: var(--pointColorViolet);
+}
+
+.pointColorBlue {
+    color: var(--pointColorBlue);
+}
+
+.pointColorGreen {
+    color: var(--pointColorGreen);
+}
+
+.pointColorOrange {
+    color: var(--pointColorOrange);
+}
+
+.pointColorYellow {
+    color: var(--pointColorYellow);
+}
+
+.bgGraPinkViolet {
+    background: var(--GraPinkViolet);
+}
+
+.bgGraBlueGreen {
+    background: var(--GraBlueGreen);
+}
+
+.bgGraOrangeYellow {
+    background: var(--GraOrangeYellow);
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.marginAuto {
+    margin: 0 auto;
+}
+
+.hold {
+    overflow: hidden;
+}
+
+.blank80 {
+    height: 80px;
+}
+
+.blank100 {
+    height: 100px;
+}
+
+.blank120 {
+    height: 120px;
+}
+
+/* // 레이아웃 */
+
+.dim {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba($color: #373737, $alpha: 0.3);
+    z-index: 9;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+
+    &.on {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+/* 키프레임 */
+/* keyframe */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes pot {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* // 키프레임 */
+
+/* day&night */
+.button-cover {
+    position: fixed;
+    top: 3vh;
+    right: 2vw;
+    z-index: 9;
+}
+
+.button-cover:before {
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.button-cover .knobs,
+.button-cover .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button-cover .button {
+    position: relative;
+    top: 50%;
+    width: 100px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.button-cover .checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    z-index: 3;
+}
+
+.button-cover .knobs {
+    z-index: 2;
+}
+
+.button-cover .layer {
+    width: 100%;
+    background-color: #edecff;
+    transition: 0.3s ease all;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Button 10 */
+#button-10 .knobs:before,
+#button-10 .knobs:after,
+#button-10 .knobs span {
+    position: absolute;
+    top: 4px;
+    width: 35px;
+    height: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+    content: "";
+    left: 4px;
+    background-color: var(--pointColorViolet);
+}
+
+#button-10 .knobs:after {
+    content: "DART";
+    right: 4px;
+    color: #7d7d7d;
+}
+
+#button-10 .knobs span {
+    display: inline-block;
+    left: 4px;
+    color: #fff;
+    z-index: 1;
+}
+
+#button-10 .checkbox:checked+.knobs span {
+    color: #4e4e4e;
+}
+
+#button-10 .checkbox:checked+.knobs:before {
+    left: 52px;
+    background: var(--black02);
+}
+
+#button-10 .checkbox:checked+.knobs:after {
+    color: #fff;
+}
+
+#button-10 .checkbox:checked~.layer {
+    background: var(--gray01);
+}
+
+/* // day&night */
+
+/* DARK 모드 */
+body.active {
+    color: var(--white);
+    background: var(--black03);
+
+    & * {
+        cursor: url('/img/cursorW.png') 1 1, auto;
+    }
+
+    & a {
+        color: var(--white);
+    }
+
+    & button {
+        color: var(--white);
+    }
+}
+
+/* // DARK 모드 */
+
+/* 반응형 : 600px */
+/* 600px */
+@media(max-width:600px) {
+    * {
+        cursor: default !important;
+    }
+}
