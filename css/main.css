@@ -254,7 +254,7 @@
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
 }
 
 .cnt03_wrap .cnt_section .cnt_article {
@@ -305,7 +305,7 @@
 
 .cnt03_wrap .cnt_section .cnt_article .cnt_right {
   display: flex;
-  gap: 15px 15px;
+  gap: 5px 15px;
   flex-direction: column;
   flex: 1;
 }
@@ -313,6 +313,7 @@
 .cnt03_wrap .cnt_section .cnt_article .cnt_right .cnt_top .text {
   font-size: 20px;
   font-weight: 500;
+  line-height: 150%;
 }
 
 .cnt03_wrap .cnt_section .cnt_article .cnt_right .cnt_bottom {
@@ -349,7 +350,7 @@
   position: absolute;
   content: "";
   width: 1px;
-  height: 15px;
+  height: 80%;
   background: var(--black01);
   top: 50%;
   right: -15px;
@@ -484,7 +485,7 @@
 }
 
 .cnt04_wrap .cnt_section {
-  margin-left: calc((100% - min(94%, 1600px)) / 2);
+  margin-left: calc((100% - min(90%, 1600px)) / 2);
 }
 
 .cnt04_wrap .cnt_section .article_title {
@@ -776,7 +777,7 @@
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
-  right: calc((100% - min(94%, 1600px)) / 2);
+  right: calc((100% - min(90%, 1600px)) / 2);
   display: flex;
   flex-direction: column;
   gap: 20px 0;
@@ -841,7 +842,7 @@
 .menu_btn {
   position: fixed;
   bottom: calc(2vh + 50px);
-  right: calc((100% - min(94%, 1600px)) / 2);
+  right: calc((100% - min(90%, 1600px)) / 2);
   z-index: 10;
   opacity: 0;
   visibility: hidden;
@@ -861,7 +862,7 @@
 .top_btn {
   position: fixed;
   bottom: 10vh;
-  right: calc((100% - min(94%, 1600px)) / 2);
+  right: calc((100% - min(90%, 1600px)) / 2);
   z-index: 10;
   opacity: 0;
   visibility: hidden;
@@ -1300,7 +1301,7 @@ body.active .top_btn.dark img {
 
   .cnt04_wrap .cnt_section .cnt_article .article_cnt .swiper-pagination {
     left: initial;
-    right: calc((100% - min(94%, 1600px)) / 2);
+    right: calc((100% - min(90%, 1600px)) / 2);
     top: -40px;
     transform: initial;
   }
@@ -1348,6 +1349,10 @@ body.active .top_btn.dark img {
 /* // 1280px */
 /* 900px */
 @media (max-width: 900px) {
+  .button-cover {
+    right: 5%;
+  }
+
   .cnt03_wrap .cnt_section .cnt_article {
     width: 100%;
   }
@@ -1424,15 +1429,29 @@ body.active .top_btn.dark img {
   }
 
   .cnt03_wrap .cnt_header span {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .cnt03_wrap .cnt_section {
     margin-top: 10px;
   }
 
+  .cnt03_wrap .cnt_section .info_list {
+    gap: 0 15px;
+  }
+
   .cnt03_wrap .cnt_section .info_list>span {
     font-size: 18px;
+  }
+
+  .cnt03_wrap .cnt_section .info_list>span:nth-of-type(1) {}
+
+  .cnt03_wrap .cnt_section .info_list>span:nth-of-type(2) {
+    flex: 1;
+  }
+
+  .cnt03_wrap .cnt_section .info_list>span.date:after {
+    right: -7.5px;
   }
 
   .cnt03_wrap .cnt_section .info_list>span span {
@@ -1472,6 +1491,19 @@ body.active .top_btn.dark img {
     margin-top: 10px;
   }
 
+  .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.text {
+    display: none;
+  }
+
+  .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.info {
+    margin-top: 0;
+    font-size: 16px;
+  }
+
+  .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.date:after {
+    display: none;
+  }
+
   .cnt03_wrap .cnt_section04 {
     margin-top: 80px;
   }
@@ -1482,6 +1514,11 @@ body.active .top_btn.dark img {
 
   .cnt03_wrap .cnt_section04 .cnt_section {
     margin-top: 10px;
+  }
+
+  .cnt03_wrap .cnt_section04 .cnt_section .info_list>span.info {
+    margin-top: 0;
+    font-size: 16px;
   }
 
   .cnt04_wrap {
@@ -1504,6 +1541,10 @@ body.active .top_btn.dark img {
     font-size: 16px;
   }
 
+  .cnt04_wrap .cnt_section .article_cnt .swiper {
+    padding-right: 15px;
+  }
+
   .cnt04_wrap .cnt_section .cnt_article .article_title {
     font-size: 20px;
   }
@@ -1511,8 +1552,8 @@ body.active .top_btn.dark img {
   .cnt04_wrap .cnt_section .cnt_article .article_cnt .cnt_list {
     border-radius: 15px;
     padding: 30px;
-    width: 320px;
-    height: 400px;
+    width: 280px;
+    height: 380px;
   }
 
   .cnt04_wrap .cnt_section .cnt_article .article_cnt .cnt_list::after {
@@ -1577,7 +1618,7 @@ body.active .top_btn.dark img {
   .cnt05_wrap .cnt_section01 .cnt_list>li {
     width: 100%;
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px 20px;
     margin-bottom: 30px;
     box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
   }
@@ -1587,7 +1628,7 @@ body.active .top_btn.dark img {
   }
 
   .cnt05_wrap .cnt_section01 .cnt_list>li a span {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn img {

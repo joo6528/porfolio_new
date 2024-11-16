@@ -272,7 +272,7 @@
         margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
-        gap: 40px;
+        gap: 30px;
 
         & .cnt_article {
             display: flex;
@@ -324,13 +324,14 @@
 
             & .cnt_right {
                 display: flex;
-                gap: 15px 15px;
+                gap: 5px 15px;
                 flex-direction: column;
                 flex: 1;
 
                 & .cnt_top .text {
                     font-size: 20px;
                     font-weight: 500;
+                    line-height: 150%;
                 }
 
                 & .cnt_bottom {
@@ -367,7 +368,7 @@
                     position: absolute;
                     content: '';
                     width: 1px;
-                    height: 15px;
+                    height: 80%;
                     background: var(--black01);
                     top: 50%;
                     right: -15px;
@@ -508,7 +509,7 @@
     }
 
     & .cnt_section {
-        margin-left: calc((100% - min(94%, 1600px)) / 2);
+        margin-left: calc((100% - min(90%, 1600px)) / 2);
 
         & .article_title {
             font-weight: 500;
@@ -809,7 +810,7 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: calc((100% - min(94%, 1600px)) / 2);
+    right: calc((100% - min(90%, 1600px)) / 2);
     display: flex;
     flex-direction: column;
     gap: 20px 0;
@@ -882,7 +883,7 @@
 .menu_btn {
     position: fixed;
     bottom: calc(2vh + 50px);
-    right: calc((100% - min(94%, 1600px)) / 2);
+    right: calc((100% - min(90%, 1600px)) / 2);
     z-index: 10;
     opacity: 0;
     visibility: hidden;
@@ -903,7 +904,7 @@
 .top_btn {
     position: fixed;
     bottom: 10vh;
-    right: calc((100% - min(94%, 1600px)) / 2);
+    right: calc((100% - min(90%, 1600px)) / 2);
     z-index: 10;
     opacity: 0;
     visibility: hidden;
@@ -1503,7 +1504,7 @@ body.active {
 
                     & .swiper-pagination {
                         left: initial;
-                        right: calc((100% - min(94%, 1600px)) / 2);
+                        right: calc((100% - min(90%, 1600px)) / 2);
                         top: -40px;
                         transform: initial;
                     }
@@ -1566,6 +1567,10 @@ body.active {
 
 /* 900px */
 @media(max-width:900px) {
+    .button-cover {
+        right: 5%;
+    }
+
     .cnt03_wrap {
         & .cnt_section {
             & .cnt_article {
@@ -1663,7 +1668,7 @@ body.active {
     .cnt03_wrap {
         & .cnt_header {
             & span {
-                font-size: 20px;
+                font-size: 22px;
             }
         }
 
@@ -1671,8 +1676,20 @@ body.active {
             margin-top: 10px;
 
             & .info_list {
+                gap: 0 15px;
+
                 &>span {
                     font-size: 18px;
+
+                    &:nth-of-type(1) {}
+
+                    &:nth-of-type(2) {
+                        flex: 1;
+                    }
+
+                    &.date::after {
+                        right: -7.5px;
+                    }
 
                     & span {
                         display: none;
@@ -1717,6 +1734,25 @@ body.active {
 
             & .cnt_section {
                 margin-top: 10px;
+
+                & .info_list {
+                    &>span {
+                        &.text {
+                            display: none;
+                        }
+
+                        &.info {
+                            margin-top: 0;
+                            font-size: 16px;
+                        }
+
+                        &.date {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -1729,6 +1765,19 @@ body.active {
 
             & .cnt_section {
                 margin-top: 10px;
+
+                & .info_list {
+                    &>span {
+                        &.text {
+                            display: none;
+                        }
+
+                        &.info {
+                            margin-top: 0;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -1760,16 +1809,21 @@ body.active {
 
         & .cnt_section {
             & .cnt_article {
+
                 & .article_title {
                     font-size: 20px;
                 }
 
                 & .article_cnt {
+                    &.swiper {
+                        padding-right: 15px;
+                    }
+
                     & .cnt_list {
                         border-radius: 15px;
                         padding: 30px;
-                        width: 320px;
-                        height: 400px;
+                        width: 280px;
+                        height: 380px;
 
                         &::after {
                             width: 200px;
@@ -1843,7 +1897,7 @@ body.active {
                 &>li {
                     width: 100%;
                     border-radius: 15px;
-                    padding: 20px;
+                    padding: 15px 20px;
                     margin-bottom: 30px;
                     box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
 
@@ -1853,7 +1907,7 @@ body.active {
                         }
 
                         & span {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
 
                         &.list_moreBtn {
