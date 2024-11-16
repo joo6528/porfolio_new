@@ -10,7 +10,7 @@ $(function () {
     // cnt04 : 포트폴리오 리스트
     var cnt04_01 = new Swiper(".cnt04_wrap .article01 .mySwiper", {
         slidesPerView: 'auto',
-        spaceBetween: 60,
+        spaceBetween: 50,
         speed: 1000,
         autoplay: {
             delay: 5000,
@@ -22,7 +22,7 @@ $(function () {
         },
         breakpoints: {
             1280: {
-                spaceBetween: 60,
+                spaceBetween: 50,
             },
             600: {
                 spaceBetween: 40,
@@ -35,7 +35,7 @@ $(function () {
 
     var cnt04_02 = new Swiper(".cnt04_wrap .article02 .mySwiper", {
         slidesPerView: 'auto',
-        spaceBetween: 60,
+        spaceBetween: 50,
         speed: 1000,
         autoplay: {
             delay: 5000,
@@ -47,7 +47,7 @@ $(function () {
         },
         breakpoints: {
             1280: {
-                spaceBetween: 60,
+                spaceBetween: 50,
             },
             600: {
                 spaceBetween: 40,
@@ -60,7 +60,7 @@ $(function () {
 
     var cnt04_03 = new Swiper(".cnt04_wrap .article03 .mySwiper", {
         slidesPerView: 'auto',
-        spaceBetween: 60,
+        spaceBetween: 50,
         speed: 1000,
         autoplay: {
             delay: 5000,
@@ -72,7 +72,7 @@ $(function () {
         },
         breakpoints: {
             1280: {
-                spaceBetween: 60,
+                spaceBetween: 50,
             },
             600: {
                 spaceBetween: 40,

@@ -292,6 +292,7 @@
                 border-radius: 15px;
                 background: var(--white);
                 overflow: hidden;
+                border: 1px solid var(--black01);
 
                 & .logo {
                     &.small01 {
@@ -401,12 +402,13 @@
             position: absolute;
             font-size: 60px;
             font-weight: 600;
-            color: var(--gray02);
+            color: var(--black01);
             top: 50%;
             transform: translateY(-50%);
             right: 0;
             writing-mode: vertical-rl;
             z-index: -1;
+            opacity: 0.2;
         }
 
     }
@@ -425,12 +427,13 @@
             position: absolute;
             font-size: 60px;
             font-weight: 600;
-            color: var(--gray02);
+            color: var(--black01);
             top: 50%;
             transform: translateY(-50%);
             right: 0;
             writing-mode: vertical-rl;
             z-index: -1;
+            opacity: 0.2;
         }
     }
 
@@ -448,12 +451,13 @@
             position: absolute;
             font-size: 60px;
             font-weight: 600;
-            color: var(--gray02);
+            color: var(--black01);
             top: 50%;
             transform: translateY(-50%);
             right: 0;
             writing-mode: vertical-rl;
             z-index: -1;
+            opacity: 0.2;
         }
     }
 
@@ -536,6 +540,7 @@
 
             & .swiper {
                 padding-bottom: 25px;
+                border-right: 30px;
                 box-sizing: border-box;
             }
 
@@ -553,6 +558,7 @@
                 // justify-content: center;
                 position: relative;
                 transition: background 0.6s ease-in-out;
+                border: 1px solid var(--black01);
 
                 &:after {
                     position: absolute;
@@ -946,7 +952,8 @@ body.active {
             & .cnt_article {
                 & .cnt_left {
                     box-shadow: 10px 10px 5px var(--black03Op2);
-                    background: var(--black04);
+                    background: var(--black03);
+                    border: 1px solid var(--white);
 
                     & .percent {
                         background: var(--white);
@@ -980,7 +987,8 @@ body.active {
             & .article_cnt {
                 & .cnt_list {
                     box-shadow: 20px 20px 10px var(--black03Op2);
-                    background: var(--black01);
+                    background: var(--black03);
+                    border: 1px solid var(--white);
 
                     & .cnt_bottom {
                         & .moreBtn {
