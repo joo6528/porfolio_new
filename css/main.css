@@ -26,7 +26,7 @@
   content: "";
   width: 150px;
   height: 150px;
-  background: url("/img/calendar.svg") no-repeat;
+  background: url("img/calendar.svg") no-repeat;
   background-size: 150px auto;
   display: block;
   top: -150px;
@@ -337,6 +337,7 @@
   transform: translateY(-50%);
   right: 0;
   writing-mode: vertical-rl;
+  z-index: -1;
 }
 .cnt03_wrap .cnt_section03 {
   margin-top: 120px;
@@ -356,6 +357,7 @@
   transform: translateY(-50%);
   right: 0;
   writing-mode: vertical-rl;
+  z-index: -1;
 }
 .cnt03_wrap .cnt_section04 {
   margin-top: 120px;
@@ -375,6 +377,7 @@
   transform: translateY(-50%);
   right: 0;
   writing-mode: vertical-rl;
+  z-index: -1;
 }
 
 /* // cnt03 */
@@ -459,7 +462,7 @@
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:after {
   position: absolute;
-  background: url("/img/folder.svg") no-repeat;
+  background: url("../img/folder.svg") no-repeat;
   content: "";
   width: 250px;
   height: 250px;
@@ -510,7 +513,7 @@
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover {
   background: var(--black02);
   justify-content: space-between;
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top {
   top: 40px;
@@ -522,19 +525,19 @@
   opacity: 1;
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top {
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_title {
   color: var(--white);
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_subTitle {
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_bottom .moreBtn {
   background: var(--white);
   color: var(--black01);
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 .cnt04_wrap .cnt_section .article_cnt .swiper-pagination {
   top: 30px;
@@ -643,17 +646,17 @@
   margin-bottom: 0;
 }
 .cnt05_wrap .cnt_section01 .cnt_list > li:hover {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 .cnt05_wrap .cnt_section01 .cnt_list > li:hover a {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 .cnt05_wrap .cnt_section01 .cnt_list > li:hover a span {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 .cnt05_wrap .cnt_section01 .cnt_list > li:hover .list_moreBtn {
   transform: translateX(10px);
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 
 /* // cnt05 */
@@ -788,22 +791,22 @@ body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list .cnt_bottom .moreBtn
 }
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover {
   background: var(--white);
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_title {
   color: var(--black03);
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_subTitle {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_bottom .moreBtn {
   background: var(--black02);
   color: var(--white);
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 body.active .cnt05_wrap .cnt_section01 {
   background: var(--black03);
@@ -822,26 +825,26 @@ body.active .cnt05_wrap .cnt_section01 .cnt_list > li a.list_moreBtn.dark {
   display: block;
 }
 body.active .cnt05_wrap .cnt_section01 .cnt_list > li:hover {
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 body.active .cnt05_wrap .cnt_section01 .cnt_list > li:hover a {
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 body.active .cnt05_wrap .cnt_section01 .cnt_list > li:hover a span {
-  cursor: url("/img/cursorWOn.png") 2 2, auto;
+  cursor: url("img/cursorWOn.png") 2 2, auto;
 }
 body.active .cnt05_wrap .cnt_section01 .cnt_list > li:hover a.list_moreBtn.dark {
-  cursor: url("/img/cursorOn.png") 2 2, auto;
+  cursor: url("img/cursorOn.png") 2 2, auto;
 }
 body.active .top_btn {
   display: none;
 }
 body.active .top_btn.dark {
   display: block;
-  cursor: url("/img/cursor.png") 2 2, auto;
+  cursor: url("img/cursor.png") 2 2, auto;
 }
 body.active .top_btn.dark img {
-  cursor: url("/img/cursor.png") 2 2, auto;
+  cursor: url("img/cursor.png") 2 2, auto;
 }
 
 /* // DARK 모드 */

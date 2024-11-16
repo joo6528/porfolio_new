@@ -27,7 +27,6 @@
 
 /* 레이아웃 */
 * {
-  cursor: url("/img/cursor.png") 1 1, auto;
   transition: all 0.1s ease-in-out;
 }
 
@@ -360,9 +359,6 @@ body.active {
   color: var(--white);
   background: var(--black03);
 }
-body.active * {
-  cursor: url("/img/cursorW.png") 1 1, auto;
-}
 body.active a {
   color: var(--white);
 }
@@ -371,6 +367,20 @@ body.active button {
 }
 
 /* // DARK 모드 */
+/* 그룹 선택 */
+.cursor, * {
+  cursor: url("../img/cursor.png") 2 2, auto;
+}
+
+.cursorDark, body.active * {
+  cursor: url("../img/cursorW.png") 2 2, auto;
+}
+
+.cursorOn {
+  cursor: url("../img/cursorOn.png") 2 2, auto;
+}
+
+/* // 그룹 선택 */
 /* 반응형 : 600px */
 /* 600px */
 @media (max-width: 600px) {
