@@ -12,15 +12,26 @@ $(function () {
         lightCheck();
     });
 
-    let lightStatus = localStorage.getItem('lightStatus');
+    initializePage();
 
-    // 초기 상태 설정
-    if (lightStatus === 'checked') {
-        $('#lightCheck').prop('checked', true);
-        $('body').addClass('active');
-    } else {
-        $('#lightCheck').prop('checked', false);
-        $('body').removeClass('active');
+    // `pageshow` 이벤트를 추가로 처리
+    $(window).on('pageshow', function (event) {
+        if (event.originalEvent.persisted) {
+            // 캐싱된 페이지가 복원될 경우 초기화
+            initializePage();
+        }
+    });
+
+    function initializePage() {
+        let lightStatus = localStorage.getItem('lightStatus');
+
+        if (lightStatus === 'checked') {
+            $('#lightCheck').prop('checked', true); // 체크박스 상태 설정
+            $('body').addClass('active');          // 클래스 추가
+        } else {
+            $('#lightCheck').prop('checked', false); // 체크박스 상태 해제
+            $('body').removeClass('active');        // 클래스 제거
+        }
     }
 
     // 체크박스 상태 변경 시 이벤트 처리
