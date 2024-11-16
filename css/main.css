@@ -627,7 +627,7 @@
 .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_bottom .moreBtn {
   background: var(--white);
   color: var(--black01);
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 .cnt04_wrap .cnt_section .article_cnt .swiper-pagination {
@@ -755,20 +755,20 @@
 }
 
 .cnt05_wrap .cnt_section01 .cnt_list>li:hover {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 .cnt05_wrap .cnt_section01 .cnt_list>li:hover a {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 .cnt05_wrap .cnt_section01 .cnt_list>li:hover a span {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 .cnt05_wrap .cnt_section01 .cnt_list>li:hover .list_moreBtn {
   transform: translateX(10px);
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 /* // cnt05 */
@@ -929,20 +929,20 @@ body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list .cnt_bottom .moreBtn
 
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover {
   background: var(--white);
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_title {
   color: var(--black03);
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_top .cnt_subTitle {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_bottom .moreBtn {
@@ -985,7 +985,7 @@ body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover a span {
 }
 
 body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover a.list_moreBtn.dark {
-  cursor: url("img/cursorOn.png") 2 2, auto;
+  cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
 body.active .top_btn {
