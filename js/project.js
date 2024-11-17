@@ -21,11 +21,11 @@ $(function () {
         $(".progress .bar").css('width', scrolledPercentage + "%");
     }
 
-    updateProgressBar();
+    //updateProgressBar();
 
-    $(window).scroll(function () {
-        updateProgressBar();
-    });
+    // $(window).scroll(function () {
+    //     updateProgressBar();
+    // });
 
     // 컬러 색상에 맞게 background 변경 js
     $('.color_wrap > li').not(':has(.grad)').each(function () {
@@ -93,6 +93,8 @@ $(function () {
         // $('.dim').removeClass('on');
         $('body').removeClass('hold');
     });
+
+    $(".quick").addClass('on');
 
     $('.dim').click(function () {
         $('.previewPopup').removeClass('on');

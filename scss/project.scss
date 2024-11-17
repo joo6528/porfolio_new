@@ -687,7 +687,7 @@ body.active {
 
     .cnt_header {
         & h2 {
-            font-size: 20px;
+            font-size: 22px;
         }
     }
 
@@ -700,7 +700,7 @@ body.active {
 
         & .cnt_header {
             & h2 {
-                font-size: 20px;
+                font-size: 22px;
 
                 &.underbar {
                     &::after {
@@ -711,6 +711,8 @@ body.active {
         }
 
         & .cnt_section {
+            margin-top: 15px;
+
             & .link_wrap {
                 gap: 30px;
 
@@ -734,7 +736,7 @@ body.active {
 
         & .cnt_section {
             & .title {
-                font-size: 18px;
+                font-size: 16px;
             }
         }
     }
@@ -804,10 +806,19 @@ body.active {
 
                 &>li {
                     & span {
-                        font-size: 18px;
+                        font-size: 16px;
 
                         &:nth-of-type(1) {
-                            width: 90px;
+                            width: 80px;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: calc(100% - 100px);
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            word-break: break-all;
+                            display: inline-block;
                         }
                     }
                 }

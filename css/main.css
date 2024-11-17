@@ -772,83 +772,7 @@
 }
 
 /* // cnt05 */
-/* quick menu */
-.quick {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  right: calc((100% - min(90%, 1600px)) / 2);
-  display: flex;
-  flex-direction: column;
-  gap: 20px 0;
-  z-index: 10;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-}
 
-.quick.on {
-  opacity: 1;
-  visibility: visible;
-}
-
-.quick li::before {
-  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-  color: var(--white);
-  font-size: 14px;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.quick li:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
-.quick li {
-  flex: 1;
-  text-align: right;
-}
-
-.quick li:nth-of-type(1) {
-  position: relative;
-}
-
-.quick li:nth-of-type(1)::before {
-  content: "홈";
-}
-
-.quick li:nth-of-type(2) {
-  position: relative;
-}
-
-.quick li:nth-of-type(2)::before {
-  content: "자기소개";
-  left: -72px;
-}
-
-.quick li:nth-of-type(3) {
-  position: relative;
-}
-
-.quick li:nth-of-type(3)::before {
-  content: "포트폴리오";
-}
-
-.quick li:nth-of-type(4) {
-  position: relative;
-}
-
-.quick li:nth-of-type(4)::before {
-  content: "공부기록";
-}
-
-.quick li img {
-  width: 60px;
-  vertical-align: middle;
-}
-
-/* // quick menu */
 /* menuBtn */
 .menu_btn {
   position: fixed;
@@ -1697,55 +1621,6 @@ body.active .top_btn.dark img {
     width: 25px;
   }
 
-  .quick {
-    transform: initial;
-    top: initial;
-    bottom: -30%;
-  }
-
-  .quick li {
-    text-align: center;
-    ;
-  }
-
-  .quick li img {
-    width: 30px;
-  }
-
-  .quick li::before {
-    opacity: 1;
-    visibility: visible;
-    left: 0;
-    font-size: 12px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 10px;
-    color: var(--black03Op2);
-  }
-
-  .quick li:nth-of-type(2)::before {
-    left: 0;
-  }
-
-  .quick.on {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    right: initial;
-    flex-direction: row;
-    justify-content: center;
-    background: var(--white);
-    padding: 10px;
-    box-sizing: border-box;
-    box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
-    height: 80px;
-  }
-
-  .quick li.on::before {
-    color: var(--black02);
-  }
-
   .menu_btn.on {
     opacity: 1;
     visibility: visible;
@@ -1769,19 +1644,6 @@ body.active .top_btn.dark img {
 
   body.active .menu_btn.dark {
     display: block;
-  }
-
-  body.active .quick {
-    background: var(--black03);
-    box-shadow: -10px -10px 10px var(--black03Op2);
-  }
-
-  body.active .quick li::before {
-    color: var(--black01);
-  }
-
-  body.active .quick li.on::before {
-    color: var(--white);
   }
 }
 

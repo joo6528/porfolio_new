@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root {
   --black01: #494949;
   --black02: #373737;
@@ -187,6 +188,85 @@ h6 {
 }
 
 /* // 레이아웃 */
+
+/* quick menu */
+.quick {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: calc((100% - min(90%, 1600px)) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+}
+
+.quick.on {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quick li::before {
+  transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+  color: var(--white);
+  font-size: 14px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.quick li:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quick li {
+  flex: 1;
+  text-align: right;
+}
+
+.quick li:nth-of-type(1) {
+  position: relative;
+}
+
+.quick li:nth-of-type(1)::before {
+  content: "홈";
+}
+
+.quick li:nth-of-type(2) {
+  position: relative;
+}
+
+.quick li:nth-of-type(2)::before {
+  content: "자기소개";
+  left: -72px;
+}
+
+.quick li:nth-of-type(3) {
+  position: relative;
+}
+
+.quick li:nth-of-type(3)::before {
+  content: "포트폴리오";
+}
+
+.quick li:nth-of-type(4) {
+  position: relative;
+}
+
+.quick li:nth-of-type(4)::before {
+  content: "공부기록";
+}
+
+.quick li img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+/* // quick menu */
+
 .dim {
   position: fixed;
   width: 100%;
@@ -199,6 +279,7 @@ h6 {
   visibility: hidden;
   transition: all 0.4s ease-in-out;
 }
+
 .dim.on {
   opacity: 1;
   visibility: visible;
@@ -211,36 +292,44 @@ h6 {
     opacity: 0;
     transform: translateY(40px);
   }
+
   50% {
     opacity: 1;
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     transform: translateY(-40px);
   }
 }
+
 @keyframes slideRight {
   0% {
     opacity: 0;
     width: 0;
   }
+
   100% {
     opacity: 1;
     width: 100%;
   }
 }
+
 @keyframes pot {
   0% {
     transform: translateX(-50%) translateY(0);
   }
+
   50% {
     transform: translateX(-50%) translateY(-5px);
   }
+
   100% {
     transform: translateX(-50%) translateY(0);
   }
 }
+
 /* // 키프레임 */
 /* day&night */
 .button-cover {
@@ -337,20 +426,20 @@ h6 {
   z-index: 1;
 }
 
-#button-10 .checkbox:checked + .knobs span {
+#button-10 .checkbox:checked+.knobs span {
   color: #4e4e4e;
 }
 
-#button-10 .checkbox:checked + .knobs:before {
+#button-10 .checkbox:checked+.knobs:before {
   left: 52px;
   background: var(--black02);
 }
 
-#button-10 .checkbox:checked + .knobs:after {
+#button-10 .checkbox:checked+.knobs:after {
   color: #fff;
 }
 
-#button-10 .checkbox:checked ~ .layer {
+#button-10 .checkbox:checked~.layer {
   background: var(--gray01);
 }
 
@@ -360,20 +449,24 @@ body.active {
   color: var(--white);
   background: var(--black03);
 }
+
 body.active a {
   color: var(--white);
 }
+
 body.active button {
   color: var(--white);
 }
 
 /* // DARK 모드 */
 /* 그룹 선택 */
-.cursor, * {
+.cursor,
+* {
   cursor: url("../img/cursor.png") 2 2, auto;
 }
 
-.cursorDark, body.active * {
+.cursorDark,
+body.active * {
   cursor: url("../img/cursorW.png") 2 2, auto;
 }
 
@@ -387,5 +480,67 @@ body.active button {
 @media (max-width: 600px) {
   * {
     cursor: default !important;
+  }
+
+  .quick {
+    transform: initial;
+    top: initial;
+    bottom: -30%;
+  }
+
+  .quick li {
+    text-align: center;
+    ;
+  }
+
+  .quick li img {
+    width: 30px;
+  }
+
+  .quick li::before {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    color: var(--black03Op2);
+  }
+
+  .quick li:nth-of-type(2)::before {
+    left: 0;
+  }
+
+  .quick.on {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    right: initial;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--white);
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
+    height: 80px;
+  }
+
+  .quick li.on::before {
+    color: var(--black02);
+  }
+
+  body.active .quick {
+    background: var(--black03);
+    box-shadow: -10px -10px 10px var(--black03Op2);
+  }
+
+  body.active .quick li::before {
+    color: var(--black01);
+  }
+
+  body.active .quick li.on::before {
+    color: var(--white);
   }
 }

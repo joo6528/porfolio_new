@@ -188,6 +188,92 @@ h6 {
 
 /* // 레이아웃 */
 
+/* quick menu */
+.quick {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc((100% - min(90%, 1600px)) / 2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+    // background: rgba($color: #fff, $alpha: 0.4);
+    // background: var(--black02);
+    // box-sizing: border-box;
+    // padding: 30px 20px;
+    // border-radius: 25px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+
+    &.on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    & li {
+        flex: 1;
+        text-align: center;
+
+        &::before {
+            transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+            color: var(--black03Op2);
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &:nth-of-type(1) {
+            position: relative;
+
+            &::before {
+                content: '홈';
+            }
+        }
+
+        &:nth-of-type(2) {
+            position: relative;
+
+            &::before {
+                content: '자기소개';
+                left: -72px;
+            }
+        }
+
+        &:nth-of-type(3) {
+            position: relative;
+
+            &::before {
+                content: '포트폴리오';
+            }
+        }
+
+        &:nth-of-type(4) {
+            position: relative;
+
+            &::before {
+                content: '공부기록';
+            }
+        }
+
+        & img {
+            width: 60px;
+            vertical-align: middle;
+        }
+    }
+}
+
+/* // quick menu */
+
 .dim {
     position: fixed;
     width: 100%;
@@ -407,5 +493,53 @@ body.active {
 @media(max-width:600px) {
     * {
         cursor: default !important;
+    }
+
+    .quick {
+        transform: initial;
+        top: initial;
+        bottom: -30%;
+
+        & li {
+            text-align: center;
+
+            & img {
+                width: 30px;
+            }
+
+            &:nth-of-type(2)::before {
+                left: 0;
+            }
+
+            &::before {
+                opacity: 1;
+                visibility: visible;
+                left: 0;
+                font-size: 12px;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 10px;
+                color: var(--black03Op2);
+            }
+
+            &.on {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                right: initial;
+                flex-direction: row;
+                justify-content: center;
+                background: var(--white);
+                padding: 10px;
+                box-sizing: border-box;
+                box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
+                height: 80px;
+
+                &::before {
+                    color: var(--black02);
+                }
+            }
+        }
     }
 }
