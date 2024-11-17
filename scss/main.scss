@@ -28,7 +28,7 @@
             // background: url('/img/face_img.svg') no-repeat;
             width: 150px;
             height: 150px;
-            background: url('img/calendar.svg') no-repeat;
+            background: url('img/calendar.png') no-repeat;
             background-size: 150px auto;
             display: block;
             top: -150px;
@@ -563,7 +563,7 @@
 
                 &:after {
                     position: absolute;
-                    background: url('../img/folder.svg')no-repeat;
+                    background: url('../img/folder.png')no-repeat;
                     content: '';
                     width: 250px;
                     height: 250px;
@@ -1834,7 +1834,7 @@ body.active {
                 }
 
                 &:nth-of-type(2) {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
         }
