@@ -270,6 +270,7 @@
   font-size: 28px;
   display: inline-block;
   line-height: 150%;
+  vertical-align: middle;
 }
 
 .cnt05_wrap .cnt_section .font_wrap>li span:nth-of-type(1) {
