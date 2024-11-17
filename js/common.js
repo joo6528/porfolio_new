@@ -53,6 +53,7 @@ $(function () {
 
     // 퀵 메뉴 클릭 js
     $('.quick li').click(function () {
+        console.log('!!')
         $('.quick li').removeClass('on');
         $(this).addClass('on');
 
