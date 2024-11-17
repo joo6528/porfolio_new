@@ -488,7 +488,14 @@ body.active {
 
 /* // 그룹 선택 */
 
-/* 반응형 : 600px */
+/* 반응형 : 900, 600px */
+
+@media(max-width:900px) {
+    .button-cover {
+        right: 5%;
+    }
+}
+
 /* 600px */
 @media(max-width:600px) {
     * {

@@ -1315,9 +1315,6 @@ body.active .top_btn.dark img {
 /* // 1280px */
 /* 900px */
 @media (max-width: 900px) {
-  .button-cover {
-    right: 5%;
-  }
 
   .cnt03_wrap .cnt_section .cnt_article {
     width: initial;
