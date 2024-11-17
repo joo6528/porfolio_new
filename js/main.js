@@ -122,6 +122,9 @@ $(function () {
 
     // 퀵 메뉴 클릭 js
     $('.quick li').click(function () {
+        $('.quick li').removeClass('on');
+        $(this).addClass('on');
+
         var targetId = $(this).attr('data-scroll');
         var targetElement = $('#' + targetId);
         if (targetElement.length) {
@@ -158,9 +161,11 @@ $(function () {
             // 퀵메뉴 딤처리
             $('.quick').mouseenter(function () {
                 $('.dim').addClass('on');
+                $(".quick").addClass('active');
             });
             $('.quick').mouseleave(function () {
                 $('.dim').removeClass('on');
+                $(".quick").removeClass('active');
             });
             $(".quick").removeClass('active');
         } else {

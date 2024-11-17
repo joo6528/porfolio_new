@@ -830,15 +830,18 @@
     }
 
     & li {
+        flex: 1;
+        text-align: center;
+
         &::before {
+            transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+            color: var(--black03Op2);
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            left: 0;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: -100%;
-            color: var(--white);
         }
 
         &:hover::before {
@@ -850,7 +853,7 @@
             position: relative;
 
             &::before {
-                content: '자기소개';
+                content: '홈';
             }
         }
 
@@ -858,12 +861,20 @@
             position: relative;
 
             &::before {
-                content: '포트폴리오';
+                content: '자기소개';
                 left: -72px;
             }
         }
 
         &:nth-of-type(3) {
+            position: relative;
+
+            &::before {
+                content: '포트폴리오';
+            }
+        }
+
+        &:nth-of-type(4) {
             position: relative;
 
             &::before {
@@ -873,6 +884,15 @@
 
         & img {
             width: 60px;
+            vertical-align: middle;
+        }
+
+        &.on img {
+            width: 90px;
+        }
+
+        &.on::before {
+            color: var(--black01);
         }
     }
 }
@@ -1929,23 +1949,42 @@ body.active {
         & li {
             & img {
                 width: 40px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 20px;
+            }
+
+            &:nth-of-type(2)::before {
+                left: 0;
             }
 
             &::before {
                 opacity: 1;
                 visibility: visible;
-                left: -60px;
-                font-size: 14px;
+                left: 0;
+                font-size: 10px;
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                bottom: 0;
+                color: var(--black03Op2);
             }
         }
 
         &.on {
-            bottom: calc(2vh + 120px);
-
-            &.active {
-                opacity: 0;
-                visibility: hidden;
-            }
+            bottom: 20px;
+            left: 5%;
+            width: 90%;
+            right: initial;
+            flex-direction: row;
+            justify-content: center;
+            background: var(--white);
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
+            height: 80px;
+            border-radius: 50px;
         }
     }
 
