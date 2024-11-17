@@ -102,3 +102,19 @@ $(function () {
         $('body').removeClass('hold');
     });
 });
+
+$(function () {
+    $.ajax({
+        url: "../layout/dockbar.html", // 가져올 파일 경로
+        method: "GET", // HTTP 메서드 (GET, POST 등)
+        dataType: "html", // 기대하는 데이터 타입
+        success: function (data) {
+            // 성공적으로 데이터를 가져온 경우
+            $("#quickMenu").html(data); // 데이터를 #content에 삽입
+        },
+        error: function (xhr, status, error) {
+            // 요청이 실패한 경우
+            $("#content").html("<p>Error: " + xhr.status + " " + error + "</p>");
+        }
+    });
+});
