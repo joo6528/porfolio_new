@@ -1,5 +1,17 @@
 $(document).ready(function () {
     $.ajax({
+        url: "../layout/daynight.html",
+        method: "GET",
+        dataType: "html",
+        success: function (data) {
+            $("#lightBtn").html(data);
+        },
+        error: function (xhr, status, error) {
+            console.log('Error')
+        }
+    });
+
+    $.ajax({
         url: "../layout/dockbar.html",
         method: "GET",
         dataType: "html",

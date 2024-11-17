@@ -598,6 +598,10 @@ body.active {
                     }
                 }
             }
+
+            & .info {
+                font-size: 14px;
+            }
         }
 
         & .cnt_section {
@@ -708,6 +712,10 @@ body.active {
                         height: 15px;
                     }
                 }
+            }
+
+            &.info {
+                font-size: 12px;
             }
         }
 
