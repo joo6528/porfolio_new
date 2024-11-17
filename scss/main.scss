@@ -1939,17 +1939,10 @@ body.active {
         bottom: -30%;
 
         & li {
+            text-align: center;
+
             & img {
                 width: 40px;
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                bottom: 30px;
-                padding: 5px;
-                border-radius: 10px;
-                box-shadow: 5px 5px 5px var(--pointColorVioletOp2);
-                border: 1px solid var(--pointColorVioletOp2);
-                background: var(--white);
             }
 
             &:nth-of-type(2)::before {
@@ -1979,12 +1972,7 @@ body.active {
                 padding: 10px;
                 box-sizing: border-box;
                 box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
-                height: 110px;
-
-                & img {
-                    border: 0;
-                    background: var(--black02);
-                }
+                height: 80px;
 
                 &::before {
                     color: var(--black02);
@@ -2001,7 +1989,7 @@ body.active {
     }
 
     .top_btn {
-        bottom: 2vh;
+        bottom: 100px;
     }
 
     body.active {
