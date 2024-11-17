@@ -848,14 +848,6 @@
   vertical-align: middle;
 }
 
-.quick li.on img {
-  width: 90px;
-}
-
-.quick li.on::before {
-  color: var(--black01);
-}
-
 /* // quick menu */
 /* menuBtn */
 .menu_btn {
@@ -1692,18 +1684,23 @@ body.active .top_btn.dark img {
   }
 
   .quick li img {
-    width: 40px;
+    width: 30px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--pointColorVioletOp2);
+    border: 1px solid var(--pointColorVioletOp2);
+    background: var(--white);
   }
 
   .quick li::before {
     opacity: 1;
     visibility: visible;
     left: 0;
-    font-size: 10px;
+    font-size: 12px;
     position: absolute;
     width: 100%;
     text-align: center;
@@ -1716,18 +1713,26 @@ body.active .top_btn.dark img {
   }
 
   .quick.on {
-    bottom: 20px;
-    left: 5%;
-    width: 90%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     right: initial;
     flex-direction: row;
     justify-content: center;
     background: var(--white);
     padding: 10px;
     box-sizing: border-box;
-    box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
-    height: 80px;
-    border-radius: 50px;
+    box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
+    height: 50px;
+  }
+
+  .quick li.on img {
+    border: 0;
+    background: var(--black02);
+  }
+
+  .quick li.on::before {
+    color: var(--black02);
   }
 
   .menu_btn.on {
