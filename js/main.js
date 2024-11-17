@@ -1,3 +1,17 @@
+$(document).ready(function () {
+    $.ajax({
+        url: "layout/dockbar_main.html",
+        method: "GET",
+        dataType: "html",
+        success: function (data) {
+            $("#quickMenu").html(data);
+        },
+        error: function (xhr, status, error) {
+            console.log('Error')
+        }
+    });
+});
+
 $(function () {
     // $('#lightCheck').change(function () {
     //     if ($(this).is(':checked')) {
