@@ -105,7 +105,7 @@ $(function () {
 
 $(function () {
     $.ajax({
-        url: "layout/dockbar.html", // 가져올 파일 경로
+        url: "../../layout/dockbar.html", // 가져올 파일 경로
         method: "GET", // HTTP 메서드 (GET, POST 등)
         dataType: "html", // 기대하는 데이터 타입
         success: function (data) {
