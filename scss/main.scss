@@ -1586,7 +1586,15 @@ body.active {
     .cnt03_wrap {
         & .cnt_section {
             & .cnt_article {
-                width: 100%;
+                width: initial;
+
+                &.cnt_left {
+                    display: block;
+                }
+
+                &.cnt_right {
+                    display: none;
+                }
             }
         }
     }
@@ -1686,6 +1694,7 @@ body.active {
 
         & .cnt_section {
             margin-top: 10px;
+            gap: 20px;
 
             & .info_list {
                 gap: 0 15px;
@@ -1710,6 +1719,17 @@ body.active {
             }
 
             & .cnt_article {
+                & .cnt_left {
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    font-size: 25px;
+
+                    & .percent {
+                        font-size: 20px;
+                    }
+                }
+
                 & .cnt_right {
                     & .cnt_bottom {
                         & .per {
@@ -1942,7 +1962,7 @@ body.active {
             text-align: center;
 
             & img {
-                width: 40px;
+                width: 30px;
             }
 
             &:nth-of-type(2)::before {
@@ -1957,7 +1977,7 @@ body.active {
                 position: absolute;
                 width: 100%;
                 text-align: center;
-                bottom: 5px;
+                bottom: 10px;
                 color: var(--black03Op2);
             }
 
@@ -2018,6 +2038,19 @@ body.active {
 
             &.dark {
                 display: block;
+            }
+        }
+
+        &.quick.on {
+            background: var(--black03);
+            box-shadow: -10px -10px 10px var(--black03Op2);
+
+            & li::before {
+                color: var(--white);
+            }
+
+            & li.on::before {
+                color: var(--black01);
             }
         }
     }

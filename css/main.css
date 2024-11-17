@@ -1396,7 +1396,15 @@ body.active .top_btn.dark img {
   }
 
   .cnt03_wrap .cnt_section .cnt_article {
-    width: 100%;
+    width: initial;
+  }
+
+  .cnt03_wrap .cnt_section01 .cnt_section .cnt_article .cnt_left {
+    display: block;
+  }
+
+  .cnt03_wrap .cnt_section01 .cnt_section .cnt_article .cnt_right {
+    display: none;
   }
 }
 
@@ -1476,6 +1484,7 @@ body.active .top_btn.dark img {
 
   .cnt03_wrap .cnt_section {
     margin-top: 10px;
+    gap: 20px;
   }
 
   .cnt03_wrap .cnt_section .info_list {
@@ -1498,6 +1507,17 @@ body.active .top_btn.dark img {
 
   .cnt03_wrap .cnt_section .info_list>span span {
     display: none;
+  }
+
+  .cnt03_wrap .cnt_section .cnt_article .cnt_left {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 25px;
+  }
+
+  .cnt03_wrap .cnt_section .cnt_article .cnt_left .percent {
+    font-size: 20px;
   }
 
   .cnt03_wrap .cnt_section .cnt_article .cnt_right .cnt_bottom .per {
@@ -1689,7 +1709,7 @@ body.active .top_btn.dark img {
   }
 
   .quick li img {
-    width: 40px;
+    width: 30px;
   }
 
   .quick li::before {
@@ -1700,7 +1720,7 @@ body.active .top_btn.dark img {
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 5px;
+    bottom: 10px;
     color: var(--black03Op2);
   }
 
@@ -1749,6 +1769,19 @@ body.active .top_btn.dark img {
 
   body.active .menu_btn.dark {
     display: block;
+  }
+
+  body.active .quick {
+    background: var(--black03);
+    box-shadow: -10px -10px 10px var(--black03Op2);
+  }
+
+  body.active .quick li::before {
+    color: var(--black01);
+  }
+
+  body.active .quick li.on::before {
+    color: var(--white);
   }
 }
 
