@@ -227,36 +227,36 @@ h6 {
   text-align: right;
 }
 
-.quick li:nth-of-type(1) {
+.quick li.home {
   position: relative;
 }
 
-.quick li:nth-of-type(1)::before {
+.quick li.home::before {
   content: "홈";
 }
 
-.quick li:nth-of-type(2) {
+.quick li.myself {
   position: relative;
 }
 
-.quick li:nth-of-type(2)::before {
+.quick li.myself::before {
   content: "자기소개";
   left: -72px;
 }
 
-.quick li:nth-of-type(3) {
+.quick li.porfolio {
   position: relative;
 }
 
-.quick li:nth-of-type(3)::before {
+.quick li.porfolio::before {
   content: "포트폴리오";
 }
 
-.quick li:nth-of-type(4) {
+.quick li.study {
   position: relative;
 }
 
-.quick li:nth-of-type(4)::before {
+.quick li.study::before {
   content: "공부기록";
 }
 
@@ -510,15 +510,15 @@ body.active * {
     opacity: 1;
     visibility: visible;
     left: 0;
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 10px;
+    bottom: 0;
     color: var(--black03Op2);
   }
 
-  .quick li:nth-of-type(2)::before {
+  .quick li.myself::before {
     left: 0;
   }
 
@@ -533,7 +533,9 @@ body.active * {
     padding: 10px;
     box-sizing: border-box;
     box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
-    height: 80px;
+    height: 70px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
   }
 
   .quick li.on::before {
