@@ -65,7 +65,7 @@ $(function () {
                 }, 800);
             }
         });
-    }, 300);
+    }, 1000);
 
     $(window).scroll(function () {
         let wdHeight = $(window).scrollTop();
