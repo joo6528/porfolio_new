@@ -49,7 +49,76 @@ $(function () {
             localStorage.setItem('lightStatus', 'unchecked');
             $('body').removeClass('active');
         }
+    };
+
+    // 퀵 메뉴 클릭 js
+    $('.quick li').click(function () {
+        $('.quick li').removeClass('on');
+        $(this).addClass('on');
+
+        var targetId = $(this).attr('data-scroll');
+        var targetElement = $('#' + targetId);
+        if (targetElement.length) {
+            $('html, body').stop().animate({
+                scrollTop: targetElement.offset().top - 30
+            }, 800);
+        }
+    });
+
+    $(window).scroll(function () {
+        let wdHeight = $(window).scrollTop();
+        let cnt02offsetTop = $('.cnt02_wrap').offset().top;
+        let cnt03offsetTop = $('.cnt03_wrap').offset().top;
+
+        if (wdHeight > cnt02offsetTop) {
+            $(".quick").addClass('on');
+        } else {
+            $(".quick").removeClass('on');
+        }
+
+        if (wdHeight > cnt03offsetTop) {
+            $(".menu_btn").addClass('on');
+            $(".top_btn").addClass('on');
+        } else {
+            $(".menu_btn").removeClass('on');
+            $(".top_btn").removeClass('on');
+        }
+    });
+
+    function resize() {
+        let wdWidth = $(window).width();
+
+        if (wdWidth >= 600) {
+            // 퀵메뉴 딤처리
+            $('.quick').mouseenter(function () {
+                $('.dim').addClass('on');
+                $(".quick").addClass('active');
+            });
+            $('.quick').mouseleave(function () {
+                $('.dim').removeClass('on');
+                $(".quick").removeClass('active');
+            });
+            $(".quick").removeClass('active');
+        } else {
+            $('.quick').mouseenter(function () {
+                $('.dim').removeClass('on');
+            });
+            $(".quick").addClass('active');
+
+            $('.menu_btn').click(function () {
+                $('.quick').toggleClass('active');
+                $('.dim').toggleClass('on');
+            })
+        }
     }
+
+    resize();
+
+    $(window).resize(function () {
+        let wdWidth = $(window).width();
+
+        resize();
+    });
 
     AOS.init();
 });
