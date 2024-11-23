@@ -51,19 +51,21 @@ $(function () {
         }
     };
 
-    // 퀵 메뉴 클릭 js
-    $('.quick li').click(function () {
-        $('.quick li').removeClass('on');
-        $(this).addClass('on');
+    setTimeout(function () {
+        // 퀵 메뉴 클릭 js
+        $('.quick li').click(function () {
+            $('.quick li').removeClass('on');
+            $(this).addClass('on');
 
-        var targetId = $(this).attr('data-scroll');
-        var targetElement = $('#' + targetId);
-        if (targetElement.length) {
-            $('html, body').stop().animate({
-                scrollTop: targetElement.offset().top - 30
-            }, 800);
-        }
-    });
+            var targetId = $(this).attr('data-scroll');
+            var targetElement = $('#' + targetId);
+            if (targetElement.length) {
+                $('html, body').stop().animate({
+                    scrollTop: targetElement.offset().top - 30
+                }, 800);
+            }
+        });
+    }, 300);
 
     $(window).scroll(function () {
         let wdHeight = $(window).scrollTop();
