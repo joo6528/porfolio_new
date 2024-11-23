@@ -257,11 +257,15 @@
   gap: 30px;
 }
 
+.cnt03_wrap .cnt_section .sec_title {
+  width: 100%;
+  font-size: 20px;
+}
+
 .cnt03_wrap .cnt_section .cnt_article {
   display: flex;
   gap: 0 15px;
   align-items: center;
-  width: calc(50% - 30px);
 }
 
 .cnt03_wrap .cnt_section .cnt_article .cnt_left {
@@ -270,7 +274,7 @@
   height: 96px;
   line-height: 96px;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
   border-radius: 15px;
@@ -284,7 +288,7 @@
 }
 
 .cnt03_wrap .cnt_section .cnt_article .cnt_left .logo.small02 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .cnt03_wrap .cnt_section .cnt_article .cnt_left .percent {
@@ -546,6 +550,7 @@
   bottom: 0;
   opacity: 0;
   transition: all 0.35s ease-in-out;
+  background-size: 250px 250px;
 }
 
 .cnt04_wrap .cnt_section .article_cnt .cnt_list .cnt_top {
@@ -1127,12 +1132,16 @@ body.active .top_btn.dark img {
     font-size: 24px;
   }
 
+  .cnt03_wrap .cnt_section .sec_title {
+    font-size: 18px;
+  }
+
   .cnt03_wrap .cnt_section .cnt_article .cnt_left {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .cnt03_wrap .cnt_section .cnt_article .cnt_left .logo.small01 {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .cnt03_wrap .cnt_section .cnt_article .cnt_left .logo.small02 {
@@ -1153,10 +1162,6 @@ body.active .top_btn.dark img {
 
   .cnt03_wrap .cnt_section01 {
     padding-bottom: 100px;
-  }
-
-  .cnt03_wrap .cnt_section01 .cnt_section .cnt_article .cnt_left {
-    display: none;
   }
 
   .cnt03_wrap .cnt_section02 {
@@ -1404,8 +1409,12 @@ body.active .top_btn.dark img {
   }
 
   .cnt03_wrap .cnt_section {
-    margin-top: 10px;
+    margin-top: 20px;
     gap: 20px;
+  }
+
+  .cnt03_wrap .cnt_section .sec_title {
+    font-size: 16px;
   }
 
   .cnt03_wrap .cnt_section .info_list {
@@ -1434,7 +1443,15 @@ body.active .top_btn.dark img {
     width: 70px;
     height: 70px;
     line-height: 70px;
-    font-size: 25px;
+    font-size: 24px;
+  }
+
+  .cnt03_wrap .cnt_section .cnt_article .cnt_left .logo.small01 {
+    font-size: 12px;
+  }
+
+  .cnt03_wrap .cnt_section .cnt_article .cnt_left .logo.small02 {
+    font-size: 16px;
   }
 
   .cnt03_wrap .cnt_section .cnt_article .cnt_left .percent {

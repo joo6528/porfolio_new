@@ -274,11 +274,15 @@
         flex-wrap: wrap;
         gap: 30px;
 
+        & .sec_title {
+            width: 100%;
+            font-size: 20px;
+        }
+
         & .cnt_article {
             display: flex;
             gap: 0 15px;
             align-items: center;
-            width: calc(50% - 30px);
 
             & .cnt_left {
                 position: relative;
@@ -286,7 +290,7 @@
                 height: 96px;
                 line-height: 96px;
                 text-align: center;
-                font-size: 50px;
+                font-size: 40px;
                 font-weight: 500;
                 box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
                 border-radius: 15px;
@@ -300,7 +304,7 @@
                     }
 
                     &.small02 {
-                        font-size: 30px;
+                        font-size: 25px;
                     }
                 }
 
@@ -571,6 +575,7 @@
                     bottom: 0;
                     opacity: 0;
                     transition: all 0.35s ease-in-out;
+                    background-size: 250px 250px;
                 }
 
                 & .cnt_top {
@@ -1286,13 +1291,18 @@ body.active {
         }
 
         & .cnt_section {
+
+            & .sec_title {
+                font-size: 18px;
+            }
+
             & .cnt_article {
                 & .cnt_left {
-                    font-size: 30px;
+                    font-size: 28px;
 
                     & .logo {
                         &.small01 {
-                            font-size: 10px;
+                            font-size: 14px;
                         }
 
                         &.small02 {
@@ -1603,8 +1613,12 @@ body.active {
         }
 
         & .cnt_section {
-            margin-top: 10px;
+            margin-top: 20px;
             gap: 20px;
+
+            & .sec_title {
+                font-size: 16px;
+            }
 
             & .info_list {
                 gap: 0 15px;
@@ -1633,7 +1647,17 @@ body.active {
                     width: 70px;
                     height: 70px;
                     line-height: 70px;
-                    font-size: 25px;
+                    font-size: 24px;
+
+                    & .logo {
+                        &.small01 {
+                            font-size: 12px;
+                        }
+
+                        &.small02 {
+                            font-size: 16px;
+                        }
+                    }
 
                     & .percent {
                         font-size: 20px;
