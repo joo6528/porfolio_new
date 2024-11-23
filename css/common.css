@@ -244,6 +244,10 @@ h6 {
   left: -72px;
 }
 
+.quick li.image {
+  display: none;
+}
+
 .quick li.porfolio {
   position: relative;
 }
@@ -522,6 +526,25 @@ body.active * {
     left: 0;
   }
 
+  .quick li.image {
+    width: 80px;
+    flex: initial;
+    position: relative;
+    display: block;
+  }
+
+  .quick li.image a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 30px;
+  }
+
+  .quick li.image a img {
+    width: 100%;
+  }
+
   .quick.on {
     bottom: 0;
     left: 0;
@@ -539,7 +562,7 @@ body.active * {
   }
 
   .quick li.on::before {
-    color: var(--black02);
+    color: var(--black04);
   }
 
   body.active .quick {

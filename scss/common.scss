@@ -249,6 +249,10 @@ h6 {
             }
         }
 
+        &.image {
+            display: none;
+        }
+
         &.porfolio {
             position: relative;
 
@@ -530,6 +534,25 @@ body.active {
                 color: var(--black03Op2);
             }
 
+            &.image {
+                width: 80px;
+                flex: initial;
+                position: relative;
+                display: block;
+
+                & a {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    bottom: 30px;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+            }
+
             &.on {
                 bottom: 0;
                 left: 0;
@@ -542,9 +565,11 @@ body.active {
                 box-sizing: border-box;
                 box-shadow: -10px -10px 10px var(--pointColorVioletOp2);
                 height: 70px;
+                border-top-left-radius: 35px;
+                border-top-right-radius: 35px;
 
                 &::before {
-                    color: var(--black02);
+                    color: var(--black04);
                 }
             }
         }
