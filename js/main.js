@@ -37,12 +37,18 @@ $(function () {
         breakpoints: {
             1280: {
                 spaceBetween: 50,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
             },
             600: {
                 spaceBetween: 40,
+                autoplay: -1,
             },
             200: {
                 spaceBetween: 30,
+                autoplay: -1,
             },
         },
     });
@@ -62,12 +68,18 @@ $(function () {
         breakpoints: {
             1280: {
                 spaceBetween: 50,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
             },
             600: {
                 spaceBetween: 40,
+                autoplay: -1,
             },
             200: {
                 spaceBetween: 30,
+                autoplay: -1,
             },
         },
     });
@@ -87,12 +99,18 @@ $(function () {
         breakpoints: {
             1280: {
                 spaceBetween: 50,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
             },
             600: {
                 spaceBetween: 40,
+                autoplay: -1,
             },
             200: {
                 spaceBetween: 30,
+                autoplay: -1,
             },
         },
     });
