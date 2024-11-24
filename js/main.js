@@ -27,7 +27,7 @@ $(function () {
         spaceBetween: 50,
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 6500,
             disableOnInteraction: false,
         },
         pagination: {
@@ -38,17 +38,17 @@ $(function () {
             1280: {
                 spaceBetween: 50,
                 autoplay: {
-                    delay: 5000,
+                    delay: 6500,
                     disableOnInteraction: false,
                 },
             },
             600: {
                 spaceBetween: 40,
-                autoplay: -1,
+                autoplay: false,
             },
             200: {
                 spaceBetween: 30,
-                autoplay: -1,
+                autoplay: false,
             },
         },
     });
@@ -58,7 +58,7 @@ $(function () {
         spaceBetween: 50,
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 6500,
             disableOnInteraction: false,
         },
         pagination: {
@@ -69,17 +69,17 @@ $(function () {
             1280: {
                 spaceBetween: 50,
                 autoplay: {
-                    delay: 5000,
+                    delay: 6500,
                     disableOnInteraction: false,
                 },
             },
             600: {
                 spaceBetween: 40,
-                autoplay: -1,
+                autoplay: false,
             },
             200: {
                 spaceBetween: 30,
-                autoplay: -1,
+                autoplay: false,
             },
         },
     });
@@ -89,7 +89,7 @@ $(function () {
         spaceBetween: 50,
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 6500,
             disableOnInteraction: false,
         },
         pagination: {
@@ -100,40 +100,65 @@ $(function () {
             1280: {
                 spaceBetween: 50,
                 autoplay: {
-                    delay: 5000,
+                    delay: 6500,
                     disableOnInteraction: false,
                 },
             },
             600: {
                 spaceBetween: 40,
-                autoplay: -1,
+                autoplay: false,
             },
             200: {
                 spaceBetween: 30,
-                autoplay: -1,
+                autoplay: false,
             },
         },
     });
 
-    $('.cnt04_wrap .article01 .swiper-slide').on('mouseover', function () {
-        cnt04_01.autoplay.stop();
-    });
-    $('.cnt04_wrap .article01 .swiper-slide').on('mouseout', function () {
-        cnt04_01.autoplay.start();
-    });
+    function resize() {
+        let wdWidth = $(window).width();
 
-    $('.cnt04_wrap .article02 .swiper-slide').on('mouseover', function () {
-        cnt04_02.autoplay.stop();
-    });
-    $('.cnt04_wrap .article02 .swiper-slide').on('mouseout', function () {
-        cnt04_02.autoplay.start();
-    });
+        if (wdWidth >= 1280) {
+            cnt04_01.autoplay.start();
+            cnt04_02.autoplay.start();
+            cnt04_03.autoplay.start();
 
-    $('.cnt04_wrap .article03 .swiper-slide').on('mouseover', function () {
-        cnt04_03.autoplay.stop();
-    });
-    $('.cnt04_wrap .article03 .swiper-slide').on('mouseout', function () {
-        cnt04_03.autoplay.start();
+            $('.cnt04_wrap .article01 .swiper-slide').on('mouseover', function () {
+                cnt04_01.autoplay.stop();
+            });
+            $('.cnt04_wrap .article01 .swiper-slide').on('mouseout', function () {
+                cnt04_01.autoplay.start();
+            });
+
+            $('.cnt04_wrap .article02 .swiper-slide').on('mouseover', function () {
+                cnt04_02.autoplay.stop();
+            });
+            $('.cnt04_wrap .article02 .swiper-slide').on('mouseout', function () {
+                cnt04_02.autoplay.start();
+            });
+
+            $('.cnt04_wrap .article03 .swiper-slide').on('mouseover', function () {
+                cnt04_03.autoplay.stop();
+            });
+            $('.cnt04_wrap .article03 .swiper-slide').on('mouseout', function () {
+                cnt04_03.autoplay.start();
+            });
+        } else {
+            $('.cnt04_wrap .swiper-slide').off('mouseover');
+            $('.cnt04_wrap .swiper-slide').off('mouseout');
+
+            cnt04_01.autoplay.stop();
+            cnt04_02.autoplay.stop();
+            cnt04_03.autoplay.stop();
+        }
+    };
+
+    resize();
+
+    $(window).resize(function () {
+        let wdWidth = $(window).width();
+
+        resize();
     });
 
     // slide 오버 시 해당 타이틀 addClass js
