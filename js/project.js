@@ -37,9 +37,11 @@ $(function () {
     // }
 
     // 홈 클릭 후 뒤로가기 js
-    $("#goBack").click(function () {
-        window.history.back();
-    });
+    setTimeout(function () {
+        $("#goBack").click(function () {
+            window.history.back();
+        });
+    }, 1000);
 
     function updateProgressBar() {
         const documentHeight = $(document).height(); // 문서의 총 높이
