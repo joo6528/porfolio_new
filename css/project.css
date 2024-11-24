@@ -187,6 +187,9 @@
 }
 
 .cnt03_wrap .cnt_section .info li {
+  display: flex;
+  gap: 0 30px;
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 
@@ -199,8 +202,6 @@
   font-weight: 500;
   position: relative;
   width: 130px;
-  margin-right: 15px;
-  padding-right: 15px;
   display: inline-block;
 }
 
@@ -208,15 +209,16 @@
   position: absolute;
   content: "";
   width: 1px;
-  height: 15px;
+  height: 80%;
   background: var(--black01);
   top: 50%;
   transform: translateY(-50%);
-  right: 0;
+  right: -15px;
 }
 
 .cnt03_wrap .cnt_section .info li span:nth-of-type(2) {
   font-weight: 400;
+  flex: 1;
 }
 
 .cnt03_wrap .cnt_section .info li:last-of-type {
@@ -476,7 +478,7 @@ body.active .previewPopup .closeBtn {
 
   .cnt03_wrap .cnt_section .info li span:nth-of-type(1) {
     font-size: 24px;
-    width: 110px;
+    width: 90px;
   }
 
   .cnt03_wrap .cnt_section .info li span:nth-of-type(2) {
@@ -654,12 +656,12 @@ body.active .previewPopup .closeBtn {
   }
 
   .cnt03_wrap .cnt_section .info li span:nth-of-type(1) {
-    width: 85px;
-    font-size: 18px;
+    width: 80px;
+    font-size: 16px;
   }
 
   .cnt03_wrap .cnt_section .info li span:nth-of-type(2) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .cnt04_wrap {

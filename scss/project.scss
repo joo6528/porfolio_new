@@ -190,6 +190,9 @@
     & .cnt_section {
         & .info {
             & li {
+                display: flex;
+                gap: 0 30px;
+                flex-wrap: wrap;
                 margin-bottom: 15px;
 
                 & span {
@@ -206,18 +209,19 @@
 
                         &::after {
                             position: absolute;
-                            content: '';
+                            content: "";
                             width: 1px;
-                            height: 15px;
+                            height: 80%;
                             background: var(--black01);
                             top: 50%;
                             transform: translateY(-50%);
-                            right: 0;
+                            right: -15px;
                         }
                     }
 
                     &:nth-of-type(2) {
                         font-weight: 400;
+                        flex: 1;
                     }
                 }
 
@@ -526,7 +530,7 @@ body.active {
                     & span {
                         &:nth-of-type(1) {
                             font-size: 24px;
-                            width: 110px;
+                            width: 90px;
                         }
 
                         &:nth-of-type(2) {
@@ -760,12 +764,12 @@ body.active {
 
                     & span {
                         &:nth-of-type(1) {
-                            width: 85px;
-                            font-size: 18px;
+                            width: 80px;
+                            font-size: 16px;
                         }
 
                         &:nth-of-type(2) {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                     }
                 }
