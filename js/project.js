@@ -36,6 +36,11 @@ $(function () {
     //     $('#lightCheck').prop('checked', false);
     // }
 
+    // 홈 클릭 후 뒤로가기 js
+    $("#goBack").on("click", function () {
+        window.history.back();
+    });
+
     function updateProgressBar() {
         const documentHeight = $(document).height(); // 문서의 총 높이
         const windowHeight = $(window).height(); // 윈도우 창의 높이
