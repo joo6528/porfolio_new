@@ -37,7 +37,7 @@ $(function () {
     // }
 
     // 홈 클릭 후 뒤로가기 js
-    $("#goBack").on("click", function () {
+    $("#goBack").click(function () {
         window.history.back();
     });
 
