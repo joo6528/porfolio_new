@@ -1,5 +1,5 @@
 $(function () {
-    console.log('!!');
+    console.log('123');
 
     // light & dark js
     function lightCheck() {
