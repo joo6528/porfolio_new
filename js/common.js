@@ -40,7 +40,7 @@ $(function () {
         });
 
         initializePage();
-    }, 300);
+    }, 500);
 
     // 상태 업데이트 함수
     function updateLightStatus(isChecked) {
