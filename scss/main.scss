@@ -288,7 +288,7 @@
                 position: relative;
                 width: 96px;
                 height: 96px;
-                line-height: 96px;
+                line-height: 1.6rem;
                 text-align: center;
                 font-size: 40px;
                 font-weight: 500;
@@ -299,6 +299,11 @@
                 border: 1px solid var(--black01);
 
                 & .logo {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
                     &.small01 {
                         font-size: 18px;
                     }
@@ -357,14 +362,22 @@
             }
         }
 
+        & .info_title {
+            font-size: 20px;
+        }
+
         & .info_list {
             display: flex;
             gap: 0 30px;
             flex-wrap: wrap;
+            background: #eee;
+            padding: 20px;
+            border-radius: 20px;
+            width: 94%;
 
             &>span {
                 font-weight: 500;
-                font-size: 28px;
+                font-size: 26px;
                 line-height: 150%;
                 position: relative;
 
@@ -425,6 +438,10 @@
         & .cnt_section {
             flex-direction: column;
             gap: 15px 0;
+
+            &:last-of-type {
+                margin-top: 40px;
+            }
         }
 
         &:after {
@@ -701,6 +718,7 @@
 
     & .cnt_header img {
         margin-bottom: 20px;
+        width: 120px;
     }
 
     & .cnt_header p {
@@ -743,7 +761,7 @@
 
             &>li {
                 width: 50%;
-                padding: 40px;
+                padding: 30px 40px;
                 border-radius: 25px;
                 box-sizing: border-box;
                 background: var(--white);
@@ -904,6 +922,10 @@ body.active {
                         }
                     }
                 }
+            }
+
+            & .info_list {
+                background: #333;
             }
         }
     }
@@ -1105,7 +1127,7 @@ body.active {
 
             & .info_list {
                 &>span {
-                    font-size: 24px;
+                    font-size: 22px;
                 }
             }
         }
@@ -1367,6 +1389,10 @@ body.active {
         & .cnt_section03 {
             margin-top: 100px;
 
+            & .info_title {
+                font-size: 18px;
+            }
+
             &::after {
                 font-size: 40px;
             }
@@ -1516,6 +1542,22 @@ body.active {
                     display: none;
                 }
             }
+
+            &.info_list {
+                width: 100%;
+            }
+        }
+
+        & .cnt_section02::after {
+            display: none;
+        }
+
+        & .cnt_section03::after {
+            display: none;
+        }
+
+        & .cnt_section04::after {
+            display: none;
         }
     }
 }
@@ -1646,7 +1688,6 @@ body.active {
                 & .cnt_left {
                     width: 70px;
                     height: 70px;
-                    line-height: 70px;
                     font-size: 24px;
 
                     & .logo {
