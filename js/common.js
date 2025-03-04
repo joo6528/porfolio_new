@@ -1,4 +1,6 @@
 $(function () {
+    console.log('!!');
+
     // light & dark js
     function lightCheck() {
         if ($('.button-cover .checkbox').prop('checked') == true) {
