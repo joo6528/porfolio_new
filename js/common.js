@@ -1,6 +1,4 @@
 $(function () {
-    console.log('123');
-
     // light & dark js
     function lightCheck() {
         if ($('.button-cover .checkbox').prop('checked') == true) {
@@ -13,8 +11,6 @@ $(function () {
     $('.button-cover').click(function () {
         lightCheck();
     });
-
-    initializePage();
 
     // `pageshow` 이벤트를 추가로 처리
     $(window).on('pageshow', function (event) {
@@ -36,11 +32,15 @@ $(function () {
         }
     }
 
-    // 체크박스 상태 변경 시 이벤트 처리
-    $('#lightCheck').change(function () {
-        const isChecked = $(this).is(':checked');
-        updateLightStatus(isChecked);
-    });
+    setTimeout(() => {
+        // 체크박스 상태 변경 시 이벤트 처리
+        $('#lightCheck').change(function () {
+            const isChecked = $(this).is(':checked');
+            updateLightStatus(isChecked);
+        });
+
+        initializePage();
+    }, 300);
 
     // 상태 업데이트 함수
     function updateLightStatus(isChecked) {
