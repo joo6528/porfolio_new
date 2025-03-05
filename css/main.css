@@ -1526,6 +1526,10 @@ body.active .top_btn.dark img {
         margin-top: 80px;
     }
 
+    .cnt03_wrap .cnt_section .info_title {
+        font-size: 16px;
+    }
+
     .cnt03_wrap .cnt_section03::after {
         font-size: 30px;
     }
@@ -1540,7 +1544,7 @@ body.active .top_btn.dark img {
 
     .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.info {
         margin-top: 0;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.date:after {

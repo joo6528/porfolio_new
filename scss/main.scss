@@ -1732,6 +1732,10 @@ body.active {
             }
         }
 
+        & .info_title {
+            font-size: 16px;
+        }
+
         & .cnt_section03 {
             margin-top: 80px;
 
@@ -1781,7 +1785,7 @@ body.active {
 
                         &.info {
                             margin-top: 0;
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                     }
                 }
