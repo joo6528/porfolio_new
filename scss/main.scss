@@ -400,7 +400,14 @@
                     width: 100%;
                     margin-top: 10px;
                     font-weight: 400;
-                    font-size: 24px;
+                    font-size: 22px;
+
+                    & .certicate img {
+                        width: 40px;
+                        vertical-align: middle;
+                        line-height: 0;
+                        font-size: 0;
+                    }
                 }
             }
         }
@@ -1808,6 +1815,10 @@ body.active {
                         &.info {
                             margin-top: 0;
                             font-size: 14px;
+
+                            & .certicate img {
+                                width: 30px;
+                            }
                         }
                     }
                 }

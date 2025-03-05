@@ -21,6 +21,11 @@ $(function () {
     //     }
     // });
 
+    $(".pdfLink").on("click", function () {
+        var pdfUrl = $(this).data("url");
+        window.open(pdfUrl, '_blank');
+    });
+
     // cnt04 : 포트폴리오 리스트
     var cnt04_01 = new Swiper(".cnt04_wrap .article01 .mySwiper", {
         slidesPerView: 'auto',

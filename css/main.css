@@ -387,6 +387,13 @@
     font-size: 22px;
 }
 
+.cnt03_wrap .cnt_section .info_list>span.info .certicate img {
+    width: 40px;
+    vertical-align: middle;
+    line-height: 0;
+    font-size: 0;
+}
+
 .cnt03_wrap .cnt_section02 {
     margin-top: 120px;
     position: relative;
@@ -1567,6 +1574,10 @@ body.active .top_btn.dark img {
     .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.info {
         margin-top: 0;
         font-size: 14px;
+    }
+
+    .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.info .certicate img {
+        width: 30px;
     }
 
     .cnt03_wrap .cnt_section03 .cnt_section .info_list>span.date:after {
