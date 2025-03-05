@@ -727,16 +727,13 @@
         font-weight: 600;
     }
 
-    & .cnt_section01 {
-        background: linear-gradient(180deg, var(--gray01)0%, var(--pointColorVioletOp4)100%);
+    & .cnt_section {
         margin-top: 200px;
-        padding-bottom: 40vh;
         box-sizing: border-box;
         position: relative;
 
         &::before {
             position: absolute;
-            content: 'SCSS';
             font-size: 300px;
             color: var(--gray02);
             line-height: 130%;
@@ -746,7 +743,6 @@
 
         &::after {
             position: absolute;
-            content: 'CSS의 단점을 보안하기 위해 만들어 CSS 전처리기';
             font-size: 30px;
             color: var(--gray03);
             line-height: 130%;
@@ -823,6 +819,32 @@
                 }
             }
         }
+    }
+
+    & .cnt05_wrap01 {
+        &::before {
+            content: 'SCSS';
+        }
+
+        &::after {
+            content: 'CSS의 단점을 보안하기 위해 만들어 CSS 전처리기';
+        }
+
+        padding-bottom: 10vh;
+    }
+
+    & .cnt05_wrap02 {
+        &::before {
+            content: 'JS';
+        }
+
+        &::after {
+            content: '동적인 기능을 구현하기 위해 사용되는 프로그래밍 언어';
+        }
+
+        background: linear-gradient(180deg, var(--gray01)0%, var(--pointColorVioletOp4)100%);
+        margin-top: 0;
+        padding-bottom: 40vh;
     }
 }
 
@@ -981,7 +1003,7 @@ body.active {
     }
 
     & .cnt05_wrap {
-        & .cnt_section01 {
+        & .cnt_section {
             background: var(--black03);
 
             & .cnt_list {
@@ -1203,7 +1225,7 @@ body.active {
             }
         }
 
-        & .cnt_section01 {
+        & .cnt_section {
             &::before {
                 font-size: 200px;
             }
@@ -1491,7 +1513,7 @@ body.active {
             }
         }
 
-        & .cnt_section01 {
+        & .cnt_section {
             &::before {
                 font-size: 180px;
             }
@@ -1890,16 +1912,20 @@ body.active {
             }
         }
 
-        & .cnt_section01 {
-            margin-top: 120px;
-            padding-bottom: 20vh;
-
+        & .cnt_section {
             &::before {
-                display: none;
+                /* display: none; */
+                font-size: 30px;
+                left: 5%;
+                top: -50px;
             }
 
             &::after {
-                display: none;
+                /* display: none; */
+                font-size: 12px;
+                right: 5%;
+                left: initial;
+                top: -30px;
             }
 
             & .cnt_list {
@@ -1930,6 +1956,15 @@ body.active {
                 }
             }
         }
+
+        & .cnt_section01 {
+            margin-top: 120px;
+            padding-bottom: 10vh;
+        }
+
+        & .cnt_section02 {
+            padding-bottom: 20vh;
+        }
     }
 
     .menu_btn {
@@ -1955,7 +1990,7 @@ body.active {
         }
 
         & .cnt05_wrap {
-            & .cnt_section01 {
+            & .cnt_section {
                 & .cnt_list {
                     &>li {
                         box-shadow: 10px 10px 5px var(--black03Op2);

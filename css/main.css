@@ -698,17 +698,14 @@
     font-weight: 600;
 }
 
-.cnt05_wrap .cnt_section01 {
-    background: linear-gradient(180deg, var(--gray01) 0%, var(--pointColorVioletOp4) 100%);
+.cnt05_wrap .cnt_section {
     margin-top: 200px;
-    padding-bottom: 40vh;
     box-sizing: border-box;
     position: relative;
 }
 
-.cnt05_wrap .cnt_section01::before {
+.cnt05_wrap .cnt_section::before {
     position: absolute;
-    content: "SCSS";
     font-size: 300px;
     color: var(--gray02);
     line-height: 130%;
@@ -716,9 +713,16 @@
     left: calc((100% - min(94%, 1600px)) / 2);
 }
 
-.cnt05_wrap .cnt_section01::after {
+.cnt05_wrap .cnt_section01::before {
+    content: "SCSS";
+}
+
+.cnt05_wrap .cnt_section02::before {
+    content: "JS";
+}
+
+.cnt05_wrap .cnt_section::after {
     position: absolute;
-    content: "CSS의 단점을 보안하기 위해 만들어 CSS 전처리기";
     font-size: 30px;
     color: var(--gray03);
     line-height: 130%;
@@ -727,12 +731,30 @@
     top: 320px;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list {
+.cnt05_wrap .cnt_section01::after {
+    content: "CSS의 단점을 보안하기 위해 만들어 CSS 전처리기";
+}
+
+.cnt05_wrap .cnt_section02::after {
+    content: "동적인 기능을 구현하기 위해 사용되는 프로그래밍 언어";
+}
+
+.cnt05_wrap .cnt_section01 {
+    padding-bottom: 10vh;
+}
+
+.cnt05_wrap .cnt_section02 {
+    background: linear-gradient(180deg, var(--gray01) 0%, var(--pointColorVioletOp4) 100%);
+    margin-top: 0;
+    padding-bottom: 40vh;
+}
+
+.cnt05_wrap .cnt_section .cnt_list {
     padding-top: 200px;
     box-sizing: border-box;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li {
+.cnt05_wrap .cnt_section .cnt_list>li {
     width: 50%;
     padding: 30px 40px;
     border-radius: 25px;
@@ -748,16 +770,16 @@
     z-index: 1;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li a {
+.cnt05_wrap .cnt_section .cnt_list>li a {
     font-size: 0;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li a.list_txt {
+.cnt05_wrap .cnt_section .cnt_list>li a.list_txt {
     width: calc(100% - 40px);
     text-align: left;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li a span {
+.cnt05_wrap .cnt_section .cnt_list>li a span {
     font-size: 26px;
     font-weight: 500;
     overflow: hidden;
@@ -767,31 +789,31 @@
     display: block;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn {
+.cnt05_wrap .cnt_section .cnt_list>li a.list_moreBtn {
     transition: all 0.4s ease-in-out;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn.dark {
+.cnt05_wrap .cnt_section .cnt_list>li a.list_moreBtn.dark {
     display: none;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li:last-of-type {
+.cnt05_wrap .cnt_section .cnt_list>li:last-of-type {
     margin-bottom: 0;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li:hover {
+.cnt05_wrap .cnt_section .cnt_list>li:hover {
     cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li:hover a {
+.cnt05_wrap .cnt_section .cnt_list>li:hover a {
     cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li:hover a span {
+.cnt05_wrap .cnt_section .cnt_list>li:hover a span {
     cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
-.cnt05_wrap .cnt_section01 .cnt_list>li:hover .list_moreBtn {
+.cnt05_wrap .cnt_section .cnt_list>li:hover .list_moreBtn {
     transform: translateX(10px);
     cursor: url("../img/cursorOn.png") 2 2, auto;
 }
@@ -915,40 +937,40 @@ body.active .cnt04_wrap .cnt_section .article_cnt .cnt_list:hover .cnt_bottom .m
     cursor: url("../img/cursorWOn.png") 2 2, auto;
 }
 
-body.active .cnt05_wrap .cnt_section01 {
+body.active .cnt05_wrap .cnt_section {
     background: var(--black03);
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li {
+body.active .cnt05_wrap .cnt_section .cnt_list>li {
     background: var(--black01);
     box-shadow: 20px 20px 10px var(--black03Op2);
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li a {
+body.active .cnt05_wrap .cnt_section .cnt_list>li a {
     color: var(--white);
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn {
+body.active .cnt05_wrap .cnt_section .cnt_list>li a.list_moreBtn {
     display: none;
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn.dark {
+body.active .cnt05_wrap .cnt_section .cnt_list>li a.list_moreBtn.dark {
     display: block;
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover {
+body.active .cnt05_wrap .cnt_section .cnt_list>li:hover {
     cursor: url("../img/cursorWOn.png") 2 2, auto;
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover a {
+body.active .cnt05_wrap .cnt_section .cnt_list>li:hover a {
     cursor: url("../img/cursorWOn.png") 2 2, auto;
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover a span {
+body.active .cnt05_wrap .cnt_section .cnt_list>li:hover a span {
     cursor: url("../img/cursorWOn.png") 2 2, auto;
 }
 
-body.active .cnt05_wrap .cnt_section01 .cnt_list>li:hover a.list_moreBtn.dark {
+body.active .cnt05_wrap .cnt_section .cnt_list>li:hover a.list_moreBtn.dark {
     cursor: url("../img/cursorOn.png") 2 2, auto;
 }
 
@@ -1075,25 +1097,25 @@ body.active .top_btn.dark img {
         line-height: 100px;
     }
 
-    .cnt05_wrap .cnt_section01::before {
+    .cnt05_wrap .cnt_section::before {
         font-size: 200px;
     }
 
-    .cnt05_wrap .cnt_section01::after {
+    .cnt05_wrap .cnt_section::after {
         font-size: 26px;
         top: 220px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list {
+    .cnt05_wrap .cnt_section .cnt_list {
         padding-top: 100px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li {
+    .cnt05_wrap .cnt_section .cnt_list>li {
         padding: 30px;
         margin-bottom: 40px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li a span {
+    .cnt05_wrap .cnt_section .cnt_list>li a span {
         font-size: 24px;
     }
 
@@ -1318,25 +1340,25 @@ body.active .top_btn.dark img {
         line-height: 80px;
     }
 
-    .cnt05_wrap .cnt_section01::before {
+    .cnt05_wrap .cnt_section::before {
         font-size: 180px;
     }
 
-    .cnt05_wrap .cnt_section01::after {
+    .cnt05_wrap .cnt_section::after {
         font-size: 22px;
         top: 200px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list {
+    .cnt05_wrap .cnt_section .cnt_list {
         padding-top: 100px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li {
+    .cnt05_wrap .cnt_section .cnt_list>li {
         padding: 25px;
         margin-bottom: 40px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li a span {
+    .cnt05_wrap .cnt_section .cnt_list>li a span {
         font-size: 20px;
     }
 
@@ -1647,22 +1669,33 @@ body.active .top_btn.dark img {
 
     .cnt05_wrap .cnt_section01 {
         margin-top: 120px;
+        padding-bottom: 10vh;
+    }
+
+    .cnt05_wrap .cnt_section02 {
         padding-bottom: 20vh;
     }
 
-    .cnt05_wrap .cnt_section01::before {
-        display: none;
+    .cnt05_wrap .cnt_section::before {
+        /* display: none; */
+        font-size: 30px;
+        left: 5%;
+        top: -50px;
     }
 
-    .cnt05_wrap .cnt_section01::after {
-        display: none;
+    .cnt05_wrap .cnt_section::after {
+        /* display: none; */
+        font-size: 12px;
+        right: 5%;
+        left: initial;
+        top: -30px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list {
+    .cnt05_wrap .cnt_section .cnt_list {
         padding-top: 0;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li {
+    .cnt05_wrap .cnt_section .cnt_list>li {
         width: 100%;
         border-radius: 15px;
         padding: 15px 20px;
@@ -1670,15 +1703,15 @@ body.active .top_btn.dark img {
         box-shadow: 10px 10px 5px var(--pointColorVioletOp2);
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li a.list_txt {
+    .cnt05_wrap .cnt_section .cnt_list>li a.list_txt {
         width: calc(100% - 25px);
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li a span {
+    .cnt05_wrap .cnt_section .cnt_list>li a span {
         font-size: 16px;
     }
 
-    .cnt05_wrap .cnt_section01 .cnt_list>li a.list_moreBtn img {
+    .cnt05_wrap .cnt_section .cnt_list>li a.list_moreBtn img {
         width: 25px;
     }
 
@@ -1695,7 +1728,7 @@ body.active .top_btn.dark img {
         box-shadow: 10px 10px 5px var(--black03Op2);
     }
 
-    body.active .cnt05_wrap .cnt_section01 .cnt_list>li {
+    body.active .cnt05_wrap .cnt_section .cnt_list>li {
         box-shadow: 10px 10px 5px var(--black03Op2);
     }
 
